@@ -9,10 +9,33 @@ const faqData = [
     answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
   },
   {
-    question: "What is Togethr?",
+    question: "What exactly do you do?",
     answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
   },
-  // Add more question-answer pairs as needed
+  {
+    question: "Who’s an expert?",
+    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+  },
+  {
+    question: "Is it free?",
+    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+  },
+  {
+    question: "Why are you doing this?",
+    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+  },
+  {
+    question: "Can I buy products from Togethr?",
+    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+  },
+  {
+    question: "How can I buy from Togethr?",
+    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+  },
+  {
+    question: "What is a price match guarantee?",
+    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+  },
 ];
 
 export default function Faq() {
@@ -24,7 +47,7 @@ export default function Faq() {
 
   return (
     <>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center py-16">
         <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-16">
           <div className="flex flex-col gap-y-4">
             <div className="text-black bold text-[2.5rem]">
@@ -34,7 +57,7 @@ export default function Faq() {
               {faqData.map((item, index) => (
                 <div className="flex flex-col" key={index}>
                   <button onClick={() => toggleContentVisibility(index)}>
-                    <div className="w-full flex justify-between">
+                    <div className="w-full flex items-center justify-between pt-4 pb-2">
                       <div className="text-black bold text-xl">
                         {item.question}
                       </div>
@@ -59,7 +82,7 @@ export default function Faq() {
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="regular text-[#51636F] text-lg pt-4"
+                        className="regular text-[#51636F] text-lg"
                       >
                         {item.answer}
                       </motion.div>
