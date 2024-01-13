@@ -47,7 +47,7 @@ export default function Faq() {
 
   return (
     <>
-      <div className="w-full flex justify-center py-16">
+      <div className="w-full flex justify-center py-16 faq-bg">
         <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-16">
           <div className="flex flex-col gap-y-4">
             <div className="text-black bold text-[2.5rem]">
