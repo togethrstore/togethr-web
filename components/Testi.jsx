@@ -16,7 +16,7 @@ const reviewData = [
     expert: " Vishnu Bhupathi",
     reviewer: "Overachiever L",
     ratings: [1, 2, 3, 4],
-    title: "Elizabeth was great - very trustworthy!",
+    title: "Electronics is a branch of physics and engineering",
     description:
       "Electronics is a branch of physics and engineering that involves the study and manipulation of electrical currents to process, transmit, and store information. It encompasses the design, analysis, and application of electronic circuits and devices, playing a pivotal role in technology, telecommunications, and countless aspects of modern life.",
     date: "Oct 6, 2023",
@@ -72,7 +72,7 @@ const Card = ({ review }) => {
               </div>
             </div>
           </div>
-          <div key={key} className="flex gap-0.5">
+          <div className="flex gap-0.5">
             {review.ratings.map((rating, index) => (
               <Rating key={index} />
             ))}
@@ -113,6 +113,8 @@ export default function Testimonials() {
             <div
               className="max-w-4xl xl:max-w-7xl"
               style={{ position: "absolute" }}
+              key={index}
+              
             >
               <AnimatePresence initial={false} custom={direction}>
                 {page % reviewData.length === index && (
