@@ -1,6 +1,6 @@
 import React from "react";
-import Rating from "./Rating";
-import { LeftButton, RightButton } from "./Buttons";
+import { LeftButton, RightButton, Rating } from "./Buttons";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Card = () => {
   return (
