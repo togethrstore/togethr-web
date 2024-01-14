@@ -72,7 +72,7 @@ const Card = ({ review }) => {
               </div>
             </div>
           </div>
-          <div className="flex gap-0.5">
+          <div key={key} className="flex gap-0.5">
             {review.ratings.map((rating, index) => (
               <Rating key={index} />
             ))}
