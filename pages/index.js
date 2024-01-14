@@ -13,7 +13,7 @@ export default function Home() {
       <div className="">
         <Hero />
         <About />
-        <Carousel />
+        {/* <Carousel /> */}
         <Testimonials />
         <Faq />
         <Footer />
