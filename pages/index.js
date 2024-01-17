@@ -5,6 +5,9 @@ import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
 import Testimonials from "../components/Testi";
+import Electronics from "../components/Electronics";
+import Undersports from "../components/Undersports";
+import Appliances from "../components/Appliances";
 
 export default function Home() {
   return (
@@ -12,6 +15,11 @@ export default function Home() {
       <Head></Head>
       <div className="">
         <Hero />
+        <div className="categories-desktop">
+          <Electronics />
+          <Undersports />
+          <Appliances />
+        </div>
         <About />
         {/* <Carousel /> */}
         <Testimonials />

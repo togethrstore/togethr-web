@@ -16,36 +16,36 @@ export default function About() {
             </div>
           </div>
           <div className="w-full flex justify-between">
-            <div className="w-[30%] p-6 flex flex-col about-box">
+            <div className="w-[30%] p-6 flex flex-col about-box items-center">
               <div className="w-28">
                 <Image src={Requirement} alt="" />
               </div>
               <div className="text-black text-2xl bold py-4">
                 Share Requirements
               </div>
-              <div className="regular text-[#51636F] text-lg">
+              <div className="regular text-[#51636F] text-lg text-center">
                 Fill out a form <br />
                 (takes less than a minute)
               </div>
             </div>
-            <div className="w-[30%] p-6 flex flex-col about-box">
+            <div className="w-[30%] p-6 flex flex-col about-box items-center">
               <div className="w-28">
                 <Image src={Expert} alt="" />
               </div>
               <div className="text-black text-2xl bold py-4">
                 Talk to Expert
               </div>
-              <div className="regular text-[#51636F] text-lg">
+              <div className="regular text-[#51636F] text-lg text-center">
                 Our expert will contact you to discuss your requirements.
               </div>
             </div>
             {/* asaushfiahwfi */}
-            <div className="w-[30%] p-6 flex flex-col about-box">
+            <div className="w-[30%] p-6 flex flex-col about-box items-center">
               <div className="w-28">
                 <Image src={Cart} alt="" />
               </div>
               <div className="text-black text-2xl bold py-4">Shop Togethr </div>
-              <div className="regular text-[#51636F] text-lg">
+              <div className="regular text-[#51636F] text-lg text-center">
                 Purchase your perfect product at the best price.
               </div>
             </div>
