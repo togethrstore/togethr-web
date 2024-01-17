@@ -32,15 +32,29 @@ const categories = [
 
 const Footer = () => {
   return (
-    <div className="w-full flex justify-center py-12">
+    <div className="w-full flex justify-center px-6 lg:px-0 py-10 lg:py-12">
       <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl">
         <div className="flex flex-col">
-          <div className="w-32">
-            <Image src={Logo} alt="" />
+          <div className="flex justify-between">
+            <div className="w-32">
+              <Image src={Logo} alt="" />
+            </div>
+            <div className="lg:hidden flex items-center gap-x-4">
+              <Link href={""}>
+                <div className="w-6 h-6 cursor-pointer">
+                  <Image src={Instagram} alt="" />
+                </div>
+              </Link>
+              <Link href={""}>
+                <div className="w-6 h-6 cursor-pointer">
+                  <Image src={Linkedin} alt="" />
+                </div>
+              </Link>
+            </div>
           </div>
-          <div className="py-12 flex gap-x-32">
+          <div className="py-12 flex flex-col gap-4 lg:flex-row gap-x-32">
             {categories.map((category, index) => (
-              <div key={index} className="flex flex-col gap-y-6">
+              <div key={index} className="flex flex-col gap-y-3 lg:gap-y-6">
                 <div className="bold text-black text-lg">{category.title}</div>
                 <div className="flex flex-col gap-y-2 text-[#51636F] text-base medium">
                   {category.items.map((item, subIndex) => (
@@ -56,7 +70,7 @@ const Footer = () => {
             <div className="text-black text-base regular">
               Copyright © 2023 Togethr. All rights reserved.
             </div>
-            <div className="flex items-center gap-x-4">
+            <div className="hidden lg:flex items-center gap-x-4">
               <Link href={""}>
                 <div className="w-6 h-6 cursor-pointer">
                   <Image src={Instagram} alt="" />

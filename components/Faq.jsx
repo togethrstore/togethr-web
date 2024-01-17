@@ -47,21 +47,21 @@ export default function Faq() {
 
   return (
     <>
-      <div className="w-full flex justify-center py-16 faq-bg">
+      <div className="w-full flex justify-center px-6 lg:px-0 py-10 lg:py-16 faq-bg">
         <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-16">
           <div className="flex flex-col gap-y-4">
-            <div className="text-black bold text-[2.5rem]">
+            <div className="text-black bold text-2xl lg:text-[2.5rem]">
               Frequently asked questions
             </div>
-            <div className="flex flex-col pt-12 gap-y-4">
+            <div className="flex flex-col pt-4 lg:pt-12 gap-y-4">
               {faqData.map((item, index) => (
                 <div className="flex flex-col" key={index}>
                   <button onClick={() => toggleContentVisibility(index)}>
                     <div className="w-full flex items-center justify-between pt-4 pb-2">
-                      <div className="text-black bold text-xl">
+                      <div className="text-black text-start medium lg:bold text-xl lg:text-xl">
                         {item.question}
                       </div>
-                      <div className="w-6">
+                      <div className="w-5 lg:w-6">
                         <motion.div
                           initial={false}
                           animate={{
@@ -82,7 +82,7 @@ export default function Faq() {
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="regular text-[#51636F] text-lg"
+                        className="medium text-[#51636F] text-base lg:text-lg"
                       >
                         {item.answer}
                       </motion.div>

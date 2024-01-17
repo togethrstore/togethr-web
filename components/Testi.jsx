@@ -51,35 +51,36 @@ const Card = ({ review }) => {
       initial="enter"
       animate="center"
       exit="exit"
-      className="w-full"
+      className="w-full px-6 lg:px-0"
     >
       <motion.div className="w-full p-6 flex flex-col border-2 border-[#625DF5] rounded-2xl testi-bg">
-        <div className="w-full flex justify-between">
+        <div className="w-full flex flex-col items-center lg:flex-row lg:justify-between">
           <div className="flex items-center h-max gap-x-4">
             <div className="w-14 h-14 bg-[#625DF5] border border-[#625DF5] rounded-full"></div>
             <div className="flex flex-col gap-y-1">
-              <div className="bold text-lg text-black">
+              <div className="bold text-base lg:text-lg text-black">
                 Expert:
-                <span className="medium text-[#51636F] text-lg">
+                <span className="medium text-[#51636F] text-base lg:text-lg">
                   {review.expert}
                 </span>
               </div>
-              <div className="bold text-lg text-black">
+              <div className="bold text-base lg:text-lg text-black">
                 Reviewer:
-                <span className="medium text-[#51636F] text-lg">
+                <span className="medium text-[#51636F] text-base lg:text-lg">
+                  {" "}
                   {review.reviewer}
                 </span>
               </div>
             </div>
           </div>
-          <div className="flex gap-0.5">
+          <div className="flex gap-0.5 mt-4 lg:my-0">
             {review.ratings.map((rating, index) => (
               <Rating key={index} />
             ))}
           </div>
         </div>
-        <div className="w-full bg-[#625DF5] h-[2px] my-6 rounded-2xl"></div>
-        <div className="flex flex-col gap-y-6">
+        <div className="w-full bg-[#625DF5] h-[2px] my-4 lg:my-6 rounded-2xl"></div>
+        <div className="flex flex-col gap-y-3 lg:gap-y-6">
           <div className="bold text-xl text-black">{review.title}</div>
           <div className="medium text-[#51636F] text-lg">
             {review.description}
@@ -100,12 +101,13 @@ export default function Testimonials() {
   };
   return (
     <div className="w-full flex justify-center">
-      <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-16">
+      <div className="w-full flex flex-col gap-y-6 lg:gap-y-12 max-w-4xl px-6 lg:px-0 xl:max-w-7xl py-10 lg:py-16">
         <div className="flex flex-col gap-y-4">
-          <div className="text-black bold text-[2.5rem]">We are Togethr</div>
-          <div className="regular text-[#51636F] text-lg">
-            Lorem Ipsum dos amasfasfet. Lorem Ipsum dos amet. Lorem Ipsum dos
-            amet.
+          <div className="text-black bold text-2xl lg:text-[2.5rem]">
+            We are Togethr
+          </div>
+          <div className="medium text-[#51636F] text-base lg:text-lg">
+            Talk to real experts and buy authentic products at best prices.
           </div>
         </div>
         <div className="flex justify-center">
@@ -114,7 +116,6 @@ export default function Testimonials() {
               className="max-w-4xl xl:max-w-7xl"
               style={{ position: "absolute" }}
               key={index}
-              
             >
               <AnimatePresence initial={false} custom={direction}>
                 {page % reviewData.length === index && (
@@ -132,7 +133,7 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
-        <div className="w-full flex justify-center items-center gap-x-6 mt-80">
+        <div className="w-full flex justify-center items-center gap-x-6 mt-[36rem] lg:mt-80">
           <button onClick={() => paginate(-1)}>
             <LeftButton />
           </button>
