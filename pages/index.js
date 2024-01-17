@@ -15,11 +15,11 @@ export default function Home() {
       <Head></Head>
       <div className="">
         <Hero />
-        <div className="categories-desktop">
+        {/* <div className="categories-desktop">
           <Electronics />
           <Undersports />
           <Appliances />
-        </div>
+        </div> */}
         <About />
         {/* <Carousel /> */}
         <Testimonials />
