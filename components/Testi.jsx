@@ -18,7 +18,7 @@ const reviewData = [
     ratings: [1, 2, 3, 4],
     title: "Electronics is a branch of physics and engineering",
     description:
-      "Electronics is a branch of physics and engineering that involves the study and manipulation of electrical currents to process, transmit, and store information. It encompasses the design, analysis, and application of electronic circuits and devices, playing a pivotal role in technology, telecommunications, and countless aspects of modern life.",
+      "Elizabeth was quick and knew exactly what I wanted when I needed some new hiking shoes. She found the best deal for me and was very friendly! 100% who you need to talk to for all of your gear needs. Expect great conversation and detailed recommendations when chatting with Elizabeth.",
     date: "Oct 6, 2023",
   },
 ];
