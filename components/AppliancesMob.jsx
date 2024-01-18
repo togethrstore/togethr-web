@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import ImageOne from "../public/assets/images/categories/electronics/image1.png";
-import ImageTwo from "../public/assets/images/categories/electronics/image2.png";
-import ImageThree from "../public/assets/images/categories/electronics/image3.png";
-import ImageFour from "../public/assets/images/categories/electronics/image4.png";
+import ImageOne from "../public/assets/images/categories/appliances/image1.png";
+import ImageTwo from "../public/assets/images/categories/appliances/image2.png";
+import ImageThree from "../public/assets/images/categories/appliances/image3.png";
+import ImageFour from "../public/assets/images/categories/appliances/image4.png";
 import { LeftButton, LeftButtonMob, RightButtonMob } from "./Buttons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,28 +12,29 @@ import "slick-carousel/slick/slick-theme.css";
 const items = [
   {
     title: "Laptops",
-    image: ImageFour,
-    buttonLabel: "Shop with Expert",
+    image: ImageOne,
+    buttonLabel: "Join Waitlist",
     buttonHref: "/laptops",
   },
   {
     title: "Phones",
-    image: ImageOne,
-    buttonLabel: "Shop with Expert",
-    buttonHref: "/phones",
-  },
-  {
-    title: "Headphones",
     image: ImageTwo,
-    buttonLabel: "Shop with Expert",
+    buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
   {
-    title: "Smart Watches",
+    title: "Phones",
     image: ImageThree,
-    buttonLabel: "Shop with Expert",
+    buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
+  {
+    title: "Phones",
+    image: ImageFour,
+    buttonLabel: "Join Waitlist",
+    buttonHref: "/phones",
+  },
+  // Add more items as needed
 ];
 
 const CustomSlider = ({ children }) => {
@@ -73,7 +74,9 @@ const CustomSlider = ({ children }) => {
   return (
     <div>
       <div className="flex items-center justify-between px-6 pb-6 lg:pb-0 lg:px-0">
-        <div className="text-black text-xl lg:text-2xl bold">Electronics</div>
+        <div className="text-black text-xl lg:text-2xl bold">
+          Home Appliances
+        </div>
         <div className="flex gap-x-2">
           <LeftButtonMob onClick={goToPrevSlide} />
           <RightButtonMob onClick={goToNextSlide} />
@@ -92,21 +95,11 @@ const CustomSlider = ({ children }) => {
   );
 };
 
-export default function ElectronicsMob() {
+export default function ApplicancesMob() {
   return (
     <>
       <div className="w-full flex justify-center">
-        <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-12">
-          <div className="flex flex-col gap-y-4 px-6">
-            <div className="text-black bold text-2xl lg:text-[2.5rem]">
-              Shop Categories
-            </div>
-            <div className="medium text-[#51636F] text-base lg:text-lg">
-              Talk to real experts and buy authentic products at the best
-              prices.
-            </div>
-          </div>
-
+        <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl pb-6">
           <div className="flex flex-col gap-y-4">
             <div>
               <CustomSlider className="w-full flex items-center justify-between">
@@ -128,7 +121,13 @@ export default function ElectronicsMob() {
                       />
                     </div>
                     <a href={item.buttonHref}>
-                      <button className="w-full medium lg:bold hero-button py-3 text-white text-base mt-2">
+                      <button
+                        className={`w-full medium lg:bold py-3 text-white text-base mt-2 ${
+                          index === 0
+                            ? "text-white bg-[#625DF5] hero-button"
+                            : "text-[#625DF5] bg-white rounded-2xl border-2 border-[#625DF5]"
+                        }`}
+                      >
                         {item.buttonLabel}
                       </button>
                     </a>

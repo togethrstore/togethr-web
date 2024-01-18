@@ -37,17 +37,17 @@ const Footer = () => {
         <div className="flex flex-col">
           <div className="flex justify-between">
             <div className="w-32">
-              <Image src={Logo} alt="" />
+              <Image src={Logo} alt="" priority={true} />
             </div>
             <div className="lg:hidden flex items-center gap-x-4">
               <Link href={""}>
                 <div className="w-6 h-6 cursor-pointer">
-                  <Image src={Instagram} alt="" />
+                  <Image src={Instagram} alt="" priority={true} />
                 </div>
               </Link>
               <Link href={""}>
                 <div className="w-6 h-6 cursor-pointer">
-                  <Image src={Linkedin} alt="" />
+                  <Image src={Linkedin} alt="" priority={true} />
                 </div>
               </Link>
             </div>
@@ -73,12 +73,12 @@ const Footer = () => {
             <div className="hidden lg:flex items-center gap-x-4">
               <Link href={""}>
                 <div className="w-6 h-6 cursor-pointer">
-                  <Image src={Instagram} alt="" />
+                  <Image src={Instagram} alt="" priority={true} />
                 </div>
               </Link>
               <Link href={""}>
                 <div className="w-6 h-6 cursor-pointer">
-                  <Image src={Linkedin} alt="" />
+                  <Image src={Linkedin} alt="" priority={true} />
                 </div>
               </Link>
             </div>

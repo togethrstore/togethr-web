@@ -7,7 +7,7 @@ const LeftButton = () => {
   return (
     <button>
       <div className="w-12 rounded-full border-2 border-[#625df5] inline-flex">
-        <Image className="button-bg" src={ArrowLeft} alt="" />
+        <Image className="button-bg" src={ArrowLeft} alt="" priority={true} />
       </div>
     </button>
   );
@@ -17,7 +17,7 @@ const RightButton = () => {
   return (
     <button>
       <div className="w-12 rounded-full border-2 border-[#625df5] inline-flex">
-        <Image className="button-bg" src={ArrowRight} alt="" />
+        <Image className="button-bg" src={ArrowRight} alt="" priority={true} />
       </div>
     </button>
   );
@@ -26,7 +26,7 @@ const RightButton = () => {
 const LeftButtonMob = ({ onClick }) => (
   <button onClick={onClick}>
     <div className="w-8 rounded-full border-2 border-[#625df5] inline-flex your-left-button-mob-styles">
-      <Image className="button-bg" src={ArrowLeft} alt="" />
+      <Image className="button-bg" src={ArrowLeft} alt="" priority={true} />
     </div>
   </button>
 );
@@ -34,7 +34,7 @@ const LeftButtonMob = ({ onClick }) => (
 const RightButtonMob = ({ onClick }) => (
   <button onClick={onClick}>
     <div className="w-8 rounded-full border-2 border-[#625df5] inline-flex your-right-button-mob-styles">
-      <Image className="button-bg" src={ArrowRight} alt="" />
+      <Image className="button-bg" src={ArrowRight} alt="" priority={true} />
     </div>
   </button>
 );

@@ -9,6 +9,8 @@ import Electronics from "../components/Electronics";
 import Undersports from "../components/Undersports";
 import Appliances from "../components/Appliances";
 import ElectronicsMob from "../components/ElectronicsMob";
+import UndersportsMob from "../components/UndersportsMob";
+import ApplicancesMob from "../components/AppliancesMob";
 
 export default function Home() {
   return (
@@ -16,12 +18,16 @@ export default function Home() {
       <Head></Head>
       <div className="">
         <Hero />
-        {/* <div className="categories-desktop">
+        <div className="categories-desktop hidden lg:block">
           <Electronics />
           <Undersports />
           <Appliances />
-        </div> */}
-        <ElectronicsMob />
+        </div>
+        <div className="lg:hidden">
+          <ElectronicsMob />
+          <UndersportsMob />
+          <ApplicancesMob />
+        </div>
         <About />
         {/* <Carousel /> */}
         <Testimonials />

@@ -57,7 +57,12 @@ const Carousel = () => {
         <div className="w-full flex justify-between relative">
           <button>
             <div className="w-12 absolute top-36 left-1 rounded-full border-2 border-[#625df5] inline-flex">
-              <Image className="button-bg" src={ArrowLeft} alt="" />
+              <Image
+                className="button-bg"
+                src={ArrowLeft}
+                alt=""
+                priority={true}
+              />
             </div>
           </button>
           {carouselItems.map((item, index) => (
@@ -69,7 +74,7 @@ const Carousel = () => {
               <div className="flex h-full flex-col justify-between">
                 <div className="w-max bg-[#625DF5] px-4 py-2 gap-x-2 flex items-center rounded-full">
                   <div className="w-6">
-                    <Image src={Cycling} alt="" />
+                    <Image src={Cycling} alt="" priority={true} />
                   </div>
                   <div className="text-white text-lg medium">
                     {item.category}
@@ -83,7 +88,7 @@ const Carousel = () => {
                   <div className="flex justify-between items-center">
                     <div className="flex gap-x-1 items-center">
                       <div className="w-4">
-                        <Image src={Location} alt="" />
+                        <Image src={Location} alt="" priority={true} />
                       </div>
                       <div className="text-[#E6E6E6] text-base medium">
                         {item.location}
@@ -91,7 +96,7 @@ const Carousel = () => {
                     </div>
                     <div className="flex gap-x-1 items-center">
                       <div className="w-4">
-                        <Image src={Star} alt="" />
+                        <Image src={Star} priority={true} alt="" />
                       </div>
                       <div className="text-[#E6E6E6] text-base medium">
                         {item.stars}
@@ -104,7 +109,12 @@ const Carousel = () => {
           ))}
           <button>
             <div className="w-12 absolute top-36 right-1 rounded-full border-2 border-[#625df5] inline-flex">
-              <Image className="button-bg" src={ArrowRight} alt="" />
+              <Image
+                className="button-bg"
+                src={ArrowRight}
+                alt=""
+                priority={true}
+              />
             </div>
           </button>
         </div>

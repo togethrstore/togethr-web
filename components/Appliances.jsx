@@ -7,25 +7,25 @@ import ImageFour from "../public/assets/images/categories/appliances/image4.png"
 
 const items = [
   {
-    title: "Laptops",
+    title: "Televisions",
     image: ImageOne,
     buttonLabel: "Join Waitlist",
     buttonHref: "/laptops",
   },
   {
-    title: "Phones",
+    title: "Washing Machine",
     image: ImageTwo,
     buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
   {
-    title: "Phones",
+    title: "Air Conditioners",
     image: ImageThree,
     buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
   {
-    title: "Phones",
+    title: "Suggest a product",
     image: ImageFour,
     buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
@@ -39,7 +39,7 @@ export default function Appliances() {
       <div className="w-full flex justify-center">
         <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-12">
           <div className="flex flex-col gap-y-4">
-            <div className="text-black text-2xl bold">Electronics</div>
+            <div className="text-black text-2xl bold">Home Appliances</div>
             <div className="w-full flex items-center justify-between">
               {items.map((item, index) => (
                 <div
@@ -52,7 +52,7 @@ export default function Appliances() {
                 >
                   <div className="text-black text-xl bold">{item.title}</div>
                   <div className="w-40 xl:w-56 2xl:w-60">
-                    <Image src={item.image} alt={item.title} />
+                    <Image src={item.image} alt={item.title} priority={true} />
                   </div>
                   <a href={item.buttonHref}>
                     <button

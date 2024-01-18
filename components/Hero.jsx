@@ -21,10 +21,10 @@ export default function Hero() {
           </button>
         </div>
         <div className="w-[80%] lg:hidden">
-          <Image src={HeroMob} alt="" />
+          <Image src={HeroMob} alt="" priority={true} />
         </div>
         <div className="w-[50%] hidden lg:block">
-          <Image src={HeroImg} alt="" />
+          <Image src={HeroImg} alt="" priority={true} />
         </div>
       </div>
     </div>

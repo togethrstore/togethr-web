@@ -20,7 +20,7 @@ export default function About() {
           <div className="w-full flex flex-col gap-y-6 lg:flex-row justify-between">
             <div className="w-full lg:w-[30%] p-6 flex gap-x-4 lg:flex-col about-box items-center">
               <div className="w-32 lg:w-28">
-                <Image src={Requirement} alt="" />
+                <Image src={Requirement} alt="" priority={true} />
               </div>
               <div>
                 <div className="text-black text-lg lg:text-2xl bold pb-2 lg:py-4">
@@ -33,7 +33,7 @@ export default function About() {
             </div>
             <div className="w-full lg:w-[30%] p-6 flex gap-x-4 lg:flex-col about-box items-center">
               <div className="w-32 lg:w-28">
-                <Image src={Expert} alt="" />
+                <Image src={Expert} alt="" priority={true} />
               </div>
               <div>
                 <div className="text-black text-lg lg:text-2xl bold pb-2 lg:py-4">
@@ -47,7 +47,7 @@ export default function About() {
             {/* asaushfiahwfi */}
             <div className="w-full lg:w-[30%] p-6 flex gap-x-4 lg:flex-col about-box items-center">
               <div className="w-32 lg:w-28">
-                <Image src={Cart} alt="" />
+                <Image src={Cart} alt="" priority={true} />
               </div>
               <div>
                 <div className="text-black text-lg lg:text-2xl bold pb-2 lg:py-4">

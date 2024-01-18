@@ -69,7 +69,7 @@ export default function Faq() {
                             transition: { duration: 0.3 },
                           }}
                         >
-                          <Image src={ArrowDown} alt="" />
+                          <Image src={ArrowDown} alt="" priority={true} />
                         </motion.div>
                       </div>
                     </div>

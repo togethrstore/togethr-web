@@ -7,30 +7,29 @@ import ImageFour from "../public/assets/images/categories/sports/image4.png";
 
 const items = [
   {
-    title: "Laptops",
+    title: "Cycling",
     image: ImageOne,
     buttonLabel: "Shop with Expert",
     buttonHref: "/laptops",
   },
   {
-    title: "Phones",
+    title: "Tennis",
     image: ImageTwo,
     buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
   {
-    title: "Phones",
+    title: "Golf",
     image: ImageThree,
     buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
   {
-    title: "Phones",
+    title: "Running",
     image: ImageFour,
     buttonLabel: "Suggest",
     buttonHref: "/phones",
   },
-  // Add more items as needed
 ];
 
 export default function Undersports() {
@@ -52,7 +51,7 @@ export default function Undersports() {
                 >
                   <div className="text-black text-xl bold">{item.title}</div>
                   <div className="w-40 xl:w-56 2xl:w-60">
-                    <Image src={item.image} alt={item.title} />
+                    <Image src={item.image} alt={item.title} priority={true} />
                   </div>
                   <a href={item.buttonHref}>
                     <button
