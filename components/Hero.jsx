@@ -16,7 +16,7 @@ export default function Hero() {
               Real experts — Personalized product picks — for free!
             </div>
           </div>
-          <button className="w-full lg:w-max regular hero-button py-3 px-12 text-white text-lg">
+          <button className="w-full lg:w-max medium hero-button py-3 px-12 text-white text-lg">
             Shop with Expert
           </button>
         </div>

@@ -23,6 +23,22 @@ const RightButton = () => {
   );
 };
 
+const LeftButtonMob = ({ onClick }) => (
+  <button onClick={onClick}>
+    <div className="w-8 rounded-full border-2 border-[#625df5] inline-flex your-left-button-mob-styles">
+      <Image className="button-bg" src={ArrowLeft} alt="" />
+    </div>
+  </button>
+);
+
+const RightButtonMob = ({ onClick }) => (
+  <button onClick={onClick}>
+    <div className="w-8 rounded-full border-2 border-[#625df5] inline-flex your-right-button-mob-styles">
+      <Image className="button-bg" src={ArrowRight} alt="" />
+    </div>
+  </button>
+);
+
 const Rating = () => {
   return (
     <svg
@@ -48,4 +64,4 @@ const Rating = () => {
   );
 };
 
-export { LeftButton, RightButton, Rating };
+export { LeftButton, RightButton, Rating, LeftButtonMob, RightButtonMob };

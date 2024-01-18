@@ -50,7 +50,7 @@ const Carousel = () => {
           <div className="text-black bold text-[2.5rem]">
             Meet the Real Experts
           </div>
-          <div className="regular text-[#51636F] text-lg">
+          <div className="medium text-[#51636F] text-lg">
             Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.
           </div>
         </div>

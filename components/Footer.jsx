@@ -67,7 +67,7 @@ const Footer = () => {
             ))}
           </div>
           <div className="w-full flex justify-between items-center">
-            <div className="text-black text-base regular">
+            <div className="text-black text-base medium">
               Copyright © 2023 Togethr. All rights reserved.
             </div>
             <div className="hidden lg:flex items-center gap-x-4">

@@ -84,3 +84,8 @@
     ),
     #fff;
 }
+
+.slick-slide {
+  padding-left: 8px;
+  padding-right: 8px;
+}

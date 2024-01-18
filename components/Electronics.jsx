@@ -39,8 +39,8 @@ export default function Electronics() {
       <div className="w-full flex justify-center">
         <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-12">
           <div className="flex flex-col gap-y-4">
-            <div className="text-black bold text-[2.5rem]">Shop Categories</div>
-            <div className="regular text-[#51636F] text-lg">
+            <div className="text-black bold text-2xl lg:text-[2.5rem]">Shop Categories</div>
+            <div className="medium text-[#51636F] text-lg">
               Talk to real experts and buy authentic products at the best
               prices.
             </div>

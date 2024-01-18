@@ -8,6 +8,7 @@ import Testimonials from "../components/Testi";
 import Electronics from "../components/Electronics";
 import Undersports from "../components/Undersports";
 import Appliances from "../components/Appliances";
+import ElectronicsMob from "../components/ElectronicsMob";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <Undersports />
           <Appliances />
         </div> */}
+        <ElectronicsMob />
         <About />
         {/* <Carousel /> */}
         <Testimonials />
