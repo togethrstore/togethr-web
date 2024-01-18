@@ -11,25 +11,25 @@ import "slick-carousel/slick/slick-theme.css";
 
 const items = [
   {
-    title: "Laptops",
+    title: "Televisions",
     image: ImageOne,
     buttonLabel: "Join Waitlist",
     buttonHref: "/laptops",
   },
   {
-    title: "Phones",
+    title: "Washing Machine",
     image: ImageTwo,
     buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
   {
-    title: "Phones",
+    title: "Air Conditioners",
     image: ImageThree,
     buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
   {
-    title: "Phones",
+    title: "Suggest a product",
     image: ImageFour,
     buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
