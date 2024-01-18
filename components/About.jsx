@@ -23,7 +23,7 @@ export default function About() {
                 <Image src={Requirement} alt="" priority={true} />
               </div>
               <div>
-                <div className="text-black text-lg lg:text-2xl bold pb-2 lg:py-4">
+                <div className="text-black text-start lg:text-center text-lg lg:text-2xl bold pb-2 lg:py-4">
                   Share Requirements
                 </div>
                 <div className="medium text-[#51636F] text-lg text-start lg:text-center">
@@ -36,11 +36,11 @@ export default function About() {
                 <Image src={Expert} alt="" priority={true} />
               </div>
               <div>
-                <div className="text-black text-lg lg:text-2xl bold pb-2 lg:py-4">
+                <div className="text-black text-start lg:text-center text-lg lg:text-2xl bold pb-2 lg:py-4">
                   Talk to Expert{" "}
                 </div>
                 <div className="medium text-[#51636F] text-lg text-start lg:text-center">
-                  Fill out a form (takes less than a minute)
+                  Our expert will contact you to discuss your requirements.{" "}
                 </div>
               </div>
             </div>
@@ -49,8 +49,8 @@ export default function About() {
               <div className="w-32 lg:w-28">
                 <Image src={Cart} alt="" priority={true} />
               </div>
-              <div>
-                <div className="text-black text-lg lg:text-2xl bold pb-2 lg:py-4">
+              <div className="">
+                <div className="text-black text-start lg:text-center text-lg lg:text-2xl bold pb-2 lg:py-4">
                   Shop Togethr
                 </div>
                 <div className="medium text-[#51636F] text-lg text-start lg:text-center">
