@@ -112,7 +112,9 @@ export default function ApplicancesMob() {
                         : "border-[#E0E0E0] bg-white"
                     }`}
                   >
-                    <div className="text-black text-xl bold">{item.title}</div>
+                    <div className="text-black text-lg lg:text-xl bold">
+                      {item.title}
+                    </div>
                     <div className="w-40 xl:w-56 2xl:w-60">
                       <Image
                         src={item.image}
