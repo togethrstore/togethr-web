@@ -115,7 +115,7 @@ const Card = ({ review }) => {
   );
 };
 
-export default function Testimonials() {
+export default function Testimonial() {
   const [[page, direction], setPage] = useState([0, 0]);
   const paginate = (newDirection) => {
     const nextPage =

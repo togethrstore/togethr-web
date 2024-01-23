@@ -4,13 +4,14 @@ import About from "../components/About";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
-import Testimonials from "../components/Testi";
+import Testimonial from "../components/Testimonial";
 import Electronics from "../components/Electronics";
 import Undersports from "../components/Undersports";
 import Appliances from "../components/Appliances";
 import ElectronicsMob from "../components/ElectronicsMob";
 import UndersportsMob from "../components/UndersportsMob";
 import ApplicancesMob from "../components/AppliancesMob";
+import CarouselMob from "../components/CarouselMob";
 
 export default function Home() {
   return (
@@ -29,8 +30,9 @@ export default function Home() {
           <ApplicancesMob />
         </div>
         <About />
+        <CarouselMob />
         <Carousel />
-        <Testimonials />
+        <Testimonial />
         <Faq />
         <Footer />
       </div>
