@@ -29,7 +29,7 @@ export default function Home() {
           <ApplicancesMob />
         </div>
         <About />
-        {/* <Carousel /> */}
+        <Carousel />
         <Testimonials />
         <Faq />
         <Footer />

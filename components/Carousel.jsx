@@ -6,6 +6,10 @@ import Star from "../public/assets/images/carousel/star.png";
 import Background from "../public/assets/images/carousel/example.png";
 import ArrowLeft from "../public/assets/images/carousel/arrow-left.png";
 import ArrowRight from "../public/assets/images/carousel/arrow-right.png";
+import ExpertOne from "../public/assets/images/carousel/expert-1.png";
+import ExpertTwo from "../public/assets/images/carousel/expert-2.png";
+import ExpertThree from "../public/assets/images/carousel/expert-3.png";
+import ExpertFour from "../public/assets/images/carousel/expert-4.png";
 
 const Carousel = () => {
   const carouselItems = [
@@ -44,7 +48,7 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full hidden lg:flex justify-center">
       <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-16">
         <div className="flex flex-col gap-y-4">
           <div className="text-black bold text-[2.5rem]">
@@ -54,8 +58,8 @@ const Carousel = () => {
             Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.
           </div>
         </div>
-        <div className="w-full flex justify-between relative">
-          <button>
+        <div className="w-full flex justify-between">
+          {/* <button>
             <div className="w-12 absolute top-36 left-1 rounded-full border-2 border-[#625df5] inline-flex">
               <Image
                 className="button-bg"
@@ -64,8 +68,20 @@ const Carousel = () => {
                 priority={true}
               />
             </div>
-          </button>
-          {carouselItems.map((item, index) => (
+          </button> */}
+          <div className="w-[25%]">
+            <Image src={ExpertOne} alt="" priority={true} />
+          </div>
+          <div className="w-[25%]">
+            <Image src={ExpertTwo} alt="" priority={true} />
+          </div>
+          <div className="w-[25%]">
+            <Image src={ExpertThree} alt="" priority={true} />
+          </div>
+          <div className="w-[25%]">
+            <Image src={ExpertFour} alt="" priority={true} />
+          </div>
+          {/* {carouselItems.map((item, index) => (
             <div
               key={index}
               style={{ backgroundImage: `url(${item.imageUrl})` }}
@@ -106,8 +122,8 @@ const Carousel = () => {
                 </div>
               </div>
             </div>
-          ))}
-          <button>
+          ))} */}
+          {/* <button>
             <div className="w-12 absolute top-36 right-1 rounded-full border-2 border-[#625df5] inline-flex">
               <Image
                 className="button-bg"
@@ -116,6 +132,11 @@ const Carousel = () => {
                 priority={true}
               />
             </div>
+          </button> */}
+        </div>
+        <div className="w-full flex justify-center">
+          <button className="w-full lg:w-max medium hero-button py-3 px-16 text-white text-lg">
+            Shop with Expert
           </button>
         </div>
       </div>

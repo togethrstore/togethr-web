@@ -6,35 +6,41 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqData = [
   {
     question: "What is Togethr?",
-    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+    answer:
+      "To put it simply, Togethr is your personal shopping assistant. Our experts help you choose the right product and buy it at the best price.",
   },
   {
     question: "What exactly do you do?",
-    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+    answer:
+      "We have a panel of experts across multiple categories who will walk you through any queries and help you make a purchase. All you have to do is fill out a quick form.",
   },
   {
     question: "Who’s an expert?",
-    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+    answer:
+      "An expert is a passionate individual who is happy to be your shopping buddy for your next big purchase. They understand your requirements and give you unbiased, personalized buying advice.",
   },
   {
     question: "Is it free?",
-    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+    answer: "Yes, you can talk to an expert free of cost, no tricks.",
   },
   {
     question: "Why are you doing this?",
-    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+    answer:
+      "We believe that modern internet shoppers are plagued with 'too much' information across multiple channels, and influencers. We want to make your shopping experience enjoyable.",
   },
   {
     question: "Can I buy products from Togethr?",
-    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+    answer: "Yes, you can!",
   },
   {
     question: "How can I buy from Togethr?",
-    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+    answer:
+      "Sign up to talk to an expert and they will share purchase links after your conversation.",
   },
   {
     question: "What is a price match guarantee?",
-    answer: "Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.",
+    answer:
+      "Whatever product you decide to buy, we will match the price from major online retailers and brands.",
   },
 ];
 
