@@ -49,31 +49,31 @@ const reviewData = [
   },
 ];
 
-const variants = {
-  enter: (direction) => {
-    return {
-      x: direction > 0 ? 100 : -100,
-      opacity: 0,
-    };
-  },
-  center: {
-    zIndex: 1,
-    x: 0,
-    opacity: 1,
-  },
-  exit: (direction) => {
-    return {
-      zIndex: 0,
-      x: 0,
-      opacity: 0,
-    };
-  },
-};
+// const variants = {
+//   enter: (direction) => {
+//     return {
+//       x: direction > 0 ? 100 : -100,
+//       opacity: 0,
+//     };
+//   },
+//   center: {
+//     zIndex: 1,
+//     x: 0,
+//     opacity: 1,
+//   },
+//   exit: (direction) => {
+//     return {
+//       zIndex: 0,
+//       x: 0,
+//       opacity: 0,
+//     };
+//   },
+// };
 
 const Card = ({ review }) => {
   return (
     <motion.div
-      variants={variants}
+      // variants={variants}
       initial="enter"
       animate="center"
       exit="exit"
@@ -92,13 +92,6 @@ const Card = ({ review }) => {
                   <RatingMob key={index} />
                 ))}
               </div>
-              {/* <div className="bold text-base lg:text-lg text-black">
-                Reviewer:
-                <span className="medium text-[#51636F] text-base lg:text-lg">
-                  {" "}
-                  {review.reviewer}
-                </span>
-              </div> */}
             </div>
           </div>
           <div className="hidden lg:flex gap-0.5 mt-4 lg:my-0">
@@ -152,7 +145,7 @@ export default function Testimonials() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.5 }}
                   >
                     <Card review={review} />
                   </motion.div>
@@ -161,7 +154,7 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
-        <div className="w-full flex justify-center items-center gap-x-6 mt-[28rem] md:mt-80 lg:mt-80">
+        <div className="w-full flex justify-center items-center gap-x-6 mt-[30rem] md:mt-80 lg:mt-80">
           <button onClick={() => paginate(-1)}>
             <LeftButton />
           </button>
