@@ -118,8 +118,11 @@ const Card = ({ review }) => {
 export default function Testimonials() {
   const [[page, direction], setPage] = useState([0, 0]);
   const paginate = (newDirection) => {
-    setPage([page + newDirection, newDirection]);
+    const nextPage =
+      (page + newDirection + reviewData.length) % reviewData.length;
+    setPage([nextPage, newDirection]);
   };
+
   return (
     <div className="w-full flex justify-center">
       <div className="w-full flex flex-col gap-y-6 lg:gap-y-12 max-w-4xl px-6 lg:px-0 xl:max-w-7xl py-10 lg:py-16">
@@ -145,7 +148,7 @@ export default function Testimonials() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 0.6 }}
                   >
                     <Card review={review} />
                   </motion.div>
