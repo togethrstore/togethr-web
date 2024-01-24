@@ -20,27 +20,27 @@ const CustomSlider = ({ children }) => {
     arrows: false,
   };
 
-  const LeftArrow = (props) => {
-    const { onClick } = props;
-    return <LeftButtonMob onClick={onClick} />;
-  };
+  // const LeftArrow = (props) => {
+  //   const { onClick } = props;
+  //   return <LeftButtonMob onClick={onClick} />;
+  // };
 
-  const RightArrow = (props) => {
-    const { onClick } = props;
-    return <RightButtonMob onClick={onClick} />;
-  };
+  // const RightArrow = (props) => {
+  //   const { onClick } = props;
+  //   return <RightButtonMob onClick={onClick} />;
+  // };
 
-  const goToNextSlide = () => {
-    if (slider) {
-      slider.slickNext();
-    }
-  };
+  // const goToNextSlide = () => {
+  //   if (slider) {
+  //     slider.slickNext();
+  //   }
+  // };
 
-  const goToPrevSlide = () => {
-    if (slider) {
-      slider.slickPrev();
-    }
-  };
+  // const goToPrevSlide = () => {
+  //   if (slider) {
+  //     slider.slickPrev();
+  //   }
+  // };
 
   return (
     <div>
