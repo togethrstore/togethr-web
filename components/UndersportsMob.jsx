@@ -31,7 +31,7 @@ const items = [
   {
     title: "Running",
     image: ImageFour,
-    buttonLabel: "Suggest",
+    buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
 ];
@@ -44,7 +44,7 @@ const CustomSlider = ({ children }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "20%",
+    centerPadding: "15%",
     arrows: false,
   };
 
@@ -112,19 +112,21 @@ export default function UndersportsMob() {
                     <div className="text-black text-lg lg:text-xl bold">
                       {item.title}
                     </div>
-                    <div className="w-40 xl:w-56 2xl:w-60">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        priority={true}
-                      />
+                    <div className="w-full flex justify-center">
+                      <div className="w-40 py-4 xl:w-56 2xl:w-60">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          priority={true}
+                        />
+                      </div>
                     </div>
                     <a href={item.buttonHref}>
                       <button
                         className={`w-full medium lg:bold py-3 text-white text-base mt-2 ${
                           index === 0
-                            ? "text-white bg-[#625DF5] hero-button"
-                            : "text-[#625DF5] bg-white rounded-2xl border-2 border-[#625DF5]"
+                            ? "bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-[white] hover:border-[#625DF5] text-white hover:text-[#625df5] transition-all duration-300"
+                            : "bg-[white] rounded-2xl border-2 border-[#625DF5] hover:bg-[#625DF5] hover:border-[#625DF5] text-[#625DF5] hover:text-white transition-all duration-300"
                         }`}
                       >
                         {item.buttonLabel}

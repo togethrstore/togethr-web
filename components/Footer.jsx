@@ -52,7 +52,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="py-12 flex flex-col gap-4 lg:flex-row gap-x-32">
+          <div className="py-8 lg:py-12 flex flex-col gap-4 lg:flex-row gap-x-32">
             {categories.map((category, index) => (
               <div key={index} className="flex flex-col gap-y-3 lg:gap-y-6">
                 <div className="bold text-black text-lg">{category.title}</div>
@@ -67,7 +67,7 @@ const Footer = () => {
             ))}
           </div>
           <div className="w-full flex justify-between items-center">
-            <div className="text-black text-base medium">
+            <div className="text-black text-sm lg:text-base regular">
               Copyright © 2023 Togethr. All rights reserved.
             </div>
             <div className="hidden lg:flex items-center gap-x-4">

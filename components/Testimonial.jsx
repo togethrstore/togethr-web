@@ -157,7 +157,7 @@ export default function Testimonial() {
             </div>
           ))}
         </div>
-        <div className="w-full flex justify-center items-center gap-x-6 mt-[30rem] md:mt-80 lg:mt-80">
+        <div className="w-full flex justify-center items-center gap-x-6 mt-[29rem] md:mt-80 lg:mt-80">
           <button onClick={() => paginate(-1)}>
             <LeftButton />
           </button>

@@ -75,6 +75,11 @@ export default function CarouselMob() {
             <Image src={ExpertFourM} alt={""} priority={true} />
           </div>
         </CustomSlider>
+        <div className="w-full flex justify-center px-6 pt-4">
+          <button className="w-full lg:w-max medium hero-button py-3 px-16 text-white text-lg">
+            Shop with Expert
+          </button>
+        </div>
       </div>
     </div>
   );

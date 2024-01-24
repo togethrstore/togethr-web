@@ -14,25 +14,25 @@ const items = [
     title: "Laptops",
     image: ImageFour,
     buttonLabel: "Shop with Expert",
-    buttonHref: "/laptops",
+    buttonHref: "/",
   },
   {
     title: "Phones",
     image: ImageOne,
     buttonLabel: "Shop with Expert",
-    buttonHref: "/phones",
+    buttonHref: "/",
   },
   {
     title: "Headphones",
     image: ImageTwo,
     buttonLabel: "Shop with Expert",
-    buttonHref: "/phones",
+    buttonHref: "/",
   },
   {
     title: "Smart Watches",
     image: ImageThree,
     buttonLabel: "Shop with Expert",
-    buttonHref: "/phones",
+    buttonHref: "/",
   },
 ];
 
@@ -44,7 +44,7 @@ const CustomSlider = ({ children }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "20%",
+    centerPadding: "15%",
     arrows: false,
   };
 
@@ -122,15 +122,17 @@ export default function ElectronicsMob() {
                     <div className="text-black text-lg lg:text-xl bold">
                       {item.title}
                     </div>
-                    <div className="w-40 xl:w-56 2xl:w-60">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        priority={true}
-                      />
+                    <div className="w-full flex justify-center">
+                      <div className="w-40 py-4 xl:w-56 2xl:w-60">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          priority={true}
+                        />
+                      </div>
                     </div>
                     <a href={item.buttonHref}>
-                      <button className="w-full medium lg:bold hero-button py-3 text-white text-base mt-2">
+                      <button className="w-full medium bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-white hover:border-[#625DF5] py-3 text-white hover:text-[#625df5] transition-all duration-300 text-base">
                         {item.buttonLabel}
                       </button>
                     </a>

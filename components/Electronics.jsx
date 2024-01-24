@@ -63,7 +63,7 @@ export default function Electronics() {
                     <Image src={item.image} alt={item.title} priority={true} />
                   </div>
                   <a href={item.buttonHref}>
-                    <button className="w-full bold hero-button py-4 text-white text-base">
+                    <button className="w-full bold bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-white hover:border-[#625DF5] py-4 text-white hover:text-[#625df5] transition-all duration-300 text-base">
                       {item.buttonLabel}
                     </button>
                   </a>

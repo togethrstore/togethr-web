@@ -27,7 +27,7 @@ const items = [
   {
     title: "Running",
     image: ImageFour,
-    buttonLabel: "Suggest",
+    buttonLabel: "Join Waitlist",
     buttonHref: "/phones",
   },
 ];
@@ -57,8 +57,8 @@ export default function Undersports() {
                     <button
                       className={`w-full bold py-4 text-base ${
                         index === 0
-                          ? "text-white bg-[#625DF5] hero-button"
-                          : "text-[#625DF5] bg-white rounded-2xl border-2 border-[#625DF5]"
+                          ? "bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-[white] hover:border-[#625DF5] text-white hover:text-[#625df5] transition-all duration-300"
+                          : "bg-[white] rounded-2xl border-2 border-[#625DF5] hover:bg-[#625DF5] hover:border-[#625DF5] text-[#625DF5] hover:text-white transition-all duration-300"
                       }`}
                     >
                       {item.buttonLabel}
