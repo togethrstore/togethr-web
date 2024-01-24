@@ -89,3 +89,7 @@
   padding-left: 8px;
   padding-right: 8px;
 }
+
+.slick-dots li {
+  margin: 0 0px !important; /* Adjusted margin here */
+}
