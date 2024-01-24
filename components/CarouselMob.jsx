@@ -16,7 +16,7 @@ const CustomSlider = ({ children }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "18%",
+    centerPadding: "10%",
     arrows: false,
   };
 
