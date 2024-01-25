@@ -120,7 +120,7 @@ export default function PrivacyPolicy() {
             How we use cookies:
           </div>
           <div className="text-[#51636F] text-base lg:text-lg regular">
-            We use "cookies" to collect information and to better understand
+            We use &quot;cookies&quot; to collect information and to better understand
             customer behaviour. You can instruct your browser to refuse all
             cookies or to indicate when a cookie is being sent. However, if you
             do not accept cookies, you may not be able to avail our goods or
