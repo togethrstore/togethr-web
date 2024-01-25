@@ -51,7 +51,7 @@ const CustomSlider = ({ children }) => {
 export default function CarouselMob() {
   return (
     <div>
-      <div className="w-full lg:hidden flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-12">
+      <div className="w-full lg:hidden flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-12 faq-bg">
         <div className="flex flex-col gap-y-4 px-6">
           <div className="text-black bold text-2xl lg:text-[2.5rem]">
             Meet the Real Experts{" "}

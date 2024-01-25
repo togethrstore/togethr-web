@@ -24,7 +24,7 @@ export default function Home() {
           <Undersports />
           <Appliances />
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden faq-bg">
           <ElectronicsMob />
           <UndersportsMob />
           <ApplicancesMob />

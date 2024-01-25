@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../public/assets/images/global/logo.png";
 import Instagram from "../public/assets/images/footer/instagram.png";
 import Linkedin from "../public/assets/images/footer/linkedin.png";
+import InstagramHover from "../public/assets/images/footer/instagram-hover.png";
+import LinkedinHover from "../public/assets/images/footer/linkedin-hover.png";
 import Link from "next/link";
 
 const categories = [
@@ -20,34 +22,58 @@ const categories = [
   {
     title: "Togethr",
     items: [
-      { name: "About Us", link: "/bicycles" },
+      { name: "About Us", link: "/about-us" },
       { name: "Become an expert", link: "/bicycles" },
-      { name: "Contact Us", link: "/bicycles" },
-      { name: "Terms & Condition", link: "/bicycles" },
-      { name: "Privacy Policy", link: "/bicycles" },
-      { name: "Cancellation & Refund Policy", link: "/bicycles" },
+      { name: "Contact Us", link: "/contact-us" },
+      { name: "Terms & Condition", link: "/terms&conditions" },
+      { name: "Privacy Policy", link: "/privacy-policy" },
+      {
+        name: "Cancellation & Refund Policy",
+        link: "/cancellation&refund-policy",
+      },
     ],
   },
 ];
 
 const Footer = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredL, setIsHoveredL] = useState(false);
+
   return (
     <div className="w-full flex justify-center px-6 lg:px-0 py-10 lg:py-12">
       <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl">
         <div className="flex flex-col">
           <div className="flex justify-between">
-            <div className="w-32">
-              <Image src={Logo} alt="" priority={true} />
-            </div>
+            <Link href={"/"}>
+              <div className="w-32 cursor-pointer">
+                <Image src={Logo} alt="" priority={true} />
+              </div>
+            </Link>
             <div className="lg:hidden flex items-center gap-x-4">
               <Link href={""}>
-                <div className="w-6 h-6 cursor-pointer">
-                  <Image src={Instagram} alt="" priority={true} />
+                <div
+                  className="w-6 h-6 cursor-pointer"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  <Image
+                    src={isHovered ? InstagramHover : Instagram}
+                    alt=""
+                    priority={true}
+                  />
                 </div>
               </Link>
               <Link href={""}>
-                <div className="w-6 h-6 cursor-pointer">
-                  <Image src={Linkedin} alt="" priority={true} />
+                <div
+                  className="w-6 h-6 cursor-pointer"
+                  onMouseEnter={() => setIsHoveredL(true)}
+                  onMouseLeave={() => setIsHoveredL(false)}
+                >
+                  <Image
+                    src={isHoveredL ? LinkedinHover : Linkedin}
+                    alt=""
+                    priority={true}
+                  />
                 </div>
               </Link>
             </div>
@@ -58,9 +84,14 @@ const Footer = () => {
                 <div className="bold text-black text-lg">{category.title}</div>
                 <div className="flex flex-col gap-y-2 text-[#51636F] text-base medium">
                   {category.items.map((item, subIndex) => (
-                    <Link key={subIndex} href={item.link} className="">
-                      {item.name}
-                    </Link>
+                    <div
+                      key={subIndex}
+                      className="hover:text-[#625DF5] transition-all duration-300"
+                    >
+                      <Link href={item.link} className="">
+                        {item.name}
+                      </Link>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -72,13 +103,29 @@ const Footer = () => {
             </div>
             <div className="hidden lg:flex items-center gap-x-4">
               <Link href={""}>
-                <div className="w-6 h-6 cursor-pointer">
-                  <Image src={Instagram} alt="" priority={true} />
+                <div
+                  className="w-6 h-6 cursor-pointer"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  <Image
+                    src={isHovered ? InstagramHover : Instagram}
+                    alt=""
+                    priority={true}
+                  />
                 </div>
               </Link>
               <Link href={""}>
-                <div className="w-6 h-6 cursor-pointer">
-                  <Image src={Linkedin} alt="" priority={true} />
+                <div
+                  className="w-6 h-6 cursor-pointer"
+                  onMouseEnter={() => setIsHoveredL(true)}
+                  onMouseLeave={() => setIsHoveredL(false)}
+                >
+                  <Image
+                    src={isHoveredL ? LinkedinHover : Linkedin}
+                    alt=""
+                    priority={true}
+                  />
                 </div>
               </Link>
             </div>
