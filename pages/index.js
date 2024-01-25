@@ -12,12 +12,14 @@ import ElectronicsMob from "../components/ElectronicsMob";
 import UndersportsMob from "../components/UndersportsMob";
 import ApplicancesMob from "../components/AppliancesMob";
 import CarouselMob from "../components/CarouselMob";
+import Header from "../components/header";
 
 export default function Home() {
   return (
     <div>
       <Head></Head>
       <div className="">
+        <Header />
         <Hero />
         <div className="categories-desktop hidden lg:block">
           <Electronics />
