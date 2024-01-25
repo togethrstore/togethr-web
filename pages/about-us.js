@@ -2,10 +2,12 @@ import React from "react";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import FaqAboutUs from "../components/Faq-Aboutus";
+import Headerr from "../components/Headerr";
 
 export default function AboutUs() {
   return (
     <>
+      <Headerr />
       <div className="flex items-center justify-center">
         <div className="w-full max-w-4xl xl:max-w-7xl flex flex-col gap-y-3 lg:gap-y-4 items-start py-10 lg:py-20 px-6 lg:px-0">
           <div className="bold text-black text-xl lg:text-2xl">About us </div>

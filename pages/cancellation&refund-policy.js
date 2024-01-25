@@ -1,9 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Headerr from "../components/Headerr";
 
 export default function CancellationPolicy() {
   return (
     <>
+      <Headerr />
       <div className="flex items-center justify-center">
         <div className="w-full max-w-4xl xl:max-w-7xl flex flex-col items-start py-10 lg:py-20 px-6 lg:px-0">
           <div className="bold text-black text-xl lg:text-2xl">

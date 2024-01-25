@@ -1,9 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Headerr from "../components/Headerr";
 
 export default function PrivacyPolicy() {
   return (
     <>
+      <Headerr />
       <div className="flex items-center justify-center">
         <div className="w-full max-w-4xl xl:max-w-7xl flex flex-col gap-y-3 lg:gap-y-4 items-start py-10 lg:py-20 px-6 lg:px-0">
           <div className="bold text-black text-xl lg:text-2xl">
@@ -120,13 +122,13 @@ export default function PrivacyPolicy() {
             How we use cookies:
           </div>
           <div className="text-[#51636F] text-base lg:text-lg regular">
-            We use &quot;cookies&quot; to collect information and to better understand
-            customer behaviour. You can instruct your browser to refuse all
-            cookies or to indicate when a cookie is being sent. However, if you
-            do not accept cookies, you may not be able to avail our goods or
-            services to the full extent. We do not control the use of cookies by
-            third parties. The third party service providers have their own
-            privacy policies addressing how they use such information.
+            We use &quot;cookies&quot; to collect information and to better
+            understand customer behaviour. You can instruct your browser to
+            refuse all cookies or to indicate when a cookie is being sent.
+            However, if you do not accept cookies, you may not be able to avail
+            our goods or services to the full extent. We do not control the use
+            of cookies by third parties. The third party service providers have
+            their own privacy policies addressing how they use such information.
           </div>
           {/* asfhiu */}
           <div className="bold text-black text-base lg:text-lg">
