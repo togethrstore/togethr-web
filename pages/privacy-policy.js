@@ -10,14 +10,15 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </div>
           <div className="text-[#51636F] text-base lg:text-lg regular">
-            This privacy policy (“Policy”) relates to the manner TOGETHR
-            EXPERIENCE STORES PRIVATE LIMITED (“we”, “us”, “our”) in which we
-            use, handle and process the data that you provide us in connection
-            with using the products or services we offer. By using this website
-            or by availing goods or services offered by us, you agree to the
-            terms and conditions of this Policy, and consent to our use,
-            storage, disclosure, and transfer of your information or data in the
-            manner described in this Policy.
+            This privacy policy (&quot;Policy&quot;) relates to the manner
+            TOGETHR EXPERIENCE STORES PRIVATE LIMITED (&quot;we&quot;,
+            &quot;us&quot;, &quot;our&quot;) in which we use, handle and process
+            the data that you provide us in connection with using the products
+            or services we offer. By using this website or by availing goods or
+            services offered by us, you agree to the terms and conditions of
+            this Policy, and consent to our use, storage, disclosure, and
+            transfer of your information or data in the manner described in this
+            Policy.
           </div>
           <div className="text-[#51636F] text-base lg:text-lg regular">
             We are committed to ensuring that your privacy is protected in
