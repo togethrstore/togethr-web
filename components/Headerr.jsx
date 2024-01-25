@@ -37,19 +37,19 @@ export default function Headerr() {
                     exit="hidden"
                     variants={dropdownVariants}
                   >
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-sm lg:text-lg inline-flex">
+                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                       Laptops
                     </motion.button>
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-sm lg:text-lg inline-flex">
+                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                       Phones
                     </motion.button>
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-sm lg:text-lg inline-flex">
+                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                       Headphones
                     </motion.button>
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-sm lg:text-lg inline-flex lg:pr-2">
+                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex lg:pr-2">
                       Smart Watches
                     </motion.button>
                   </motion.div>
@@ -87,7 +87,7 @@ export default function Headerr() {
                     exit="hidden"
                     variants={dropdownVariants}
                   >
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-sm lg:text-lg inline-flex">
+                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                       Cycling
                     </motion.button>
                     {/* <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
