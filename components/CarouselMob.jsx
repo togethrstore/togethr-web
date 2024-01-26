@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import ExpertOneM from "../public/assets/images/carousel/expert-mob1.png";
 import ExpertTwoM from "../public/assets/images/carousel/expert-mob2.png";
 import ExpertThreeM from "../public/assets/images/carousel/expert-mob3.png";
@@ -76,9 +77,11 @@ export default function CarouselMob() {
           </div>
         </CustomSlider>
         <div className="w-full flex justify-center px-6 pt-4">
-          <button className="w-full lg:w-max medium hero-button py-3 px-16 text-white text-lg">
-            Shop with Expert
-          </button>
+          <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+            <button className="w-full lg:w-max medium hero-button py-3 px-16 text-white text-lg">
+              Shop with Expert
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ import ExpertOne from "../public/assets/images/carousel/expert-1.png";
 import ExpertTwo from "../public/assets/images/carousel/expert-2.png";
 import ExpertThree from "../public/assets/images/carousel/expert-3.png";
 import ExpertFour from "../public/assets/images/carousel/expert-4.png";
+import Link from "next/link";
 
 const Carousel = () => {
   const carouselItems = [
@@ -135,9 +136,11 @@ const Carousel = () => {
           </button> */}
         </div>
         <div className="w-full flex justify-center">
-          <button className="w-full lg:w-max medium hero-button py-3 px-16 text-white text-lg">
-            Shop with Expert
-          </button>
+          <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+            <button className="w-full lg:w-max medium hero-button py-3 px-16 text-white text-lg">
+              Shop with Expert
+            </button>
+          </Link>
         </div>
       </div>
     </div>

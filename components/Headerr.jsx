@@ -37,21 +37,32 @@ export default function Headerr() {
                     exit="hidden"
                     variants={dropdownVariants}
                   >
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
-                      Laptops
-                    </motion.button>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                      <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
+                        Laptops
+                      </motion.button>
+                    </Link>
+
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
-                      Phones
-                    </motion.button>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                      <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
+                        Phones
+                      </motion.button>
+                    </Link>
+
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
-                      Headphones
-                    </motion.button>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                      <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
+                        Headphones
+                      </motion.button>
+                    </Link>
+
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex lg:pr-2">
-                      Smart Watches
-                    </motion.button>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                      <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex lg:pr-2">
+                        Smart Watches
+                      </motion.button>
+                    </Link>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -87,9 +98,12 @@ export default function Headerr() {
                     exit="hidden"
                     variants={dropdownVariants}
                   >
-                    <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
-                      Cycling
-                    </motion.button>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                      <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
+                        Cycling
+                      </motion.button>
+                    </Link>
+
                     {/* <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
                     <motion.button className="text-black medium text-sm lg:text-lg inline-flex">
                       Phones

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import HeroImg from "../public/assets/images/hero/hero.png";
 import HeroMob from "../public/assets/images/hero/hero-mob.png";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,9 +17,11 @@ export default function Hero() {
               Real experts — Personalized product picks — for free!
             </div>
           </div>
-          <button className="w-full lg:w-max medium hero-button py-3 px-12 text-white text-lg">
-            Shop with Expert
-          </button>
+          <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+            <button className="w-full lg:w-max medium hero-button py-3 px-12 text-white text-lg">
+              Shop with Expert
+            </button>
+          </Link>
         </div>
         <div className="w-[80%] lg:hidden">
           <Image src={HeroMob} alt="" priority={true} />

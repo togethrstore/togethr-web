@@ -10,25 +10,25 @@ const items = [
     title: "Televisions",
     image: ImageOne,
     buttonLabel: "Join Waitlist",
-    buttonHref: "/laptops",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
   },
   {
     title: "Washing Machine",
     image: ImageTwo,
     buttonLabel: "Join Waitlist",
-    buttonHref: "/phones",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
   },
   {
     title: "Air Conditioners",
     image: ImageThree,
     buttonLabel: "Join Waitlist",
-    buttonHref: "/phones",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
   },
   {
     title: "Suggest a product",
     image: ImageFour,
-    buttonLabel: "Join Waitlist",
-    buttonHref: "/phones",
+    buttonLabel: "Suggest",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
   },
   // Add more items as needed
 ];
