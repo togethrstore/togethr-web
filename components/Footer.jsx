@@ -12,18 +12,26 @@ const categories = [
     title: "Electronics",
     items: [
       { name: "Laptops", link: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ" },
-      { name: "Phones", link: "/https://u4lncn4kip6.typeform.com/to/PVf62CCJ" },
+      { name: "Phones", link: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ" },
     ],
   },
   {
     title: "Sports & Hobbies",
-    items: [{ name: "Bicycles", link: "/https://u4lncn4kip6.typeform.com/to/PVf62CCJ" }],
+    items: [
+      {
+        name: "Bicycles",
+        link: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+      },
+    ],
   },
   {
     title: "Togethr",
     items: [
       { name: "About Us", link: "/about-us" },
-      { name: "Become an expert", link: "/https://u4lncn4kip6.typeform.com/to/PVf62CCJ" },
+      {
+        name: "Become an expert",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSchbqV-6EsFyVjCLzeXfsns-Mq4tvDJqGJSZIJP8SixmenwPw/viewform",
+      },
       { name: "Contact Us", link: "/contact-us" },
       { name: "Terms & Condition", link: "/terms&conditions" },
       { name: "Privacy Policy", link: "/privacy-policy" },
@@ -50,7 +58,7 @@ const Footer = () => {
               </div>
             </Link>
             <div className="lg:hidden flex items-center gap-x-4">
-              <Link href={""}>
+              <Link href={"https://www.instagram.com/togethrstore/"}>
                 <div
                   className="w-6 h-6 cursor-pointer"
                   onMouseEnter={() => setIsHovered(true)}
@@ -63,7 +71,9 @@ const Footer = () => {
                   />
                 </div>
               </Link>
-              <Link href={""}>
+              <Link
+                href={"https://www.linkedin.com/company/togethr-store/about/"}
+              >
                 <div
                   className="w-6 h-6 cursor-pointer"
                   onMouseEnter={() => setIsHoveredL(true)}
@@ -102,7 +112,7 @@ const Footer = () => {
               Copyright © 2023 Togethr. All rights reserved.
             </div>
             <div className="hidden lg:flex items-center gap-x-4">
-              <Link href={""}>
+              <Link href={"https://www.instagram.com/togethrstore/"}>
                 <div
                   className="w-6 h-6 cursor-pointer"
                   onMouseEnter={() => setIsHovered(true)}
@@ -115,7 +125,9 @@ const Footer = () => {
                   />
                 </div>
               </Link>
-              <Link href={""}>
+              <Link
+                href={"https://www.linkedin.com/company/togethr-store/about/"}
+              >
                 <div
                   className="w-6 h-6 cursor-pointer"
                   onMouseEnter={() => setIsHoveredL(true)}
