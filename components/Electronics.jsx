@@ -10,25 +10,25 @@ const items = [
     title: "Laptops",
     image: ImageFour,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/SRKq2e0W",
   },
   {
     title: "Phones",
     image: ImageOne,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/EE3Vp4WF",
   },
   {
     title: "Headphones",
     image: ImageTwo,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/RCZ22YtM",
   },
   {
     title: "Smart Watches",
     image: ImageThree,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/UwUMl38w",
   },
 ];
 

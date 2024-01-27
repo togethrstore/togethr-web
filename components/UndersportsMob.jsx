@@ -14,25 +14,25 @@ const items = [
     title: "Cycling",
     image: ImageOne,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/kvLxQAd8",
   },
   {
     title: "Tennis",
     image: ImageTwo,
-    buttonLabel: "Join Waitlist",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonLabel: "Coming Soon",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/UwUMl38w",
   },
   {
     title: "Golf",
     image: ImageThree,
-    buttonLabel: "Join Waitlist",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonLabel: "Coming Soon",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/UwUMl38w",
   },
   {
     title: "Running",
     image: ImageFour,
-    buttonLabel: "Join Waitlist",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonLabel: "Coming Soon",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/UwUMl38w",
   },
 ];
 

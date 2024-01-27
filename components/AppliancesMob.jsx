@@ -13,26 +13,26 @@ const items = [
   {
     title: "Televisions",
     image: ImageOne,
-    buttonLabel: "Join Waitlist",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonLabel: "Coming Soon",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/UwUMl38w",
   },
   {
     title: "Washing Machine",
     image: ImageTwo,
-    buttonLabel: "Join Waitlist",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonLabel: "Coming Soon",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/UwUMl38w",
   },
   {
     title: "Air Conditioners",
     image: ImageThree,
-    buttonLabel: "Join Waitlist",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonLabel: "Coming Soon",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/UwUMl38w",
   },
   {
     title: "Suggest a product",
     image: ImageFour,
     buttonLabel: "Suggest",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+    buttonHref: "https://u4lncn4kip6.typeform.com/to/GTuIxk9r",
   },
   // Add more items as needed
 ];

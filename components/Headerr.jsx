@@ -37,28 +37,28 @@ export default function Headerr() {
                     exit="hidden"
                     variants={dropdownVariants}
                   >
-                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/SRKq2e0W"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                         Laptops
                       </motion.button>
                     </Link>
 
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/EE3Vp4WF"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                         Phones
                       </motion.button>
                     </Link>
 
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/RCZ22YtM"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                         Headphones
                       </motion.button>
                     </Link>
 
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/GTuIxk9r"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex lg:pr-2">
                         Smart Watches
                       </motion.button>
@@ -98,7 +98,7 @@ export default function Headerr() {
                     exit="hidden"
                     variants={dropdownVariants}
                   >
-                    <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+                    <Link href={"https://u4lncn4kip6.typeform.com/to/kvLxQAd8"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                         Cycling
                       </motion.button>
