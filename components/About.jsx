@@ -10,12 +10,12 @@ export default function About() {
       <div className="w-full flex justify-center">
         <div className="w-full flex flex-col gap-y-6 px-6 py-10 lg:px-0 max-w-4xl xl:max-w-7xl lg:py-16">
           <div className="flex flex-col gap-y-4">
-            <div className="text-black bold text-2xl lg:text-[2.5rem]">
+            <div className="text-black bold lg:pb-10 text-2xl lg:text-[2.5rem]">
               How it works?
             </div>
-            <div className="medium text-[#51636F] text-base lg:text-lg">
+            {/* <div className="medium text-[#51636F] text-base lg:text-lg">
               Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.
-            </div>
+            </div> */}
           </div>
           <div className="w-full flex flex-col gap-y-6 lg:flex-row justify-between">
             <div className="w-full lg:w-[30%] p-6 flex gap-x-4 lg:flex-col about-box items-center">

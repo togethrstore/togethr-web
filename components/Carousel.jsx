@@ -56,7 +56,8 @@ const Carousel = () => {
             Meet the Real Experts
           </div>
           <div className="medium text-[#51636F] text-lg">
-            Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.
+            Passionate people who are happy to be your shopping buddies for your
+            next big purchase{" "}
           </div>
         </div>
         <div className="w-full flex justify-between">
