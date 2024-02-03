@@ -825,19 +825,61 @@ export default function Filtering({
   );
 
   console.log(finalFilteredPhones);
+  const sortedByPrice = finalFilteredPhones
+    .slice(0, 3) // Take only the top 3 recommendations
+    .sort((a, b) => b.Price - a.Price); // Sort by price
 
   return (
     <>
-      <div>
-        {finalFilteredPhones.slice(0, 3).map((phone, index) => (
-          <div key={index}>
-            <p>Name: {phone.Name}</p>
-            <p>Price: {phone.Price}</p>
-            <p>Secondparameter: {phone.FirstScore}</p>
-            <p>Thirdparameter: {phone.SecondScore}</p>
-            <p>Fourthparameter: {phone.ThirdScore}</p>
+      <div className="w-full flex justify-center">
+        <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-12">
+          <div className="flex lg:gap-x-6">
+            {sortedByPrice.map((phone, index) => (
+              <div
+                key={index}
+                className="w-[30%] p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
+              >
+                <div className="text-lg lg:text-xl bold text-black">
+                  {phone.Name}
+                </div>
+                <div className="flex justify-between">
+                  <div className="flex flex-col items-center gap-y-2">
+                    <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
+                      Battery Score
+                    </div>
+                    <div className="text-[#625DF5] text-lg lg:text-xl bold">
+                      <span>{phone.FirstScore}</span>/100
+                    </div>
+                  </div>
+                  <div className="px-6 flex flex-col items-center gap-y-2 border-l-2 border-r-2 border-[#625DF533]">
+                    <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
+                      Performance Score
+                    </div>
+                    <div className="text-[#625DF5] text-lg lg:text-xl bold">
+                      <span>{phone.SecondScore}</span>/100
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center gap-y-2">
+                    <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
+                      Camera Score
+                    </div>
+                    <div className="text-[#625DF5] text-lg lg:text-xl bold">
+                      <span>{phone.ThirdScore}</span>/100
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="text-base text-[#51636F] medium">
+                    Phone price
+                  </div>
+                  <div className="text-lg lg:text-xl bold text-black">
+                    ₹ {phone.Price}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </>
   );
