@@ -754,15 +754,15 @@ export default function Filtering({
   const filteredByBattery = filteredByPrice.map((phone) => {
     return {
       ...phone,
-      Score: phone.Secondparameter * batteryMultiplier,
+      FirstScore: phone.Secondparameter * batteryMultiplier,
     };
   });
 
   const sortedFilteredPhones = filteredByBattery.sort(
-    (a, b) => b.Score - a.Score
+    (a, b) => b.FirstScore - a.FirstScore
   );
 
-  console.log(sortedFilteredPhones);
+  // console.log(sortedFilteredPhones);
 
   let cameraFilterMultiplier;
   switch (tabFourResponse) {
@@ -783,15 +783,15 @@ export default function Filtering({
   const filteredByCamera = sortedFilteredPhones.map((phone) => {
     return {
       ...phone,
-      Score: phone.Score * cameraFilterMultiplier,
+      SecondScore: phone.Thirdparameter * cameraFilterMultiplier,
     };
   });
 
   const semiFinalFilteredPhones = filteredByCamera.sort(
-    (a, b) => b.Score - a.Score
+    (a, b) => b.SecondScore - a.SecondScore
   );
 
-  console.log(semiFinalFilteredPhones);
+  // console.log(semiFinalFilteredPhones);
 
   let performanceFilterMultiplier;
 
@@ -816,12 +816,12 @@ export default function Filtering({
   const filteredByPerformance = semiFinalFilteredPhones.map((phone) => {
     return {
       ...phone,
-      Score: phone.Score * performanceFilterMultiplier,
+      ThirdScore: phone.Fourthparameter * performanceFilterMultiplier,
     };
   });
 
   const finalFilteredPhones = filteredByPerformance.sort(
-    (a, b) => b.Score - a.Score
+    (a, b) => b.ThirdScore - a.ThirdScore
   );
 
   console.log(finalFilteredPhones);
@@ -833,9 +833,9 @@ export default function Filtering({
           <div key={index}>
             <p>Name: {phone.Name}</p>
             <p>Price: {phone.Price}</p>
-            <p>Secondparameter: {phone.Secondparameter}</p>
-            <p>Thirdparameter: {phone.Thirdparameter}</p>
-            <p>Fourthparameter: {phone.Fourthparameter}</p>
+            <p>Secondparameter: {phone.FirstScore}</p>
+            <p>Thirdparameter: {phone.SecondScore}</p>
+            <p>Fourthparameter: {phone.ThirdScore}</p>
           </div>
         ))}
       </div>
