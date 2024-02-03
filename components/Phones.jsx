@@ -833,17 +833,17 @@ export default function Filtering({
     <>
       <div className="w-full flex justify-center">
         <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-12">
-          <div className="flex lg:gap-x-6">
+          <div className="flex flex-col gap-y-6 items-center lg:flex-row lg:gap-x-6">
             {sortedByPrice.map((phone, index) => (
               <div
                 key={index}
-                className="w-[30%] p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
+                className="w-max p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
               >
-                <div className="text-lg lg:text-xl bold text-black">
+                <div className="text-base lg:text-xl bold text-black">
                   {phone.Name}
                 </div>
                 <div className="flex justify-between">
-                  <div className="flex flex-col items-center gap-y-2">
+                  <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
                     <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
                       Battery Score
                     </div>
@@ -851,7 +851,7 @@ export default function Filtering({
                       <span>{phone.FirstScore}</span>/100
                     </div>
                   </div>
-                  <div className="px-6 flex flex-col items-center gap-y-2 border-l-2 border-r-2 border-[#625DF533]">
+                  <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2 border-l-2 border-r-2 border-[#625DF533]">
                     <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
                       Performance Score
                     </div>
@@ -859,7 +859,7 @@ export default function Filtering({
                       <span>{phone.SecondScore}</span>/100
                     </div>
                   </div>
-                  <div className="flex flex-col items-center gap-y-2">
+                  <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
                     <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
                       Camera Score
                     </div>
