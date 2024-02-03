@@ -19,7 +19,7 @@ const TabThree = ({ nextTab, save }) => {
         </div>
         <div className="bold text-xl lg:text-2xl">
           <span>3. </span>
-          Select a category you need expert assistance
+          How many hours do you use your phone daily?{" "}
         </div>
         {categories.map((category, index) => (
           <div key={index}>

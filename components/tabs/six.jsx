@@ -19,7 +19,7 @@ const TabSix = ({ nextTab, save }) => {
         </div>
         <div className="bold text-xl lg:text-2xl">
           <span>6. </span>
-          Select a category you need expert assistance
+          Do you want to talk to an expert?{" "}
         </div>
         {categories.map((category, index) => (
           <div key={index}>

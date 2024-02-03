@@ -7,7 +7,6 @@ const categories = [
     id: 5,
     text: "How often do you play games on your phone?",
     options: [
-      "Never",
       "Rarely (once a week or less)",
       "Occasionally (a few times a week),",
       "Daily",
@@ -24,7 +23,7 @@ const TabFive = ({ nextTab, save }) => {
         </div>
         <div className="bold text-xl lg:text-2xl">
           <span>5. </span>
-          Select a category you need expert assistance
+          How often do you play games on your phone?{" "}
         </div>
         {categories.map((category, index) => (
           <div key={index}>

@@ -730,8 +730,8 @@ export default function Filtering({
   tabFiveResponse,
 }) {
   const filteredByPrice = phones.filter((phone) => {
-    const lowerBound = tabTwoResponse * 0.85;
-    const upperBound = tabTwoResponse * 1.1;
+    const lowerBound = tabTwoResponse * 0.8; // 20% lower bound
+    const upperBound = tabTwoResponse * 1.15; // 15% upper bound
     return phone.Price >= lowerBound && phone.Price <= upperBound;
   });
 
@@ -796,9 +796,6 @@ export default function Filtering({
   let performanceFilterMultiplier;
 
   switch (tabFiveResponse) {
-    case "Never":
-      performanceFilterMultiplier = 0.25;
-      break;
     case "Rarely (once a week or less)":
       performanceFilterMultiplier = 0.5;
       break;
