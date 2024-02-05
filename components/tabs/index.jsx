@@ -39,7 +39,17 @@ export default function TabIndex() {
       {activeTab === 4 && (
         <TabFive save={setTabFiveResponse} nextTab={nextTab} />
       )}
-      {activeTab === 5 && <TabSix save={setTabSixResponse} nextTab={nextTab} />}
+      {activeTab === 5 && (
+        <TabSix
+          activeTab={activeTab}
+          save={setTabSixResponse}
+          nextTab={nextTab}
+          tabTwoResponse={tabTwoResponse}
+          tabThreeResponse={tabThreeResponse}
+          tabFourResponse={tabFourResponse}
+          tabFiveResponse={tabFiveResponse}
+        />
+      )}
       {activeTab === 6 && (
         <Filtering
           tabTwoResponse={tabTwoResponse}
