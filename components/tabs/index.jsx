@@ -127,7 +127,10 @@ export default function TabIndex() {
         {activeTab === 6 && (
           <>
             {isLoading ? (
-              <div className="w-full h-[80vh] flex justify-center items-center">
+              <div className="w-full h-[70vh] flex flex-col gap-y-8 justify-center items-center">
+                <div className="bold text-black text-lg lg:text-2xl">
+                  Finding the right fit products for you!
+                </div>
                 <div className="spinner"></div>
               </div>
             ) : showFiltering ? (
