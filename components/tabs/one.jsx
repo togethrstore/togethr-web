@@ -33,6 +33,12 @@ const TabOne = ({ nextTab, save }) => {
                       nextTab();
                     }
                   }}
+                  onTouchStart={() => {
+                    if (item === "Phones") {
+                      save(item);
+                      nextTab();
+                    }
+                  }}
                 >
                   <div>{item}</div>
                   <div className="w-7 opacity-0 transition-opacity duration-500 group-hover:opacity-100 inline-flex">
