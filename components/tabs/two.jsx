@@ -3,11 +3,25 @@ import Image from "next/image";
 import InfoCircle from "../../public/assets/images/form/info-circle.png";
 
 export default function TabTwo({ nextTab, save }) {
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState("");
+  const [isValid, setIsValid] = useState(false);
 
   const handleInputChange = (event) => {
-    setValue(event.target.value);
+    const inputValue = event.target.value;
+    const numericValue = parseInt(inputValue);
+
+    if (
+      !isNaN(numericValue) &&
+      numericValue >= 10000 &&
+      numericValue <= 200000
+    ) {
+      setIsValid(true);
+    } else {
+      setIsValid(false);
+    }
+    setValue(inputValue);
   };
+
   return (
     <>
       <div className="flex flex-col items-center">
@@ -18,9 +32,9 @@ export default function TabTwo({ nextTab, save }) {
           </div>
           <div className="flex flex-col gap-y-4">
             <input
-              type="number"
+              type="text"
               placeholder="Your answer here"
-              value={value || ""}
+              value={value}
               onChange={handleInputChange}
               className="border-[2.5px] border-[#625DF533] p-4 rounded-xl outline-none w-7/12 lg:w-5/12 mt-6 regular"
             />
@@ -32,10 +46,17 @@ export default function TabTwo({ nextTab, save }) {
             </div>
             <button
               onClick={() => {
-                save(value);
-                nextTab();
+                if (isValid) {
+                  save(value);
+                  nextTab();
+                }
               }}
-              className="w-[50%] bold bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-white hover:border-[#625DF5] py-2.5 lg:py-4 text-white hover:text-[#625df5] transition-all duration-300 text-base"
+              className={`w-[50%] bold bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] ${
+                isValid
+                  ? "hover:bg-white hover:border-[#625DF5] text-white hover:text-[#625df5]"
+                  : "cursor-not-allowed opacity-50 text-gray-400"
+              } transition-all duration-300 py-2.5 lg:py-4 text-base`}
+              disabled={!isValid}
             >
               Next
             </button>

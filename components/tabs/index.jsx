@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import TabOne from "./one";
 import TabTwo from "./two";
@@ -18,19 +18,28 @@ export default function TabIndex() {
   const [tabFourResponse, setTabFourResponse] = useState(null);
   const [tabFiveResponse, setTabFiveResponse] = useState(null);
   const [tabSixResponse, setTabSixResponse] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showFiltering, setShowFiltering] = useState(false);
+
+  useEffect(() => {
+    if (activeTab === 6) {
+      setIsLoading(true);
+      // Simulate a delay of 3 seconds
+      setTimeout(() => {
+        setIsLoading(false);
+        setShowFiltering(true);
+      }, 3000);
+    } else {
+      setIsLoading(false);
+      setShowFiltering(false);
+    }
+  }, [activeTab]);
 
   const nextTab = () => {
-    const newTabIndex = setActiveTab(activeTab + 1);
+    setActiveTab(activeTab + 1);
   };
 
   const progressBarWidth = `${15 + activeTab * 15}%`;
-
-  console.log(tabOneResponse);
-  console.log(tabTwoResponse);
-  console.log(tabThreeResponse);
-  console.log(tabFourResponse);
-  console.log(tabFiveResponse);
-  console.log(tabSixResponse);
 
   const responseStates = [
     { index: 0, response: tabOneResponse },
@@ -46,6 +55,7 @@ export default function TabIndex() {
     setActiveTab(index);
     responseStates.splice(index + 1);
   };
+
   return (
     <>
       <Headerr />
@@ -115,12 +125,21 @@ export default function TabIndex() {
           />
         )}
         {activeTab === 6 && (
-          <Filtering
-            tabTwoResponse={tabTwoResponse}
-            tabThreeResponse={tabThreeResponse}
-            tabFourResponse={tabFourResponse}
-            tabFiveResponse={tabFiveResponse}
-          />
+          <>
+            {isLoading ? (
+              <div className="w-full h-[80vh] flex justify-center items-center">
+                <div className="spinner"></div>
+              </div>
+            ) : showFiltering ? (
+              <Filtering
+                tabTwoResponse={tabTwoResponse}
+                tabThreeResponse={tabThreeResponse}
+                tabFourResponse={tabFourResponse}
+                tabFiveResponse={tabFiveResponse}
+                setActiveTab={setActiveTab}
+              />
+            ) : null}
+          </>
         )}
       </div>
     </>

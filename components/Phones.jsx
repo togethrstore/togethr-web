@@ -721,13 +721,22 @@ const phones = [
   },
 ];
 
-import React from "react";
-
+import React, { useState } from "react";
+import Recorded from "../public/assets/images/form/recorded.png";
+import Image from "next/image";
+import ArrowDown from "../public/assets/images/arrow-down.png";
+import { motion, AnimatePresence } from "framer-motion";
+import EditIcon from "../public/assets/images/form/edit.png";
+import Cart from "../public/assets/images/form/cart.png";
+import Link from "next/link";
 export default function Filtering({
+  tabOneResponse,
   tabTwoResponse,
   tabThreeResponse,
   tabFourResponse,
   tabFiveResponse,
+  tabSixResponse,
+  setActiveTab,
 }) {
   const filteredByPrice = phones.filter((phone) => {
     const lowerBound = tabTwoResponse * 0.8; // 20% lower bound
@@ -826,57 +835,153 @@ export default function Filtering({
     .slice(0, 3) // Take only the top 3 recommendations
     .sort((a, b) => b.Price - a.Price); // Sort by price
 
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleContentVisibility = () => {
+    setOpenIndex(openIndex === null ? true : null);
+  };
+
+  const responseStates = [
+    { index: 0, response: tabOneResponse },
+    { index: 1, response: tabTwoResponse },
+    { index: 2, response: tabThreeResponse },
+    { index: 3, response: tabFourResponse },
+    { index: 4, response: tabFiveResponse },
+    { index: 5, response: tabSixResponse },
+  ];
+
   return (
     <>
-      <div className="w-full flex justify-center">
-        <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-12">
-          <div className="flex flex-col gap-y-6 items-center lg:flex-row lg:gap-x-6">
-            {sortedByPrice.map((phone, index) => (
-              <div
-                key={index}
-                className="w-max p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
-              >
-                <div className="text-base lg:text-xl bold text-black">
-                  {phone.Name}
+      <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full flex flex-col gap-y-6 max-w-4xl xl:max-w-7xl py-6">
+          <button onClick={toggleContentVisibility}>
+            <div className="w-full flex justify-between items-center">
+              <div className="flex items-center gap-x-2">
+                <div className="w-6 inline-flex">
+                  <Image src={Recorded} alt="" />
                 </div>
-                <div className="flex justify-between">
-                  <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
-                    <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
-                      Battery Score
+                <div className="text-xl lg:text-2xl bold text-black">
+                  Your recorded responses
+                </div>
+              </div>
+              <div className="w-6 inline-flex">
+                <motion.div
+                  initial={false}
+                  animate={{
+                    rotate: openIndex ? 180 : 0,
+                    transition: { duration: 0.3 },
+                  }}
+                >
+                  <Image src={ArrowDown} alt="" priority={true} />
+                </motion.div>
+              </div>
+            </div>
+          </button>
+          <div>
+            <AnimatePresence>
+              {openIndex !== null && (
+                <motion.div
+                  key={openIndex}
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex gap-x-4 overflow-auto"
+                >
+                  {responseStates.map((state, index) => (
+                    <div key={index}>
+                      {state.response && (
+                        <motion.button
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.3 }}
+                          onClick={() => setActiveTab(0)}
+                        >
+                          <div className="w-max flex items-center gap-x-2 px-4 py-2.5 border-2 border-[#51636F] rounded-2xl bold">
+                            <div>{state.response}</div>
+                            <div className="lg:w-5 inline-flex">
+                              <Image className="" src={EditIcon} alt="" />
+                            </div>
+                          </div>
+                        </motion.button>
+                      )}
                     </div>
-                    <div className="text-[#625DF5] text-lg lg:text-xl bold">
-                      <span>{phone.FirstScore}</span>/100
-                    </div>
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+          <div className="w-full flex items-start justify-start">
+            <div className="flex items-center gap-x-2">
+              <div className="w-6 inline-flex">
+                <Image src={Cart} alt="" />
+              </div>
+              <div className="text-xl lg:text-2xl bold text-black">
+                Right fit products for you!{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-y-6 items-center pb-10 lg:pb-16 lg:flex-row lg:gap-x-6">
+          {sortedByPrice.map((phone, index) => (
+            <div
+              key={index}
+              className="w-max p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
+            >
+              <div className="text-base lg:text-xl bold text-black">
+                {phone.Name}
+              </div>
+              <div className="flex justify-between">
+                <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
+                  <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
+                    Battery Score
                   </div>
-                  <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2 border-l-2 border-r-2 border-[#625DF533]">
-                    <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
-                      Performance Score
-                    </div>
-                    <div className="text-[#625DF5] text-lg lg:text-xl bold">
-                      <span>{phone.SecondScore}</span>/100
-                    </div>
-                  </div>
-                  <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
-                    <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
-                      Camera Score
-                    </div>
-                    <div className="text-[#625DF5] text-lg lg:text-xl bold">
-                      <span>{phone.ThirdScore}</span>/100
-                    </div>
+                  <div className="text-[#625DF5] text-lg lg:text-xl bold">
+                    <span>{phone.FirstScore}</span>/100
                   </div>
                 </div>
-                <div>
-                  <div className="text-base text-[#51636F] medium">
-                    Phone price
+                <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2 border-l-2 border-r-2 border-[#625DF533]">
+                  <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
+                    Performance Score
                   </div>
-                  <div className="text-lg lg:text-xl bold text-black">
-                    ₹ {phone.Price}
+                  <div className="text-[#625DF5] text-lg lg:text-xl bold">
+                    <span>{phone.SecondScore}</span>/100
+                  </div>
+                </div>
+                <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
+                  <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
+                    Camera Score
+                  </div>
+                  <div className="text-[#625DF5] text-lg lg:text-xl bold">
+                    <span>{phone.ThirdScore}</span>/100
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+              <div>
+                <div className="text-base text-[#51636F] medium">
+                  Phone price
+                </div>
+                <div className="text-lg lg:text-xl bold text-black">
+                  ₹ {phone.Price}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
+      </div>
+      <div className="w-full flex flex-col gap-y-4 justify-center items-center bg-[#625DF50D] py-8 lg:py-20">
+        <div className="text-3xl lg:text-4xl bold text-black">
+          Meet the Real Experts
+        </div>
+        <div className="text-base lg:text-xl medium text-[#51636F]">
+          Passionate people who are happy to be your shopping buddies for your
+          next big purchase{" "}
+        </div>
+        <button className="w-full mt-4 lg:mt-10 lg:w-max medium hero-button py-3 px-12 text-white text-lg">
+          Shop with Expert
+        </button>
       </div>
     </>
   );
