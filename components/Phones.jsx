@@ -850,6 +850,11 @@ export default function Filtering({
     { index: 5, response: tabSixResponse },
   ];
 
+  const ReloadPage = () => {
+    // Reload the page
+    window.location.reload();
+  };
+
   return (
     <>
       <div className="w-full flex flex-col items-center justify-center">
@@ -896,7 +901,8 @@ export default function Filtering({
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
                           transition={{ duration: 0.3 }}
-                          onClick={() => setActiveTab(0)}
+                          // onClick={() => setActiveTab(0)}
+                          onClick={ReloadPage}
                         >
                           <div className="w-max flex items-center gap-x-2 px-4 py-2.5 border-2 border-[#51636F] rounded-2xl bold">
                             <div>{state.response}</div>
