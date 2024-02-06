@@ -11,7 +11,7 @@ export default function TabTwo({ nextTab, save }) {
   return (
     <>
       <div className="flex flex-col items-center">
-        <div className="w-full flex flex-col gap-y-6 px-6 py-10 lg:px-0 max-w-4xl xl:max-w-7xl lg:py-16">
+        <div className="w-full flex flex-col gap-y-6 px-6 py-4 lg:px-0 max-w-4xl xl:max-w-7xl">
           <div className="bold text-xl lg:text-2xl">
             <span>2. </span>
             How much would you like to spend?{" "}

@@ -10,10 +10,7 @@ const categories = [
 const TabOne = ({ nextTab, save }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="w-full flex flex-col gap-y-6 px-6 py-10 lg:px-0 max-w-4xl xl:max-w-7xl lg:py-16">
-        <div className="text-[#51636F] text-lg lg:text-xl medium">
-          Your responses will be recorded here
-        </div>
+      <div className="w-full flex flex-col gap-y-6 px-6 py-4 lg:px-0 max-w-4xl xl:max-w-7xl">
         <div className="bold text-xl lg:text-2xl">
           <span>1. </span>
           Select a category you need expert assistance

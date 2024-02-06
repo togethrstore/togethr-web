@@ -59,6 +59,8 @@ const TabSix = ({
           alert("Please enter a valid 10-digit phone number.");
           return; // Don't proceed if the input is invalid
         }
+        // Don't proceed to the next tab if input is invalid
+        return;
       }
     }
 
@@ -81,6 +83,7 @@ const TabSix = ({
         await axios.post(apiUrl, reducedData);
       }
 
+      // Only proceed to the next tab if input is valid
       nextTab();
     } catch (error) {
       console.error("Error posting data:", error);
@@ -101,21 +104,17 @@ const TabSix = ({
 
   return (
     <div className="flex flex-col items-center">
-      <div className="w-full flex flex-col gap-y-6 px-6 py-10 lg:px-0 max-w-4xl xl:max-w-7xl lg:py-16">
-        <div className="text-[#51636F] text-lg lg:text-xl medium">
-          Your responses will be recorded here
-        </div>
-
+      <div className="w-full flex flex-col gap-y-6 px-6 py-4 lg:px-0 max-w-4xl xl:max-w-7xl">
         {wantToTalk === null && (
           <div>
-            <div className="bold text-xl lg:text-2xl">
+            {/* <div className="bold text-xl lg:text-2xl">
               <span>6. </span>
               Do you want to talk to an expert?{" "}
-            </div>
+            </div> */}
             {categories.map((category, index) => (
               <div key={index}>
                 <div className="bold text-xl lg:text-2xl pb-3">
-                  {category.text}
+                  {category.id}. {category.text}
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                   {category.options.map((item, itemIndex) => (
@@ -152,33 +151,35 @@ const TabSix = ({
               <span>7. </span>
               Enter your contact details{" "}
             </div>
+            <div className="text-base lg:text-xl bold">Name</div>
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Enter your name here"
               value={name}
               onChange={handleInputChange}
-              className="text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl"
+              className="w-1/2 text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl medium"
             />
+            <div className="text-base lg:text-xl bold">Number</div>
             <input
               type="text"
               name="number"
-              placeholder="Number"
+              placeholder="Enter your phone number"
               value={number}
               onChange={handleInputChange}
               maxLength="10"
-              className="text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl"
+              className="w-1/2 text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl"
             />
 
             <button
-              className={`text-white bg-[#625DF5] hover:bg-[#4C53A5] text-base lg:text-lg bold p-4 rounded-2xl`}
+              className={`w-1/2 mt-4 text-white bg-[#625DF5] hover:bg-[#4C53A5] text-base lg:text-lg bold p-4 rounded-2xl`}
               onClick={() => {
                 handleNextTab();
-                nextTab();
+                // nextTab();
                 activeTab === 6;
               }}
             >
-              Now send all
+              Schedule Event
             </button>
           </div>
         )}

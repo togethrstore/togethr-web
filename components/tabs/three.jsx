@@ -13,17 +13,16 @@ const categories = [
 const TabThree = ({ nextTab, save }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="w-full flex flex-col gap-y-6 px-6 py-10 lg:px-0 max-w-4xl xl:max-w-7xl lg:py-16">
-        <div className="text-[#51636F] text-lg lg:text-xl medium">
-          Your responses will be recorded here
-        </div>
-        <div className="bold text-xl lg:text-2xl">
+      <div className="w-full flex flex-col gap-y-6 px-6 py-4 lg:px-0 max-w-4xl xl:max-w-7xl">
+        {/* <div className="bold text-xl lg:text-2xl">
           <span>3. </span>
           How many hours do you use your phone daily?{" "}
-        </div>
+        </div> */}
         {categories.map((category, index) => (
           <div key={index}>
-            <div className="bold text-xl lg:text-2xl pb-3">{category.text}</div>
+            <div className="bold text-xl lg:text-2xl pb-3">
+              {category.id}. {category.text}
+            </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {category.options.map((item, itemIndex) => (
                 <button
