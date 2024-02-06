@@ -146,7 +146,7 @@ const TabSix = ({
         )}
 
         {wantToTalk && (
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-2 lg:gap-4">
             <div className="bold text-xl lg:text-2xl">
               <span>7. </span>
               Enter your contact details{" "}
@@ -158,7 +158,7 @@ const TabSix = ({
               placeholder="Enter your name here"
               value={name}
               onChange={handleInputChange}
-              className="w-1/2 text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl medium"
+              className="w-2/3 lg:w-1/2 text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl medium"
             />
             <div className="text-base lg:text-xl bold">Number</div>
             <input
@@ -168,11 +168,11 @@ const TabSix = ({
               value={number}
               onChange={handleInputChange}
               maxLength="10"
-              className="w-1/2 text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl"
+              className="w-2/3 lg:w-1/2 text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl"
             />
 
             <button
-              className={`w-1/2 mt-4 text-white bg-[#625DF5] hover:bg-[#4C53A5] text-base lg:text-lg bold p-4 rounded-2xl`}
+              className={`w-2/3 lg:w-1/2 mt-4 text-white bg-[#625DF5] hover:bg-[#4C53A5] text-base lg:text-lg bold p-4 rounded-2xl`}
               onClick={() => {
                 handleNextTab();
                 // nextTab();

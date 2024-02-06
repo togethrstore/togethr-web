@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: "satoshi-bold";
   src: url("/assets/fonts/Satoshi-Bold.ttf");

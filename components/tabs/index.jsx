@@ -73,8 +73,10 @@ export default function TabIndex() {
                   {state.response && (
                     <button onClick={() => handleButtonClick(state.index)}>
                       <div className="w-max flex items-center gap-x-2 px-4 py-2.5 border-2 border-[#51636F] rounded-2xl bold">
-                        <div>{state.response}</div>
-                        <div className="lg:w-5 inline-flex">
+                        <div className="text-base lg:text-lg">
+                          {state.response}
+                        </div>
+                        <div className="w-4 lg:w-5 inline-flex">
                           <Image className="" src={EditIcon} alt="" />
                         </div>
                       </div>

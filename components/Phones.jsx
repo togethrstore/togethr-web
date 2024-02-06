@@ -858,9 +858,9 @@ export default function Filtering({
   return (
     <>
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="w-full flex flex-col gap-y-6 max-w-4xl xl:max-w-7xl py-6">
+        <div className="w-full flex flex-col gap-y-6 px-6 lg:px-0 max-w-4xl xl:max-w-7xl py-6">
           <button onClick={toggleContentVisibility}>
-            <div className="w-full flex justify-between items-center">
+            <div className="w-full flex justify-between items-center rounded-2xl">
               <div className="flex items-center gap-x-2">
                 <div className="w-6 inline-flex">
                   <Image src={Recorded} alt="" />
@@ -906,7 +906,7 @@ export default function Filtering({
                         >
                           <div className="w-max flex items-center gap-x-2 px-4 py-2.5 border-2 border-[#51636F] rounded-2xl bold">
                             <div>{state.response}</div>
-                            <div className="lg:w-5 inline-flex">
+                            <div className="w-4 lg:w-5 inline-flex">
                               <Image className="" src={EditIcon} alt="" />
                             </div>
                           </div>
@@ -981,11 +981,11 @@ export default function Filtering({
         <div className="text-3xl lg:text-4xl bold text-black">
           Meet the Real Experts
         </div>
-        <div className="text-base lg:text-xl medium text-[#51636F]">
+        <div className="text-base lg:text-xl medium text-[#51636F] text-center">
           Passionate people who are happy to be your shopping buddies for your
           next big purchase{" "}
         </div>
-        <button className="w-full mt-4 lg:mt-10 lg:w-max medium hero-button py-3 px-12 text-white text-lg">
+        <button className="w-max mt-4 lg:mt-10 medium hero-button py-3 px-12 text-white text-lg">
           Shop with Expert
         </button>
       </div>

@@ -17,7 +17,7 @@ export default function Hero() {
               Real experts — Personalized product picks — for free!
             </div>
           </div>
-          <Link href={"https://u4lncn4kip6.typeform.com/to/PVf62CCJ"}>
+          <Link href={"/form"}>
             <button className="w-full lg:w-max medium hero-button py-3 px-12 text-white text-lg">
               Shop with Expert
             </button>
