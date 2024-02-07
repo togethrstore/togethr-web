@@ -151,16 +151,20 @@ const TabSix = ({
               <span>7. </span>
               Enter your contact details{" "}
             </div>
-            <div className="text-base lg:text-xl bold">Name</div>
+            <div className="text-base lg:text-xl bold hidden lg:block">
+              Name
+            </div>
             <input
               type="text"
               name="name"
               placeholder="Enter your name here"
               value={name}
               onChange={handleInputChange}
-              className="w-2/3 lg:w-1/2 text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl medium"
+              className="w-full lg:w-1/2 mt-4 lg:mt-0 text-[#51636F] border-[2.5px] border-[#625DF533] p-3.5 lg:p-4 rounded-2xl medium"
             />
-            <div className="text-base lg:text-xl bold">Number</div>
+            <div className="text-base lg:text-xl bold hidden lg:block">
+              Number
+            </div>
             <input
               type="text"
               name="number"
@@ -168,11 +172,11 @@ const TabSix = ({
               value={number}
               onChange={handleInputChange}
               maxLength="10"
-              className="w-2/3 lg:w-1/2 text-[#51636F] border-[2.5px] border-[#625DF533] p-4 rounded-2xl"
+              className="w-full lg:w-1/2 mt-2 lg:mt-0 text-[#51636F] border-[2.5px] border-[#625DF533] p-3.5 lg:p-4 rounded-2xl"
             />
 
             <button
-              className={`w-2/3 lg:w-1/2 mt-4 text-white bg-[#625DF5] hover:bg-[#4C53A5] text-base lg:text-lg bold p-4 rounded-2xl`}
+              className={`w-full lg:w-1/2 mt-4 text-white bg-[#625DF5] hover:bg-[#4C53A5] text-base lg:text-lg bold p-3 lg:p-4 rounded-2xl`}
               onClick={() => {
                 handleNextTab();
                 // nextTab();

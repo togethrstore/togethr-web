@@ -36,9 +36,9 @@ export default function TabTwo({ nextTab, save }) {
               placeholder="Your answer here"
               value={value}
               onChange={handleInputChange}
-              className="border-[2.5px] border-[#625DF533] p-4 rounded-xl outline-none w-7/12 lg:w-5/12 lg:mt-6 regular"
+              className="border-[2.5px] border-[#625DF533] p-4 rounded-xl outline-none w-full lg:w-5/12 lg:mt-6 regular"
             />
-            <div className="info-box w-10/12 lg:w-max flex gap-x-2 items-center medium text-[#51636F] text-xs lg:text-base p-2 lg:p-4 border-2 border-[#625DF533] rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
+            <div className="info-box w-full lg:w-5/12 flex gap-x-2 items-center medium text-[#51636F] text-xs lg:text-base p-2 lg:p-4 border-2 border-[#625DF533] rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
               <div className="w-6 inline-flex">
                 <Image src={InfoCircle} alt="" />
               </div>
@@ -51,7 +51,7 @@ export default function TabTwo({ nextTab, save }) {
                   nextTab();
                 }
               }}
-              className={`w-[50%] bold bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] ${
+              className={`w-full lg:w-5/12 mt-2 lg:mt-4 bold bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] ${
                 isValid
                   ? "hover:bg-white hover:border-[#625DF5] text-white hover:text-[#625df5]"
                   : "cursor-not-allowed opacity-50 text-gray-400"
