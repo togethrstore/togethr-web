@@ -63,7 +63,7 @@ export default function TabIndex() {
         <div className="w-full flex flex-col gap-y-6 pt-6 lg:pt-10 px-6 lg:px-0 max-w-4xl xl:max-w-7xl">
           {activeTab === 0 && (
             <div className="text-[#51636F] text-lg lg:text-xl medium">
-              Your responses will be recorded here
+              Chudam{" "}
             </div>
           )}
           {activeTab > 0 && activeTab < 6 && (
