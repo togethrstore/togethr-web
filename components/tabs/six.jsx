@@ -182,6 +182,11 @@ const TabSix = ({
                 // nextTab();
                 activeTab === 6;
               }}
+              onTouchStart={() => {
+                handleNextTab();
+                // nextTab();
+                activeTab === 6;
+              }}
             >
               Schedule Event
             </button>
