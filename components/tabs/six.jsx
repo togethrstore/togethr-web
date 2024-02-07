@@ -25,12 +25,25 @@ const TabSix = ({
   const [number, setNumber] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(null);
 
-  const handleOptionClick = (item) => {
+  const handleOptionClick = async (item) => {
     if (item === "Yes") {
       setWantToTalk(true);
     } else {
-      setWantToTalk(false);
-      nextTab();
+      try {
+        const reducedData = {
+          price: tabTwoResponse,
+          battery: tabThreeResponse,
+          camera: tabFourResponse,
+          performance: tabFiveResponse,
+        };
+
+        const apiUrl = "/api/backend";
+        await axios.post(apiUrl, reducedData);
+
+        nextTab();
+      } catch (error) {
+        console.error("Error posting reduced data:", error);
+      }
     }
   };
 
@@ -57,23 +70,18 @@ const TabSix = ({
           alert("Please enter your name.");
         } else if (number.length !== 10) {
           alert("Please enter a valid 10-digit phone number.");
-          return; // Don't proceed if the input is invalid
+          return;
         }
-        // Don't proceed to the next tab if input is invalid
         return;
       }
     }
 
     try {
-      // Adjust the URL based on your backend API endpoint
       const apiUrl = "/api/backend";
 
       if (wantToTalk) {
-        // Case 2: Now send all button is clicked
         await axios.post(apiUrl, dataToPost);
       } else {
-        // Case 1: No is clicked
-        // Send only 4 data
         const reducedData = {
           price: dataToPost.price,
           battery: dataToPost.battery,
@@ -83,11 +91,9 @@ const TabSix = ({
         await axios.post(apiUrl, reducedData);
       }
 
-      // Only proceed to the next tab if input is valid
       nextTab();
     } catch (error) {
       console.error("Error posting data:", error);
-      // Handle error as needed
     }
   };
 
@@ -107,10 +113,6 @@ const TabSix = ({
       <div className="w-full flex flex-col gap-y-6 px-6 py-4 lg:px-0 max-w-4xl xl:max-w-7xl">
         {wantToTalk === null && (
           <div>
-            {/* <div className="bold text-xl lg:text-2xl">
-              <span>6. </span>
-              Do you want to talk to an expert?{" "}
-            </div> */}
             {categories.map((category, index) => (
               <div key={index}>
                 <div className="bold text-xl lg:text-2xl pb-3">
