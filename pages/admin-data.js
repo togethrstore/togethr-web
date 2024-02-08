@@ -44,6 +44,7 @@ const YourComponent = () => {
     <div className="px-4 sm:px-6 lg:px-8">
       {!loggedIn && (
         <div className="w-full h-[70vh] justify-center items-center flex flex-col gap-y-4">
+          <div className="bold text-3xl lg:text-6xl">ADMIN PANEL</div>
           <input
             type={showPassword ? "text" : "password"} // Conditionally set input type based on showPassword state
             className="border-[2.5px] border-[#625DF533] p-4 rounded-xl outline-none w-full lg:w-5/12 lg:mt-6 regular"
