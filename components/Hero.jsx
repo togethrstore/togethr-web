@@ -66,7 +66,7 @@ export default function Hero() {
       setmobIndex((prevIndex) =>
         prevIndex === mobileImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Change slides every 5 seconds
+    }, 3500); // Change slides every 5 seconds
 
     return () => clearTimeout(interval);
   }, [mobindex]);
@@ -93,6 +93,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             key={mobindex}
           >
@@ -103,6 +104,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             key={index}
           >
