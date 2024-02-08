@@ -721,6 +721,15 @@ const phones = [
   },
 ];
 
+const questions = [
+  {},
+  {},
+  {},
+  {
+    text: "4. How will you use your phone's camera?",
+  },
+];
+
 import React, { useState } from "react";
 import Recorded from "../public/assets/images/form/recorded.png";
 import Image from "next/image";
@@ -842,11 +851,31 @@ export default function Filtering({
   };
 
   const responseStates = [
-    { index: 0, response: tabOneResponse },
-    { index: 1, response: tabTwoResponse },
-    { index: 2, response: tabThreeResponse },
-    { index: 3, response: tabFourResponse },
-    { index: 4, response: tabFiveResponse },
+    {
+      index: 0,
+      response: tabOneResponse,
+      text: "1. Select a category you need expert assistance",
+    },
+    {
+      index: 1,
+      response: tabTwoResponse,
+      text: "2. How much would you like to spend?",
+    },
+    {
+      index: 2,
+      response: tabThreeResponse,
+      text: "3. How many hours do you use your phone daily?",
+    },
+    {
+      index: 3,
+      response: tabFourResponse,
+      text: "4. How will you use your phone's camera?",
+    },
+    {
+      index: 4,
+      response: tabFiveResponse,
+      text: "5. How often do you play games on your phone?",
+    },
     { index: 5, response: tabSixResponse },
   ];
 
@@ -891,26 +920,29 @@ export default function Filtering({
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="flex gap-x-4 overflow-auto"
+                  className="flex flex-col gap-y-2"
                 >
                   {responseStates.map((state, index) => (
                     <div key={index}>
+                      <div className="medium text-base mb-2 text-black lg:text-lg">
+                        {state.text}
+                      </div>
                       {state.response && (
-                        <motion.button
+                        <motion.div
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
                           transition={{ duration: 0.3 }}
                           // onClick={() => setActiveTab(0)}
-                          onClick={ReloadPage}
+                          // onClick={ReloadPage}
                         >
-                          <div className="w-max flex items-center gap-x-2 px-4 py-2.5 border-2 border-[#51636F] rounded-2xl bold">
+                          <div className="w-max flex items-center gap-x-2 text-[#51636F] px-4 py-2 text-base border-2 border-[#51636F] rounded-2xl bold">
                             <div>{state.response}</div>
-                            <div className="w-4 lg:w-5 inline-flex">
+                            {/* <div className="w-4 lg:w-5 inline-flex">
                               <Image className="" src={EditIcon} alt="" />
-                            </div>
+                            </div> */}
                           </div>
-                        </motion.button>
+                        </motion.div>
                       )}
                     </div>
                   ))}

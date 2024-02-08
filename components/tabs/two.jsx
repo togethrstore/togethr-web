@@ -32,11 +32,11 @@ export default function TabTwo({ nextTab, save }) {
           </div>
           <div className="flex flex-col gap-y-4">
             <input
-              type="text"
+              type="number"
               placeholder="Your answer here"
               value={value}
               onChange={handleInputChange}
-              className="border-[2.5px] border-[#625DF533] p-4 rounded-xl outline-none w-full lg:w-5/12 lg:mt-6 regular"
+              className="input-two border-[2.5px] border-[#625DF533] p-4 rounded-xl outline-none w-full lg:w-5/12 lg:mt-6 regular"
             />
             <div className="info-box w-full lg:w-5/12 flex gap-x-2 items-center medium text-[#51636F] text-xs lg:text-base p-2 lg:p-4 border-2 border-[#625DF533] rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
               <div className="w-6 inline-flex">

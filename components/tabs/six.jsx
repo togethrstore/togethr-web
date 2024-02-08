@@ -134,11 +134,9 @@ const TabSix = ({
                       }}
                     >
                       <div>{item}</div>
-                      {wantToTalk !== null && item === "Yes" && (
-                        <div className="w-7 opacity-0 transition-opacity duration-500 group-hover:opacity-100 inline-flex">
-                          <Image src={HoverButton} alt="" />
-                        </div>
-                      )}
+                      <div className="w-7 opacity-0 transition-opacity duration-500 group-hover:opacity-100 inline-flex">
+                        <Image src={HoverButton} alt="" />
+                      </div>
                     </button>
                   ))}
                 </div>

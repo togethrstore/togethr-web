@@ -137,6 +137,7 @@ export default function TabIndex() {
               </div>
             ) : showFiltering ? (
               <Filtering
+                tabOneResponse={tabOneResponse}
                 tabTwoResponse={tabTwoResponse}
                 tabThreeResponse={tabThreeResponse}
                 tabFourResponse={tabFourResponse}
