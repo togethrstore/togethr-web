@@ -1,10 +1,76 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import HeroImg from "../public/assets/images/hero/hero.png";
-import HeroMob from "../public/assets/images/hero/hero-mob.png";
 import Link from "next/link";
+import DesktopOne from "../public/assets/images/hero/desktop-1.png";
+import DesktopTwo from "../public/assets/images/hero/desktop-2.png";
+import DesktopThree from "../public/assets/images/hero/desktop-3.png";
+import DesktopFour from "../public/assets/images/hero/desktop-4.png";
+import DesktopFive from "../public/assets/images/hero/desktop-5.png";
+import DesktopSix from "../public/assets/images/hero/desktop-6.png";
+import DesktopSeven from "../public/assets/images/hero/desktop-7.png";
+import DesktopEight from "../public/assets/images/hero/desktop-8.png";
+import DesktopNine from "../public/assets/images/hero/desktop-9.png";
+
+import MobileOne from "../public/assets/images/hero/mobile-1.png";
+import MobileTwo from "../public/assets/images/hero/mobile-2.png";
+import MobileThree from "../public/assets/images/hero/mobile-3.png";
+import MobileFour from "../public/assets/images/hero/mobile-4.png";
+import MobileFive from "../public/assets/images/hero/mobile-5.png";
+import MobileSix from "../public/assets/images/hero/mobile-6.png";
+import MobileSeven from "../public/assets/images/hero/mobile-7.png";
+import MobileEight from "../public/assets/images/hero/mobile-8.png";
+import MobileNine from "../public/assets/images/hero/mobile-9.png";
+
+const mobileImages = [
+  MobileOne,
+  MobileTwo,
+  MobileThree,
+  MobileFour,
+  MobileFive,
+  MobileSix,
+  MobileSeven,
+  MobileEight,
+  MobileNine,
+];
+
+const desktopImages = [
+  DesktopOne,
+  DesktopTwo,
+  DesktopThree,
+  DesktopFour,
+  DesktopFive,
+  DesktopSix,
+  DesktopSeven,
+  DesktopEight,
+  DesktopNine,
+];
 
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      setIndex((prevIndex) =>
+        prevIndex === desktopImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change slides every 5 seconds
+
+    return () => clearTimeout(interval);
+  }, [index]);
+
+  const [mobindex, setmobIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      setmobIndex((prevIndex) =>
+        prevIndex === mobileImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change slides every 5 seconds
+
+    return () => clearTimeout(interval);
+  }, [mobindex]);
+
   return (
     <div className="flex items-center justify-center">
       <div className="w-full max-w-4xl xl:max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-between py-12 lg:py-36 lg:pt-44">
@@ -24,10 +90,24 @@ export default function Hero() {
           </Link>
         </div>
         <div className="w-[80%] lg:hidden">
-          <Image src={HeroMob} alt="" priority={true} />
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            key={mobindex}
+          >
+            <Image src={mobileImages[mobindex]} alt="" priority={true} />
+          </motion.div>{" "}
         </div>
         <div className="w-[50%] hidden lg:block">
-          <Image src={HeroImg} alt="" priority={true} />
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            key={index}
+          >
+            <Image src={desktopImages[index]} alt="" priority={true} />
+          </motion.div>
         </div>
       </div>
     </div>
