@@ -974,41 +974,42 @@ export default function Filtering({
               <div className="flex justify-between">
                 <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
                   <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
-                    Battery Score
+                    Battery
                   </div>
                   <div className="text-[#625DF5] text-lg lg:text-xl bold">
-                    <span>{phone.FirstScore}</span>/100
+                    <span>{phone.Batteryscore}</span>/100
                   </div>
                 </div>
                 <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2 border-l-2 border-r-2 border-[#625DF533]">
                   <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
-                    Performance Score
+                    Performance
                   </div>
                   <div className="text-[#625DF5] text-lg lg:text-xl bold">
-                    <span>{phone.SecondScore}</span>/100
+                    <span>{phone.Thirdparameter}</span>/100
                   </div>
                 </div>
                 <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
                   <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
-                    Camera Score
+                    Camera
                   </div>
                   <div className="text-[#625DF5] text-lg lg:text-xl bold">
-                    <span>{phone.ThirdScore}</span>/100
+                    <span>{phone.Fourthparameter}</span>/100
                   </div>
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <div className="text-base text-[#51636F] medium">
                   Phone price
                 </div>
                 <div className="text-lg lg:text-xl bold text-black">
                   ₹ {phone.Price}
                 </div>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
       </div>
+
       <div className="w-full flex flex-col gap-y-4 justify-center items-center bg-[#625DF50D] py-8 lg:py-20">
         <div className="text-3xl lg:text-4xl bold text-black">
           Meet the Real Experts
