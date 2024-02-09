@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import HoverButton from "../../public/assets/images/form/button-hover.png";
+import InfoCircle from "../../public/assets/images/form/info-circle.png";
 
 const categories = [
   { label: "Electronics", items: ["Phones", "Laptops", "Headphones"] },
@@ -49,6 +50,15 @@ const TabOne = ({ nextTab, save }) => {
             </div>
           </div>
         ))}
+        <div className="w-full flex items-center justify-between">
+          <div className="text-lg lg:text-xl bold">Home Appliances</div>
+          <div className="flex items-center gap-x-2">
+            <div className="text-base text-[#625DF5] bold">Coming Soon</div>
+            <div className="w-5 lg:w-6 inline-flex">
+              <Image src={InfoCircle} alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
