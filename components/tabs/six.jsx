@@ -173,7 +173,7 @@ const TabSix = ({
                         <Image src={Tick} alt="" />
                       </div>
                       <div className="text-black bold text-base lg:text-xl">
-                        Your event has been scheduled
+                        Our Expert will reach out to you!
                       </div>
                     </div>
                     <div className="w-4 lg:w-6 inline-flex">

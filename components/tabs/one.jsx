@@ -5,7 +5,7 @@ import InfoCircle from "../../public/assets/images/form/info-circle.png";
 
 const categories = [
   { label: "Electronics", items: ["Phones", "Laptops", "Headphones"] },
-  { label: "Sports", items: ["Cycling", "Rowing"] },
+  { label: "Sports", items: ["Cycling"] },
 ];
 
 const TabOne = ({ nextTab, save }) => {
