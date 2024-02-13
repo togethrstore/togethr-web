@@ -185,7 +185,7 @@ const TabSix = ({
             </AnimatePresence>
             <div className="bold text-xl lg:text-2xl">
               <span>7. </span>
-              Enter your contact details{" "}
+              Share Contact Details{" "}
             </div>
             <div className="text-base lg:text-xl bold hidden lg:block">
               Name
@@ -199,12 +199,12 @@ const TabSix = ({
               className="w-full lg:w-1/2 mt-4 lg:mt-0 text-[#51636F] border-[2.5px] border-[#625DF533] p-3.5 lg:p-4 rounded-2xl medium"
             />
             <div className="text-base lg:text-xl bold hidden lg:block">
-              Number
+              WhatsApp Number
             </div>
             <input
               type="text"
               name="number"
-              placeholder="Enter your phone number"
+              placeholder="Enter your WhatsApp number"
               value={number}
               onChange={handleInputChange}
               maxLength="10"
@@ -226,7 +226,7 @@ const TabSix = ({
                 setShowConfirm(name.length >= 1 && number.length === 10);
               }}
             >
-              Schedule Event
+              Submit{" "}
             </button>
           </div>
         )}

@@ -131,7 +131,7 @@ export default function TabIndex() {
             {isLoading ? (
               <div className="w-full h-[70vh] flex flex-col gap-y-8 justify-center items-center">
                 <div className="bold text-black text-lg lg:text-2xl">
-                  Finding the right fit products for you!
+                  Finding the right fit product for you!
                 </div>
                 <div className="spinner"></div>
               </div>

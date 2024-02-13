@@ -109,7 +109,7 @@ const Footer = () => {
           </div>
           <div className="w-full flex justify-between items-center">
             <div className="text-black text-sm lg:text-base regular">
-              Copyright © 2023 Togethr. All rights reserved.
+              Copyright © 2024 Togethr. All rights reserved.
             </div>
             <div className="hidden lg:flex items-center gap-x-4">
               <Link href={"https://www.instagram.com/togethrstore/"}>

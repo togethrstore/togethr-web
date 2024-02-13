@@ -85,6 +85,7 @@ import VivoV29Pro from "../public/assets/images/phones/vivo-v29-pro.png";
 import VivoV29 from "../public/assets/images/phones/vivo-v29.png";
 import VivoX100Pro5g from "../public/assets/images/phones/vivo-x100-pro-5g.png";
 import VivoX100 from "../public/assets/images/phones/vivo-x100.png";
+import { a } from "react-spring";
 
 const phones = [
   {
@@ -96,6 +97,7 @@ const phones = [
     Thirdparameter: 63.0,
     Fourthparameter: 38.0,
     image: MotorolaG545g,
+    link: "https://fktr.in/eXNt4em",
   },
   {
     Name: "Redmi 12 5G",
@@ -106,6 +108,7 @@ const phones = [
     Thirdparameter: 54.0,
     Fourthparameter: 37.0,
     image: Redmi125g,
+    link: "https://amzn.to/3HXJYC6",
   },
   {
     Name: "Xiaomi Redmi 13C 5G",
@@ -116,6 +119,7 @@ const phones = [
     Thirdparameter: 56.0,
     Fourthparameter: 33.0,
     image: XiaomiRedmiNote13,
+    link: "https://amzn.to/49vAUQN",
   },
   {
     Name: "realme C67 5G",
@@ -126,6 +130,7 @@ const phones = [
     Thirdparameter: 58.0,
     Fourthparameter: 32.0,
     image: RealmeC675g,
+    link: "https://fktr.in/xv1p5kB",
   },
   {
     Name: "POCO M6 5G",
@@ -136,6 +141,7 @@ const phones = [
     Thirdparameter: 56.0,
     Fourthparameter: 33.0,
     image: PocoM65g,
+    link: "https://fktr.in/h01iNP3",
   },
   {
     Name: "realme C53",
@@ -146,6 +152,7 @@ const phones = [
     Thirdparameter: 57.0,
     Fourthparameter: 24.0,
     image: RealmeC535g,
+    link: "https://fktr.in/92twsJg",
   },
   {
     Name: "Xiaomi Redmi 13C",
@@ -155,16 +162,8 @@ const phones = [
     Secondparameter: 66.0,
     Thirdparameter: 62.0,
     Fourthparameter: 21.0,
+    link: "https://amzn.to/49n7PHc",
     image: XiaomiRedmiNote13,
-  },
-  {
-    Name: "OPPO Reno8 T 5G",
-    Price: 12765.0,
-    Batteryscore: 86.0,
-    Displayscore: 73.0,
-    Secondparameter: 79.5,
-    Thirdparameter: 58.0,
-    Fourthparameter: 37.0,
   },
   {
     Name: "POCO X5",
@@ -175,6 +174,7 @@ const phones = [
     Thirdparameter: 61.0,
     Fourthparameter: 37.0,
     image: PocoX5,
+    link: "https://fktr.in/CuyRl04",
   },
   {
     Name: "Samsung Galaxy A14 5G",
@@ -185,6 +185,7 @@ const phones = [
     Thirdparameter: 58.0,
     Fourthparameter: 34.0,
     image: SamsungGalaxyA145g,
+    link: "https://amzn.to/3umJjar",
   },
   {
     Name: "POCO M6 Pro 5G",
@@ -195,6 +196,7 @@ const phones = [
     Thirdparameter: 54.0,
     Fourthparameter: 37.0,
     image: PocoM6Pro5g,
+    link: "https://fktr.in/2zqipLq",
   },
   {
     Name: "Samsung galaxy m14 5G",
@@ -205,6 +207,7 @@ const phones = [
     Thirdparameter: 59.0,
     Fourthparameter: 36.0,
     image: SamsungGalaxyM145g,
+    link: "https://amzn.to/4bt2fVD",
   },
   {
     Name: "Xiaomi Redmi Note 13",
@@ -215,6 +218,7 @@ const phones = [
     Thirdparameter: 66.0,
     Fourthparameter: 36.0,
     image: XiaomiRedmiNote13,
+    link: "https://fktr.in/6c5sKJe",
   },
   {
     Name: "realme 11 pro 5g",
@@ -225,6 +229,7 @@ const phones = [
     Thirdparameter: 69.0,
     Fourthparameter: 42.0,
     image: Realme11Pro5g,
+    link: "https://fktr.in/DWXKy8W",
   },
   {
     Name: "Poco x5 Pro 5g",
@@ -235,6 +240,7 @@ const phones = [
     Thirdparameter: 72.0,
     Fourthparameter: 46.0,
     image: PocoX5Pro5g,
+    link: "https://fktr.in/OqN7cj4",
   },
   {
     Name: "POCO F4 5G 8GB",
@@ -245,7 +251,9 @@ const phones = [
     Thirdparameter: 77.0,
     Fourthparameter: 56.0,
     image: PocoF45g,
+    link: "https://fktr.in/f80C7ay",
   },
+
   {
     Name: "Samsung Galaxy A34 8GB RAM",
     Price: 27499.0,
@@ -255,6 +263,7 @@ const phones = [
     Thirdparameter: 67.0,
     Fourthparameter: 43.0,
     image: SamsungGalaxyA345g,
+    link: "https://amzn.to/3uySZ1t",
   },
   {
     Name: "realme GT Neo 3 5G",
@@ -265,6 +274,7 @@ const phones = [
     Thirdparameter: 72.0,
     Fourthparameter: 56.0,
     image: RealmeGtNeo3,
+    link: "https://amzn.to/48eiaEp",
   },
   {
     Name: "vivo V27",
@@ -275,6 +285,7 @@ const phones = [
     Thirdparameter: 74.0,
     Fourthparameter: 50.0,
     image: VivoV27,
+    link: "https://fktr.in/ejhjqrl",
   },
   {
     Name: "POCO X6 5G",
@@ -285,6 +296,7 @@ const phones = [
     Thirdparameter: 66.0,
     Fourthparameter: 45.0,
     image: PocoX65g,
+    link: "https://fktr.in/74VhD1S",
   },
   {
     Name: "Motorola Edge 40 Neo",
@@ -295,6 +307,7 @@ const phones = [
     Thirdparameter: 72.0,
     Fourthparameter: 42.0,
     image: MotorolaEdge40Neo,
+    link: "https://fktr.in/gnG3c87",
   },
   {
     Name: "Infinix Zero 30 5G",
@@ -305,6 +318,7 @@ const phones = [
     Thirdparameter: 77.0,
     Fourthparameter: 51.0,
     image: InfinixZero305g,
+    link: "https://fktr.in/ahS8Gpm",
   },
   {
     Name: "realme 11 5G",
@@ -315,16 +329,18 @@ const phones = [
     Thirdparameter: 54.0,
     Fourthparameter: 34.0,
     image: Realme115g,
+    link: "https://fktr.in/20WY54W",
   },
 
   {
-    Name: "Xiaomi Redmi Note 12 Pro 5G",
+    Name: "Redmi Note 12 Pro 5G",
     Price: 23999.0,
     Batteryscore: 74.0,
     Displayscore: 83.0,
     Secondparameter: 78.5,
     Thirdparameter: 72.0,
-    Fourthparameter: 41.0,
+    Fourthparameter: 41.0, //no image
+    link: "https://fktr.in/xHiHcBx",
   },
   {
     Name: "iQOO Neo 7",
@@ -335,6 +351,7 @@ const phones = [
     Thirdparameter: 70.0,
     Fourthparameter: 63.0,
     image: IqooNeo7,
+    link: "https://amzn.to/3UB7lJc",
   },
   {
     Name: "Samsung Galaxy A15 5G",
@@ -345,6 +362,7 @@ const phones = [
     Thirdparameter: 57.0,
     Fourthparameter: 36.0,
     image: SamsungGalaxyA155g,
+    link: "https://amzn.to/3OD1G1q",
   },
   {
     Name: "Redmi note 12 5g",
@@ -355,6 +373,7 @@ const phones = [
     Thirdparameter: 60.0,
     Fourthparameter: 35.0,
     image: Redmi125g,
+    link: "https://fktr.in/6KSaaV7",
   },
   {
     Name: "OnePlus Nord CE 3 lite 5G",
@@ -365,6 +384,7 @@ const phones = [
     Thirdparameter: 62.0,
     Fourthparameter: 40.0,
     image: OneplusNordCe3Lite5g,
+    link: "https://amzn.to/3SV9xKq",
   },
   {
     Name: "Samsung Galaxy M34",
@@ -375,6 +395,7 @@ const phones = [
     Thirdparameter: 65.0,
     Fourthparameter: 39.0,
     image: SamsungGalaxyM34,
+    link: "https://amzn.to/3T4SjdT",
   },
   {
     Name: "Xiaomi Redmi Note 13 Pro Plus",
@@ -385,6 +406,7 @@ const phones = [
     Thirdparameter: 68.0,
     Fourthparameter: 52.0,
     image: XiaomiRedmiNote13,
+    link: "https://fktr.in/CmCVu98",
   },
   {
     Name: "Xiaomi Redmi Note 13 Pro",
@@ -395,6 +417,7 @@ const phones = [
     Thirdparameter: 68.0,
     Fourthparameter: 46.0,
     image: XiaomiRedmiNote13,
+    link: "https://fktr.in/FrxuwS9",
   },
   {
     Name: "POCO X6 Pro",
@@ -405,6 +428,7 @@ const phones = [
     Thirdparameter: 74.0,
     Fourthparameter: 82.0,
     image: PocoX6Pro,
+    link: "https://fktr.in/gTxaNS2",
   },
   {
     Name: "Samsung Galaxy S21 FE",
@@ -415,6 +439,7 @@ const phones = [
     Thirdparameter: 74.0,
     Fourthparameter: 56.0,
     image: SamsungGalaxyS21Fe,
+    link: "https://amzn.to/48aObNv",
   },
   {
     Name: "Google Pixel 6A",
@@ -425,6 +450,7 @@ const phones = [
     Thirdparameter: 71.0,
     Fourthparameter: 63.0,
     image: GooglePixel6a,
+    link: "https://fktr.in/Fq5XVeo",
   },
   {
     Name: "Nothing Phone 1",
@@ -435,6 +461,7 @@ const phones = [
     Thirdparameter: 70.0,
     Fourthparameter: 47.0,
     image: NothingPhone1,
+    link: "https://fktr.in/DCOStoV",
   },
   {
     Name: "Motorola Edge 40",
@@ -445,6 +472,7 @@ const phones = [
     Thirdparameter: 74.0,
     Fourthparameter: 57.0,
     image: MotorolaEdge40,
+    link: "https://fktr.in/mpo1cJ7",
   },
   {
     Name: "realme GT 2 Pro 5G",
@@ -455,6 +483,7 @@ const phones = [
     Thirdparameter: 72.0,
     Fourthparameter: 68.0,
     image: RealmeGt2Pro5g,
+    link: "https://fktr.in/PsHxWN2",
   },
   {
     Name: "realme 11 Pro Plus",
@@ -465,6 +494,7 @@ const phones = [
     Thirdparameter: 77.0,
     Fourthparameter: 45.0,
     image: Realme11ProPlus,
+    link: "https://fktr.in/S38DBuh",
   },
   {
     Name: "POCO F5 256GB",
@@ -475,6 +505,7 @@ const phones = [
     Thirdparameter: 70.0,
     Fourthparameter: 72.0,
     image: PocoF5,
+    link: "https://fktr.in/RkuPhYE",
   },
   {
     Name: "Samsung Galaxy A25 5G",
@@ -485,6 +516,7 @@ const phones = [
     Thirdparameter: 64.0,
     Fourthparameter: 39.0,
     image: SamsungGalaxyA255g,
+    link: "https://amzn.to/3uBvQeI",
   },
   {
     Name: "OnePlus Nord 3 5G",
@@ -495,6 +527,7 @@ const phones = [
     Thirdparameter: 75.0,
     Fourthparameter: 60.0,
     image: OneplusNord35g,
+    link: "https://amzn.to/3SU2uS7",
   },
   {
     Name: "vivo V29",
@@ -505,6 +538,7 @@ const phones = [
     Thirdparameter: 70.0,
     Fourthparameter: 46.0,
     image: VivoV29,
+    link: "https://fktr.in/xRoh51O",
   },
   {
     Name: "OPPO Reno10 5G",
@@ -515,6 +549,7 @@ const phones = [
     Thirdparameter: 74.0,
     Fourthparameter: 45.0,
     image: OppoReno105g,
+    link: "https://fktr.in/eFu2bpm",
   },
   {
     Name: "OnePlus 10R 5G",
@@ -525,6 +560,7 @@ const phones = [
     Thirdparameter: 68.0,
     Fourthparameter: 57.0,
     image: Oneplus10r5g,
+    link: "https://amzn.to/4bzbpzF",
   },
   {
     Name: "vivo V27 Pro 256GB",
@@ -535,6 +571,7 @@ const phones = [
     Thirdparameter: 75.0,
     Fourthparameter: 63.0,
     image: VivoV27Pro,
+    link: "https://fktr.in/64CRvNb",
   },
   {
     Name: "iQOO Neo 7 Pro",
@@ -545,6 +582,7 @@ const phones = [
     Thirdparameter: 78.0,
     Fourthparameter: 75.0,
     image: IqooNeo7Pro,
+    link: "https://amzn.to/3unglXY",
   },
   {
     Name: "OnePlus 11R 5G",
@@ -555,6 +593,7 @@ const phones = [
     Thirdparameter: 73.0,
     Fourthparameter: 77.0,
     image: Oneplus11r5g,
+    link: "https://amzn.to/49xsica",
   },
   {
     Name: "Nothing Phone (2)",
@@ -565,6 +604,7 @@ const phones = [
     Thirdparameter: 72.0,
     Fourthparameter: 76.0,
     image: NothingPhone2,
+    link: "https://fktr.in/bXxFngt",
   },
   {
     Name: "OPPO Reno11 Pro",
@@ -575,6 +615,7 @@ const phones = [
     Thirdparameter: 76.0,
     Fourthparameter: 64.0,
     image: OppoReno11Pro,
+    link: "https://fktr.in/9DCTNBh",
   },
   {
     Name: "Samsung Galaxy S22",
@@ -585,6 +626,7 @@ const phones = [
     Thirdparameter: 79.0,
     Fourthparameter: 70.0,
     image: SamsungGalaxyS22,
+    link: "https://fktr.in/whc3FSn",
   },
   {
     Name: "vivo V29 Pro",
@@ -595,6 +637,7 @@ const phones = [
     Thirdparameter: 76.0,
     Fourthparameter: 59.0,
     image: VivoV29Pro,
+    link: "https://fktr.in/t5N5b0H",
   },
   {
     Name: "Google Pixel 7a",
@@ -605,6 +648,7 @@ const phones = [
     Thirdparameter: 78.0,
     Fourthparameter: 62.0,
     image: GooglePixel7a,
+    link: "https://fktr.in/7Wncai7",
   },
   {
     Name: "Google Pixel 7",
@@ -615,6 +659,7 @@ const phones = [
     Thirdparameter: 78.0,
     Fourthparameter: 62.0,
     image: GooglePixel7,
+    link: "https://fktr.in/Ril8c2h",
   },
   {
     Name: "Oppo Reno 10 Pro",
@@ -625,6 +670,7 @@ const phones = [
     Thirdparameter: 78.0,
     Fourthparameter: 46.0,
     image: OppoReno10Pro,
+    link: "https://fktr.in/ib4xJUq",
   },
   {
     Name: "Samsung Galaxy A54 5G",
@@ -635,6 +681,7 @@ const phones = [
     Thirdparameter: 71.0,
     Fourthparameter: 47.0,
     image: SamsungGalaxyA545g,
+    link: "https://fktr.in/5edBh0L",
   },
   {
     Name: "Samsung Galaxy Z Flip 3",
@@ -645,6 +692,7 @@ const phones = [
     Thirdparameter: 72.0,
     Fourthparameter: 61.0,
     image: SamsungGalaxyZFlip3,
+    link: "https://fktr.in/LDnq5RS",
   },
   {
     Name: "Motorola Razr 40",
@@ -655,6 +703,7 @@ const phones = [
     Thirdparameter: 72.0,
     Fourthparameter: 48.0,
     image: MotorolaRazr40,
+    link: "https://amzn.to/49sIc7R",
   },
   {
     Name: "Samsung Galaxy S24 Ultra",
@@ -665,6 +714,7 @@ const phones = [
     Thirdparameter: 86.0,
     Fourthparameter: 99.0,
     image: SamsungGalaxyS24Ultra,
+    link: "https://fktr.in/KTWw4uG",
   },
   {
     Name: "vivo X100 Pro 5G",
@@ -675,6 +725,7 @@ const phones = [
     Thirdparameter: 92.0,
     Fourthparameter: 98.0,
     image: VivoX100Pro5g,
+    link: "https://fktr.in/axPNe7b",
   },
   {
     Name: "iQOO 12 5G",
@@ -685,6 +736,7 @@ const phones = [
     Thirdparameter: 84.0,
     Fourthparameter: 97.0,
     image: Iqoo125g,
+    link: "https://amzn.to/3STZjdb",
   },
   {
     Name: "vivo X100",
@@ -695,6 +747,7 @@ const phones = [
     Thirdparameter: 89.0,
     Fourthparameter: 98.0,
     image: VivoX100,
+    link: "https://fktr.in/2NXkdov",
   },
   {
     Name: "Samsung Galaxy S23 Ultra 5G",
@@ -705,6 +758,7 @@ const phones = [
     Thirdparameter: 90.0,
     Fourthparameter: 91.0,
     image: SamsungGalaxyS23Ultra5g,
+    link: "https://amzn.to/42FPPWf",
   },
   {
     Name: "Samsung Galaxy S23 5G",
@@ -715,6 +769,7 @@ const phones = [
     Thirdparameter: 83.0,
     Fourthparameter: 86.0,
     image: SamsungGalaxyS235g,
+    link: "https://amzn.to/4bwHWGJ",
   },
   {
     Name: "Apple iPhone 15 Pro Max",
@@ -725,6 +780,7 @@ const phones = [
     Thirdparameter: 91.0,
     Fourthparameter: 98.0,
     image: AppleIphone15ProMax,
+    link: "https://amzn.to/42Dn8JN",
   },
   {
     Name: "OnePlus 11",
@@ -735,6 +791,7 @@ const phones = [
     Thirdparameter: 79.0,
     Fourthparameter: 87.0,
     image: Oneplus11,
+    link: "https://amzn.to/42FQwyP",
   },
   {
     Name: "Apple iPhone 15",
@@ -745,6 +802,7 @@ const phones = [
     Thirdparameter: 82.0,
     Fourthparameter: 94.0,
     image: AppleIphone15,
+    link: "https://amzn.to/48cmi7N",
   },
   {
     Name: "Apple iPhone 14 Pro",
@@ -755,6 +813,7 @@ const phones = [
     Thirdparameter: 87.0,
     Fourthparameter: 94.0,
     image: AppleIphone14Pro,
+    link: "https://fktr.in/Znh608E",
   },
   {
     Name: "Samsung Galaxy S23 FE",
@@ -765,6 +824,7 @@ const phones = [
     Thirdparameter: 82.0,
     Fourthparameter: 71.0,
     image: SamsungGalaxyS23Fe,
+    link: "https://amzn.to/3HU400e",
   },
   {
     Name: "Apple iPhone 15 Plus",
@@ -775,6 +835,7 @@ const phones = [
     Thirdparameter: 82.0,
     Fourthparameter: 97.0,
     image: AppleIphone15Plus,
+    link: "https://amzn.to/3SVqu7t",
   },
   {
     Name: "OnePlus Open",
@@ -785,6 +846,7 @@ const phones = [
     Thirdparameter: 83.0,
     Fourthparameter: 93.0,
     image: OneplusOpen,
+    link: "https://amzn.to/3I2Hz9b",
   },
 ];
 
@@ -945,7 +1007,7 @@ export default function Filtering({
                   <Image src={Recorded} alt="" />
                 </div>
                 <div className="text-xl lg:text-2xl bold text-black">
-                  Your recorded responses
+                  Your responses{" "}
                 </div>
               </div>
               <div className="w-6 inline-flex">
@@ -1006,53 +1068,53 @@ export default function Filtering({
                 <Image src={Cart} alt="" />
               </div>
               <div className="text-xl lg:text-2xl bold text-black">
-                Right fit products for you!{" "}
+                We found these products for you:{" "}
               </div>
             </div>
           </div>
         </div>
-
         <div className="flex flex-col gap-y-6 items-center pb-10 lg:pb-16 lg:flex-row lg:gap-x-6">
           {sortedByPrice.map((phone, index) => (
-            <div
-              key={index}
-              className="w-max p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
-            >
-              <div className="w-full flex justify-center">
-                <div className="w-40 lg:w-40">
-                  <Image src={phone.image} alt="" />
-                </div>
-              </div>
-              <div className="text-base lg:text-xl bold text-black">
-                {phone.Name}
-              </div>
-              <div className="flex justify-between">
-                <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
-                  <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
-                    Battery
-                  </div>
-                  <div className="text-[#625DF5] text-lg lg:text-xl bold">
-                    <span>{phone.Batteryscore}</span>/100
+            <a target="_blank" rel="noopener noreferrer" href={phone.link}>
+              <div
+                key={index}
+                className="w-max cursor-pointer p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
+              >
+                <div className="w-full flex justify-center">
+                  <div className="w-40 lg:w-40">
+                    <Image src={phone.image} alt="" />
                   </div>
                 </div>
-                <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2 border-l-2 border-r-2 border-[#625DF533]">
-                  <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
-                    Performance
+                <div className="text-base lg:text-xl bold text-black">
+                  {phone.Name}
+                </div>
+                <div className="flex justify-between">
+                  <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
+                    <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
+                      Battery
+                    </div>
+                    <div className="text-[#625DF5] text-lg lg:text-xl bold">
+                      <span>{phone.Batteryscore}</span>/100
+                    </div>
                   </div>
-                  <div className="text-[#625DF5] text-lg lg:text-xl bold">
-                    <span>{phone.Thirdparameter}</span>/100
+                  <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2 border-l-2 border-r-2 border-[#625DF533]">
+                    <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
+                      Performance
+                    </div>
+                    <div className="text-[#625DF5] text-lg lg:text-xl bold">
+                      <span>{phone.Thirdparameter}</span>/100
+                    </div>
+                  </div>
+                  <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
+                    <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
+                      Camera
+                    </div>
+                    <div className="text-[#625DF5] text-lg lg:text-xl bold">
+                      <span>{phone.Fourthparameter}</span>/100
+                    </div>
                   </div>
                 </div>
-                <div className="px-2 lg:px-4 flex flex-col items-center gap-y-2">
-                  <div className="text-sm text-[#51636F] medium text-center max-w-[5rem]">
-                    Camera
-                  </div>
-                  <div className="text-[#625DF5] text-lg lg:text-xl bold">
-                    <span>{phone.Fourthparameter}</span>/100
-                  </div>
-                </div>
-              </div>
-              {/* <div>
+                {/* <div>
                 <div className="text-base text-[#51636F] medium">
                   Phone price
                 </div>
@@ -1060,21 +1122,22 @@ export default function Filtering({
                   ₹ {phone.Price}
                 </div>
               </div> */}
-            </div>
+              </div>
+            </a>
           ))}
         </div>
       </div>
 
       <div className="w-full flex flex-col gap-y-4 justify-center items-center bg-[#625DF50D] py-8 lg:py-20">
         <div className="text-3xl lg:text-4xl bold text-black">
-          Meet the Real Experts
+          Talk to an Expert{" "}
         </div>
         <div className="text-base lg:text-xl medium text-[#51636F] text-center">
           Passionate people who are happy to be your shopping buddies for your
           next big purchase{" "}
         </div>
         <button className="w-max mt-4 lg:mt-10 medium hero-button py-3 px-12 text-white text-lg">
-          Shop with Expert
+          Talk to an Expert{" "}
         </button>
       </div>
     </>
