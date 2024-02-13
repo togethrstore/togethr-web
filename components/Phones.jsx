@@ -1075,11 +1075,13 @@ export default function Filtering({
         </div>
         <div className="flex flex-col gap-y-6 items-center pb-10 lg:pb-16 lg:flex-row lg:gap-x-6">
           {sortedByPrice.map((phone, index) => (
-            <a target="_blank" rel="noopener noreferrer" href={phone.link}>
-              <div
-                key={index}
-                className="w-max cursor-pointer p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
-              >
+            <a
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={phone.link}
+            >
+              <div className="w-max cursor-pointer p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3">
                 <div className="w-full flex justify-center">
                   <div className="w-40 lg:w-40">
                     <Image src={phone.image} alt="" />
