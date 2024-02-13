@@ -839,7 +839,7 @@ export default function Filtering({
     (a, b) => b.ThirdScore - a.ThirdScore
   );
 
-  console.log(finalFilteredPhones);
+  // console.log(finalFilteredPhones);
   const sortedByPrice = finalFilteredPhones
     .slice(0, 3) // Take only the top 3 recommendations
     .sort((a, b) => b.Price - a.Price); // Sort by price

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import HoverButton from "../../public/assets/images/form/button-hover.png";
+import Tick from "../../public/assets/images/form/tick.png";
+import Close from "../../public/assets/images/form/close-circle.png";
+import { motion, AnimatePresence } from "framer-motion";
+
 import axios from "axios";
 
 const categories = [
@@ -10,6 +14,11 @@ const categories = [
     options: ["Yes", "No"],
   },
 ];
+
+const dropdownVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+};
 
 const TabSix = ({
   nextTab,
@@ -24,6 +33,7 @@ const TabSix = ({
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(null);
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const handleOptionClick = async (item) => {
     if (item === "Yes") {
@@ -60,18 +70,19 @@ const TabSix = ({
     };
 
     if (wantToTalk) {
-      if (name && number.length === 10) {
+      if (name.length >= 1 && number.length === 10) {
         dataToPost.name = name;
         dataToPost.number = number;
       } else {
         setIsButtonDisabled(true);
 
-        if (!name) {
+        if (name.length < 1) {
           alert("Please enter your name.");
         } else if (number.length !== 10) {
           alert("Please enter a valid 10-digit phone number.");
-          return;
         }
+
+        // This will be true only if both conditions are met
         return;
       }
     }
@@ -147,6 +158,31 @@ const TabSix = ({
 
         {wantToTalk && (
           <div className="grid grid-cols-1 gap-2 lg:gap-4">
+            <AnimatePresence>
+              {showConfirm && (
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  exit="hidden"
+                  variants={dropdownVariants}
+                  className="w-full relative max-w-4xl xl:max-w-7xl"
+                >
+                  <div className="w-full z-50 flex items-center absolute justify-between px-2 py-3 bg-white border-2 rounded-2xl border-[#625DF5]">
+                    <div className="flex items-center gap-x-1.5">
+                      <div className="w-4 lg:w-6 inline-flex">
+                        <Image src={Tick} alt="" />
+                      </div>
+                      <div className="text-black bold text-base lg:text-xl">
+                        Your event has been scheduled
+                      </div>
+                    </div>
+                    <div className="w-4 lg:w-6 inline-flex">
+                      <Image src={Close} alt="" />
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
             <div className="bold text-xl lg:text-2xl">
               <span>7. </span>
               Enter your contact details{" "}
@@ -181,11 +217,7 @@ const TabSix = ({
                 handleNextTab();
                 // nextTab();
                 activeTab === 6;
-              }}
-              onTouchStart={() => {
-                handleNextTab();
-                // nextTab();
-                activeTab === 6;
+                setShowConfirm(name.length >= 1 && number.length === 10);
               }}
             >
               Schedule Event

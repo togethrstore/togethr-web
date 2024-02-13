@@ -16,10 +16,10 @@ const YourComponent = () => {
       setLoading(true);
       const response = await fetch("/api/admin");
       const data = await response.json();
-      console.log("Fetched data:", data); // Log the fetched data
+      // console.log("Fetched data:", data); 
       setResponses(data);
     } catch (error) {
-      console.error("Error fetching responses:", error);
+      // console.error("Error fetching responses:", error);
     } finally {
       setLoading(false);
     }

@@ -151,3 +151,7 @@ input[type="number"] {
   background: linear-gradient(93.14deg, #625df5 0%, #514cf1 67.6%, #625df5 100%),
     linear-gradient(0deg, #ffffff, #ffffff);
 }
+
+.shit {
+  z-index: 1000000;
+}
