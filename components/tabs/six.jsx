@@ -219,6 +219,12 @@ const TabSix = ({
                 activeTab === 6;
                 setShowConfirm(name.length >= 1 && number.length === 10);
               }}
+              onTouchStart={() => {
+                handleNextTab();
+                // nextTab();
+                activeTab === 6;
+                setShowConfirm(name.length >= 1 && number.length === 10);
+              }}
             >
               Schedule Event
             </button>
