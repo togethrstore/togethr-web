@@ -146,3 +146,8 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
+
+.cta-animation {
+  background: linear-gradient(93.14deg, #625df5 0%, #514cf1 67.6%, #625df5 100%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+}

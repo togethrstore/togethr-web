@@ -53,7 +53,7 @@ export default function TabTwo({ nextTab, save }) {
               }}
               className={`w-full lg:w-5/12 mt-2 lg:mt-4 bold bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] ${
                 isValid
-                  ? "hover:bg-white hover:border-[#625DF5] text-white hover:text-[#625df5]"
+                  ? "bg-[#625DF5] transition-all duration-500 hover:bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500 text-white"
                   : "cursor-not-allowed opacity-50 text-gray-400"
               } transition-all duration-300 py-2.5 lg:py-4 text-base`}
               disabled={!isValid}

@@ -73,7 +73,7 @@ const CustomSlider = ({ children }) => {
   return (
     <div>
       <div className="flex items-center justify-between px-6 pb-6 lg:pb-0 lg:px-0">
-        <div className="text-black text-xl lg:text-2xl bold">Under Sports</div>
+        <div className="text-black text-xl lg:text-2xl bold">Sports</div>
         <div className="flex gap-x-2">
           <LeftButtonMob onClick={goToPrevSlide} />
           <RightButtonMob onClick={goToNextSlide} />
@@ -125,7 +125,7 @@ export default function UndersportsMob() {
                       <button
                         className={`w-full medium lg:bold py-3 text-white text-base mt-2 ${
                           index === 0
-                            ? "bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-[white] hover:border-[#625DF5] text-white hover:text-[#625df5] transition-all duration-300"
+                            ? "w-full medium bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500 hover:border-[#625DF5] py-3 text-white hover:text-[#625df5] transition-all duration-300 text-base"
                             : "bg-[white] rounded-2xl border-2 border-[#625DF5] hover:bg-[#625DF5] hover:border-[#625DF5] text-[#625DF5] hover:text-white transition-all duration-300"
                         }`}
                       >

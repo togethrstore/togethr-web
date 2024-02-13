@@ -132,7 +132,7 @@ export default function ElectronicsMob() {
                       </div>
                     </div>
                     <a href={item.buttonHref}>
-                      <button className="w-full medium bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-white hover:border-[#625DF5] py-3 text-white hover:text-[#625df5] transition-all duration-300 text-base">
+                      <button className="w-full medium bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500 hover:border-[#625DF5] py-3 text-white hover:text-[#625df5] transition-all duration-300 text-base">
                         {item.buttonLabel}
                       </button>
                     </a>

@@ -64,7 +64,7 @@ export default function Faq() {
                 <div className="flex flex-col" key={index}>
                   <button onClick={() => toggleContentVisibility(index)}>
                     <div className="w-full flex items-center justify-between pt-4 pb-2">
-                      <div className="text-black text-start medium lg:bold text-xl lg:text-xl">
+                      <div className="text-black text-start bold text-xl lg:text-xl">
                         {item.question}
                       </div>
                       <div className="w-5 lg:w-6">

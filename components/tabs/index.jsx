@@ -72,7 +72,7 @@ export default function TabIndex() {
                 <div key={state.index}>
                   {state.response && (
                     <button onClick={() => handleButtonClick(state.index)}>
-                      <div className="w-max flex items-center gap-x-2 px-4 py-2.5 border-2 border-[#51636F] rounded-2xl bold">
+                      <div className="w-max flex items-center gap-x-2 px-4 py-2.5 border-2 border-[#51636F] hover:bg-[#625DF51A] transition-all duration-500 rounded-2xl bold">
                         <div className="text-base lg:text-lg text-[#51636F]">
                           {state.response}
                         </div>

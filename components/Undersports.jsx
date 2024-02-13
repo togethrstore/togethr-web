@@ -38,7 +38,7 @@ export default function Undersports() {
       <div className="w-full flex justify-center">
         <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl">
           <div className="flex flex-col gap-y-4">
-            <div className="text-black text-2xl bold">Electronics</div>
+            <div className="text-black text-2xl bold">Sports</div>
             <div className="w-full flex items-center justify-between">
               {items.map((item, index) => (
                 <div
@@ -57,7 +57,7 @@ export default function Undersports() {
                     <button
                       className={`w-full bold py-4 text-base ${
                         index === 0
-                          ? "bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-[white] hover:border-[#625DF5] text-white hover:text-[#625df5] transition-all duration-300"
+                          ? "w-full bold bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500 hover:border-[#625DF5] py-4 text-white transition-all duration-300 text-base"
                           : "bg-[white] rounded-2xl border-2 border-[#625DF5] hover:bg-[#625DF5] hover:border-[#625DF5] text-[#625DF5] hover:text-white transition-all duration-300"
                       }`}
                     >

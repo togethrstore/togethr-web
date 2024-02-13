@@ -209,6 +209,48 @@ const Camping = () => {
   );
 };
 
+const ArrowDownSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995"
+        stroke="#292D32"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+const ArrowDownSvgMob = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="19"
+      viewBox="0 0 18 19"
+      fill="none"
+    >
+      <path
+        d="M14.9396 7.2124L10.0496 12.1024C9.47207 12.6799 8.52707 12.6799 7.94957 12.1024L3.05957 7.2124"
+        stroke="black"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
 export {
   LeftButton,
   RightButton,
@@ -219,4 +261,6 @@ export {
   ElectronicsSvg,
   Camping,
   RatingMob,
+  ArrowDownSvg,
+  ArrowDownSvgMob,
 };

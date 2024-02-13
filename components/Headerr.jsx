@@ -4,6 +4,7 @@ import ArrowDown from "../public/assets/images/arrow-down.png";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowDownSvg, ArrowDownSvgMob } from "./Buttons";
 
 export default function Headerr() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -81,7 +82,14 @@ export default function Headerr() {
                     }}
                     className="inline-flex"
                   >
-                    <Image src={ArrowDown} alt="" />
+                    <div className="lg:hidden">
+                      <ArrowDownSvgMob />
+                    </div>
+                    <div className="hidden lg:block">
+                      <ArrowDownSvg />
+                    </div>
+
+                    {/* <Image src={ArrowDown} alt="" /> */}
                   </motion.div>{" "}
                 </div>
               </button>
@@ -134,7 +142,12 @@ export default function Headerr() {
                     }}
                     className="inline-flex"
                   >
-                    <Image src={ArrowDown} alt="" />
+                    <div className="lg:hidden">
+                      <ArrowDownSvgMob />
+                    </div>
+                    <div className="hidden lg:block">
+                      <ArrowDownSvg />
+                    </div>{" "}
                   </motion.div>{" "}
                 </div>
               </button>

@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { Rating, LeftButton, RightButton, RatingMob } from "./Buttons";
 import { motion, AnimatePresence } from "framer-motion";
 
-// reviewer: " Brandon W",
-// title: "Elizabeth was great - very trustworthy!",
-
 const reviewData = [
   {
     expert: "Manas Saraswat",
@@ -12,6 +9,7 @@ const reviewData = [
     description:
       "I truly appreciate the time and effort you invested in understanding my needs and providing me with the advice I needed. Your support has been instrumental in making this important decision, and I couldn't be happier with the laptop I now have.",
     date: "I Submitted 3 weeks ago",
+    bgColor: getRandomBgColor(),
   },
   {
     expert: "Abir Mondal",
@@ -19,19 +17,22 @@ const reviewData = [
     description:
       "I truly appreciate the time and effort you invested in understanding my needs and providing me with the advice I needed. Your support has been instrumental in making this important decision, and I couldn't be happier with the laptop I now have.",
     date: "I Submitted 2 months ago",
+    bgColor: getRandomBgColor(),
   },
   {
     expert: "Mithin Kumar",
     ratings: [1, 2, 3, 4, 5],
     description: "Enquiry here before buying anything new. Thank me later",
     date: "I Submitted 2 months ago",
+    bgColor: getRandomBgColor(),
   },
   {
     expert: "Akash Gupta",
     ratings: [1, 2, 3, 4, 5],
     description:
       "The expert from Togethr really helped me in narrowing down my choices and understanding pros and limitations of each mobile phone. Would recommend everyone to try.",
-    date: "I Submitted a months ago",
+    date: "I Submitted a month ago",
+    bgColor: getRandomBgColor(),
   },
   {
     expert: "Paras Chawla",
@@ -39,6 +40,7 @@ const reviewData = [
     description:
       "Excellent review shared by Togethr team. I wanted a quick opinion to buy phone and Kaivalya attested my research which gave me confidence to buy it right away. Highly recommended to talk to them before purchasing any expensive item.",
     date: "I Submitted 2 months ago",
+    bgColor: getRandomBgColor(),
   },
   {
     expert: "Harshil Jain",
@@ -46,34 +48,20 @@ const reviewData = [
     description:
       "Wonderful experience! I got a cycle expert to contact within an hour and he recommended me the cycle according to my needs just like a friend. This was a really nice interaction with Togethr store and I would recommend anyone trying to buy a bicycle to atleast get in touch with one of the professionals here",
     date: "I Submitted 2 weeks ago",
+    bgColor: getRandomBgColor(),
   },
 ];
 
-// const variants = {
-//   enter: (direction) => {
-//     return {
-//       x: direction > 0 ? 100 : -100,
-//       opacity: 0,
-//     };
-//   },
-//   center: {
-//     zIndex: 1,
-//     x: 0,
-//     opacity: 1,
-//   },
-//   exit: (direction) => {
-//     return {
-//       zIndex: 0,
-//       x: 0,
-//       opacity: 0,
-//     };
-//   },
-// };
+function getRandomBgColor() {
+  const colors = ["#DE541E", "#FEEA00"];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
 
 const Card = ({ review }) => {
+  const textColor = review.bgColor === "#DE541E" ? "text-white" : "text-black";
+
   return (
     <motion.div
-      // variants={variants}
       initial="enter"
       animate="center"
       exit="exit"
@@ -82,7 +70,15 @@ const Card = ({ review }) => {
       <motion.div className="w-full p-6 flex flex-col border-2 border-[#625DF5] rounded-2xl testi-bg">
         <div className="w-full flex flex-col lg:items-center lg:flex-row lg:justify-between">
           <div className="flex items-center h-max gap-x-4">
-            <div className="w-14 h-14 bg-[#625DF5] border border-[#625DF5] rounded-full"></div>
+            <div
+              style={{
+                backgroundColor: review.bgColor,
+                borderColor: review.bgColor,
+              }}
+              className={`w-14 bold text-2xl h-14 flex justify-center items-center border rounded-full`}
+            >
+              <span className={textColor}>{review.expert.charAt(0)}</span>
+            </div>
             <div className="flex flex-col">
               <div className="bold text-xl lg:text-2xl text-black">
                 {review.expert}{" "}
