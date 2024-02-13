@@ -6,7 +6,7 @@ const categories = [
   {
     id: 3,
     text: "How many hours do you use your phone daily?",
-    options: ["Under 4 hours", "4 to 6 hours", "6+ hours"],
+    options: ["Under 5 hours", "5 to 7 hours", "More than 7 hours"],
   },
 ];
 

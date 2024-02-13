@@ -6,85 +6,85 @@ import { motion, AnimatePresence } from "framer-motion";
 import EditIcon from "../public/assets/images/form/edit.png";
 import Cart from "../public/assets/images/form/cart.png";
 import Link from "next/link";
-import AppleIphone15 from "../public/assets/images/phones/apple-iphone-15.jpg";
-import Oneplus10r5g from "../public/assets/images/phones/oneplus-10r-5g.jpg";
-import OneplusNord35g from "../public/assets/images/phones/oneplus-nord-3-5g.jpg";
-import OneplusNordCe3Lite5g from "../public/assets/images/phones/oneplus-nord-ce-3-lite-5g.jpg";
-import Realme11x5g from "../public/assets/images/phones/realme-11x-5g.jpg";
-import Redmi125g from "../public/assets/images/phones/redmi-12-5g.jpg";
-import Redmi13c5g from "../public/assets/images/phones/redmi-13c-5g.jpg";
-import Redmi13c from "../public/assets/images/phones/redmi-13c.jpg";
-import SamsungGalaxyA255g from "../public/assets/images/phones/samsung-galaxy-a25-5g.jpg";
-import SamsungGalaxyF545g from "../public/assets/images/phones/samsung-galaxy-f54-5g.jpg";
-import SamsungGalaxyM145g from "../public/assets/images/phones/samsung-galaxy-m14-5g.jpg";
-import SamsungGalaxyS21Fe from "../public/assets/images/phones/samsung-galaxy-s21-fe.jpg";
-import VivoV29e from "../public/assets/images/phones/vivo-v29e.jpg";
-import Iqoo125g from "../public/assets/images/phones/iqoo-12-5g.jpg";
-import IqooNeo7Pro from "../public/assets/images/phones/iqoo-neo-7-pro.jpg";
-import IqooNeo7 from "../public/assets/images/phones/iqoo-neo-7.jpg";
-import IqooZ7Pro from "../public/assets/images/phones/iqoo-z7-pro.jpg";
-import MotorolaRazr40 from "../public/assets/images/phones/motorola-razr-40.jpg";
-import Oneplus11 from "../public/assets/images/phones/oneplus-11.jpg";
-import Oneplus11r5g from "../public/assets/images/phones/oneplus-11r-5g.jpg";
-import PocoF45g from "../public/assets/images/phones/poco-f4-5g.jpg";
-import PocoM65g from "../public/assets/images/phones/poco-m6-5g.jpg";
-import PocoM6Pro5g from "../public/assets/images/phones/poco-m6-pro-5g.jpg";
-import PocoX5 from "../public/assets/images/phones/poco-x5.jpg";
-import PocoX65g from "../public/assets/images/phones/poco-x6-5g.jpg";
-import RealmeC535g from "../public/assets/images/phones/realme-c53-5g.jpg";
-import RealmeC675g from "../public/assets/images/phones/realme-c67-5g.jpg";
-import RealmeGtNeo3 from "../public/assets/images/phones/realme-gt-neo-3.jpg";
-import SamsungGalaxyA145g from "../public/assets/images/phones/samsung-galaxy-a14-5g.jpg";
-import SamsungGalaxyA155g from "../public/assets/images/phones/samsung-galaxy-a15-5g.jpg";
-import SamsungGalaxyA345g from "../public/assets/images/phones/samsung-galaxy-a34-5g.jpg";
-import SamsungGalaxyF145g from "../public/assets/images/phones/samsung-galaxy-f14-5g.jpg";
-import SamsungGalaxyM34 from "../public/assets/images/phones/samsung-galaxy-m34.jpg";
-import SamsungGalaxyS235g from "../public/assets/images/phones/samsung-galaxy-s23-5g.jpg";
-import SamsungGalaxyS23Fe from "../public/assets/images/phones/samsung-galaxy-s23-fe.jpg";
-import SamsungGalaxyS23Ultra5g from "../public/assets/images/phones/samsung-galaxy-s23-5g.jpg";
-import VivoT2x5g from "../public/assets/images/phones/vivo-t2x-5g.jpg";
-import VivoV27 from "../public/assets/images/phones/vivo-v27.jpg";
-import VivoY2005g from "../public/assets/images/phones/vivo-y200-5g.jpg";
-import XiaomiRedmiNote13 from "../public/assets/images/phones/xiaomi-redmi-note-13.jpg";
-import AppleIphone14Pro from "../public/assets/images/phones/apple-iphone-14-pro.jpg";
-import AppleIphone15Plus from "../public/assets/images/phones/apple-iphone-15-plus.jpg";
-import AppleIphone15ProMax from "../public/assets/images/phones/apple-iphone-15-pro-max.jpg";
-import GooglePixel6a from "../public/assets/images/phones/google-pixel-6a.jpg";
-import GooglePixel7 from "../public/assets/images/phones/google-pixel-7.jpg";
-import GooglePixel7a from "../public/assets/images/phones/google-pixel-7a.jpg";
-import MotorolaEdge40Neo from "../public/assets/images/phones/motorola-edge-40-neo.jpg";
-import MotorolaEdge40 from "../public/assets/images/phones/motorola-edge-40.jpg";
-import MotorolaG545g from "../public/assets/images/phones/motorola-g54-5g.jpg";
-import NothingPhone1 from "../public/assets/images/phones/nothing-phone-(1).jpg";
-import NothingPhone2 from "../public/assets/images/phones/nothing-phone-(2).jpg";
-import OneplusOpen from "../public/assets/images/phones/oneplus-open.jpg";
-import OppoReno105g from "../public/assets/images/phones/oppo-reno10-5g.jpg";
-import OppoReno10Pro from "../public/assets/images/phones/oppo-reno10-pro.jpg";
-import PocoF5 from "../public/assets/images/phones/poco-f5.jpg";
-import PocoX5Pro5g from "../public/assets/images/phones/poco-x5-pro-5g.jpg";
-import PocoX6Pro from "../public/assets/images/phones/poco-x6-pro.jpg";
-import Realme11Pro5g from "../public/assets/images/phones/realme-11-pro-5g.jpg";
-import Realme11ProPlus from "../public/assets/images/phones/realme-11-pro-plus.jpg";
-import RedmiNote12Pro5g from "../public/assets/images/phones/redmi-note-12-pro-5g.jpg";
-import RedmiNote13Pro from "../public/assets/images/phones/redmi-note-13-pro.jpg";
-import SamsungGalaxyA545g from "../public/assets/images/phones/samsung-galaxy-a54-5g.jpg";
-import SamsungGalaxyS22 from "../public/assets/images/phones/samsung-galaxy-s22.jpg";
-import SamsungGalaxyZFlip3 from "../public/assets/images/phones/samsung-galaxy-z-flip3.jpg";
-import VivoT2 from "../public/assets/images/phones/vivo-t2.jpg";
-import VivoV27Pro from "../public/assets/images/phones/vivo-v27-pro.jpg";
-import InfinixZero305g from "../public/assets/images/phones/infinix-zero-30-5g.jpg";
-import OppoReno11Pro from "../public/assets/images/phones/oppo-reno11-pro.jpg";
-import Realme115g from "../public/assets/images/phones/realme-11-5g.jpg";
-import RealmeGt2Pro5g from "../public/assets/images/phones/realme-gt-2-pro-5g.jpg";
-import RedmiNote125g from "../public/assets/images/phones/redmi-note-12-5g.jpg";
-import RedmiNote13ProPlus from "../public/assets/images/phones/redmi-note-13-pro-plus.jpg";
-import SamsungGalaxyF345g from "../public/assets/images/phones/samsung-galaxy-f34-5g.jpg";
-import SamsungGalaxyS24Ultra from "../public/assets/images/phones/samsung-galaxy-s24-ultra-5g.jpg";
-// import VivoT2Pro5g from "../public/assets/images/phones/vivo-t2-pro-5g.jpg";
-import VivoV29Pro from "../public/assets/images/phones/vivo-v29-pro.jpg";
-import VivoV29 from "../public/assets/images/phones/vivo-v29.jpg";
+import AppleIphone15 from "../public/assets/images/phones/apple-iphone-15.png";
+import Oneplus10r5g from "../public/assets/images/phones/oneplus-10r-5g.png";
+import OneplusNord35g from "../public/assets/images/phones/oneplus-nord-3-5g.png";
+import OneplusNordCe3Lite5g from "../public/assets/images/phones/oneplus-nord-ce-3-lite-5g.png";
+import Realme11x5g from "../public/assets/images/phones/realme-11x-5g.png";
+import Redmi125g from "../public/assets/images/phones/redmi-12-5g.png";
+import Redmi13c5g from "../public/assets/images/phones/redmi-13c-5g.png";
+import Redmi13c from "../public/assets/images/phones/redmi-13c.png";
+import SamsungGalaxyA255g from "../public/assets/images/phones/samsung-galaxy-a25-5g.png";
+import SamsungGalaxyF545g from "../public/assets/images/phones/samsung-galaxy-f54-5g.png";
+import SamsungGalaxyM145g from "../public/assets/images/phones/samsung-galaxy-m14-5g.png";
+import SamsungGalaxyS21Fe from "../public/assets/images/phones/samsung-galaxy-s21-fe.png";
+import VivoV29e from "../public/assets/images/phones/vivo-v29e.png";
+import Iqoo125g from "../public/assets/images/phones/iqoo-12-5g.png";
+import IqooNeo7Pro from "../public/assets/images/phones/iqoo-neo-7-pro.png";
+import IqooNeo7 from "../public/assets/images/phones/iqoo-neo-7.png";
+import IqooZ7Pro from "../public/assets/images/phones/iqoo-z7-pro.png";
+import MotorolaRazr40 from "../public/assets/images/phones/motorola-razr-40.png";
+import Oneplus11 from "../public/assets/images/phones/oneplus-11.png";
+import Oneplus11r5g from "../public/assets/images/phones/oneplus-11r-5g.png";
+import PocoF45g from "../public/assets/images/phones/poco-f4-5g.png";
+import PocoM65g from "../public/assets/images/phones/poco-m6-5g.png";
+import PocoM6Pro5g from "../public/assets/images/phones/poco-m6-pro-5g.png";
+import PocoX5 from "../public/assets/images/phones/poco-x5.png";
+import PocoX65g from "../public/assets/images/phones/poco-x6-5g.png";
+import RealmeC535g from "../public/assets/images/phones/realme-c53-5g.png";
+import RealmeC675g from "../public/assets/images/phones/realme-c67-5g.png";
+import RealmeGtNeo3 from "../public/assets/images/phones/realme-gt-neo-3.png";
+import SamsungGalaxyA145g from "../public/assets/images/phones/samsung-galaxy-a14-5g.png";
+import SamsungGalaxyA155g from "../public/assets/images/phones/samsung-galaxy-a15-5g.png";
+import SamsungGalaxyA345g from "../public/assets/images/phones/samsung-galaxy-a34-5g.png";
+import SamsungGalaxyF145g from "../public/assets/images/phones/samsung-galaxy-f14-5g.png";
+import SamsungGalaxyM34 from "../public/assets/images/phones/samsung-galaxy-m34.png";
+import SamsungGalaxyS235g from "../public/assets/images/phones/samsung-galaxy-s23-5g.png";
+import SamsungGalaxyS23Fe from "../public/assets/images/phones/samsung-galaxy-s23-fe.png";
+import SamsungGalaxyS23Ultra5g from "../public/assets/images/phones/samsung-galaxy-s23-5g.png";
+import VivoT2x5g from "../public/assets/images/phones/vivo-t2x-5g.png";
+import VivoV27 from "../public/assets/images/phones/vivo-v27.png";
+import VivoY2005g from "../public/assets/images/phones/vivo-y200-5g.png";
+import XiaomiRedmiNote13 from "../public/assets/images/phones/xiaomi-redmi-note-13.png";
+import AppleIphone14Pro from "../public/assets/images/phones/apple-iphone-14-pro.png";
+import AppleIphone15Plus from "../public/assets/images/phones/apple-iphone-15-plus.png";
+import AppleIphone15ProMax from "../public/assets/images/phones/apple-iphone-15-pro-max.png";
+import GooglePixel6a from "../public/assets/images/phones/google-pixel-6a.png";
+import GooglePixel7 from "../public/assets/images/phones/google-pixel-7.png";
+import GooglePixel7a from "../public/assets/images/phones/google-pixel-7a.png";
+import MotorolaEdge40Neo from "../public/assets/images/phones/motorola-edge-40-neo.png";
+import MotorolaEdge40 from "../public/assets/images/phones/motorola-edge-40.png";
+import MotorolaG545g from "../public/assets/images/phones/motorola-g54-5g.png";
+import NothingPhone1 from "../public/assets/images/phones/nothing-phone-(1).png";
+import NothingPhone2 from "../public/assets/images/phones/nothing-phone-(2).png";
+import OneplusOpen from "../public/assets/images/phones/oneplus-open.png";
+import OppoReno105g from "../public/assets/images/phones/oppo-reno10-5g.png";
+import OppoReno10Pro from "../public/assets/images/phones/oppo-reno10-pro.png";
+import PocoF5 from "../public/assets/images/phones/poco-f5.png";
+import PocoX5Pro5g from "../public/assets/images/phones/poco-x5-pro-5g.png";
+import PocoX6Pro from "../public/assets/images/phones/poco-x6-pro.png";
+import Realme11Pro5g from "../public/assets/images/phones/realme-11-pro-5g.png";
+import Realme11ProPlus from "../public/assets/images/phones/realme-11-pro-plus.png";
+import RedmiNote12Pro5g from "../public/assets/images/phones/redmi-note-12-pro-5g.png";
+import RedmiNote13Pro from "../public/assets/images/phones/redmi-note-13-pro.png";
+import SamsungGalaxyA545g from "../public/assets/images/phones/samsung-galaxy-a54-5g.png";
+import SamsungGalaxyS22 from "../public/assets/images/phones/samsung-galaxy-s22.png";
+import SamsungGalaxyZFlip3 from "../public/assets/images/phones/samsung-galaxy-z-flip3.png";
+import VivoT2 from "../public/assets/images/phones/vivo-t2.png";
+import VivoV27Pro from "../public/assets/images/phones/vivo-v27-pro.png";
+import InfinixZero305g from "../public/assets/images/phones/infinix-zero-30-5g.png";
+import OppoReno11Pro from "../public/assets/images/phones/oppo-reno11-pro.png";
+import Realme115g from "../public/assets/images/phones/realme-11-5g.png";
+import RealmeGt2Pro5g from "../public/assets/images/phones/realme-gt-2-pro-5g.png";
+import RedmiNote125g from "../public/assets/images/phones/redmi-note-12-5g.png";
+import RedmiNote13ProPlus from "../public/assets/images/phones/redmi-note-13-pro-plus.png";
+import SamsungGalaxyF345g from "../public/assets/images/phones/samsung-galaxy-f34-5g.png";
+import SamsungGalaxyS24Ultra from "../public/assets/images/phones/samsung-galaxy-s24-ultra.png";
+// import VivoT2Pro5g from "../public/assets/images/phones/vivo-t2-pro-5g.png";
+import VivoV29Pro from "../public/assets/images/phones/vivo-v29-pro.png";
+import VivoV29 from "../public/assets/images/phones/vivo-v29.png";
 import VivoX100Pro5g from "../public/assets/images/phones/vivo-x100-pro-5g.png";
-import VivoX100 from "../public/assets/images/phones/vivo-x100.jpg";
+import VivoX100 from "../public/assets/images/phones/vivo-x100.png";
 
 const phones = [
   {
@@ -805,13 +805,13 @@ export default function Filtering({
 
   let batteryMultiplier;
   switch (tabThreeResponse) {
-    case "Under 4 hours":
+    case "Under 5 hours":
       batteryMultiplier = 0.5;
       break;
-    case "4 to 6 hours":
+    case "5 to 7 hours":
       batteryMultiplier = 0.75;
       break;
-    case "6+ hours":
+    case "More than 7 hours":
       batteryMultiplier = 1;
       break;
     default:
@@ -904,12 +904,12 @@ export default function Filtering({
     {
       index: 0,
       response: tabOneResponse,
-      text: "1. Select a category you need expert assistance",
+      text: "1. Choose a category for expert guidance",
     },
     {
       index: 1,
       response: tabTwoResponse,
-      text: "2. How much would you like to spend?",
+      text: "2. How much are you willing to spend?",
     },
     {
       index: 2,
@@ -919,7 +919,7 @@ export default function Filtering({
     {
       index: 3,
       response: tabFourResponse,
-      text: "4. How will you use your phone's camera?",
+      text: "4. How do you use your phone’s camera?",
     },
     {
       index: 4,
@@ -1019,11 +1019,11 @@ export default function Filtering({
               className="w-max p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
             >
               <div className="w-full flex justify-center">
-                <div className="w-32 h-32 lg:w-40 lg:h-40">
+                <div className="w-40 lg:w-40">
                   <Image src={phone.image} alt="" />
                 </div>
               </div>
-              <div className="text-base lg:text-xl bold text-black mt-6">
+              <div className="text-base lg:text-xl bold text-black">
                 {phone.Name}
               </div>
               <div className="flex justify-between">

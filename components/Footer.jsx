@@ -33,7 +33,7 @@ const categories = [
         link: "https://docs.google.com/forms/d/e/1FAIpQLSchbqV-6EsFyVjCLzeXfsns-Mq4tvDJqGJSZIJP8SixmenwPw/viewform",
       },
       { name: "Contact Us", link: "/contact-us" },
-      { name: "Terms & Condition", link: "/terms&conditions" },
+      { name: "Terms & Conditions", link: "/terms&conditions" },
       { name: "Privacy Policy", link: "/privacy-policy" },
       {
         name: "Cancellation & Refund Policy",

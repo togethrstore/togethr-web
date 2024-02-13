@@ -11,7 +11,7 @@ export default function About() {
         <div className="w-full flex flex-col gap-y-6 px-6 py-10 lg:px-0 max-w-4xl xl:max-w-7xl lg:py-16">
           <div className="flex flex-col gap-y-4">
             <div className="text-black bold lg:pb-10 text-2xl lg:text-[2.5rem]">
-              How it works?
+              How it works
             </div>
             {/* <div className="medium text-[#51636F] text-base lg:text-lg">
               Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.

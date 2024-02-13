@@ -14,7 +14,7 @@ const TabOne = ({ nextTab, save }) => {
       <div className="w-full flex flex-col gap-y-6 px-6 py-4 lg:px-0 max-w-4xl xl:max-w-7xl">
         <div className="bold text-xl lg:text-2xl">
           <span>1. </span>
-          Select a category you need expert assistance
+          Choose a category for expert guidance{" "}
         </div>
         {categories.map((category, index) => (
           <div key={index}>

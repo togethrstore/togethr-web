@@ -5,7 +5,7 @@ import HoverButton from "../../public/assets/images/form/button-hover.png";
 const categories = [
   {
     id: 4,
-    text: "How will you use your phone's camera?",
+    text: "How do you use your phone’s camera?",
     options: [
       "Casual photos occasionally",
       "High-quality photos for personal use",

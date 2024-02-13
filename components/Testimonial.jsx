@@ -127,7 +127,8 @@ export default function Testimonial() {
             We are Togethr
           </div>
           <div className="medium text-[#51636F] text-base lg:text-lg">
-            Hear from our customer how they shopped Togethr with confidence!{" "}
+            Hear from our customers about their experiences shopping with our
+            experts!
           </div>
         </div>
         <div className="flex justify-center">
