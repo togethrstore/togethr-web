@@ -1,3 +1,91 @@
+import React, { useState } from "react";
+import Recorded from "../public/assets/images/form/recorded.png";
+import Image from "next/image";
+import ArrowDown from "../public/assets/images/arrow-down.png";
+import { motion, AnimatePresence } from "framer-motion";
+import EditIcon from "../public/assets/images/form/edit.png";
+import Cart from "../public/assets/images/form/cart.png";
+import Link from "next/link";
+import AppleIphone15 from "../public/assets/images/phones/apple-iphone-15.jpg";
+import Oneplus10r5g from "../public/assets/images/phones/oneplus-10r-5g.jpg";
+import OneplusNord35g from "../public/assets/images/phones/oneplus-nord-3-5g.jpg";
+import OneplusNordCe3Lite5g from "../public/assets/images/phones/oneplus-nord-ce-3-lite-5g.jpg";
+import Realme11x5g from "../public/assets/images/phones/realme-11x-5g.jpg";
+import Redmi125g from "../public/assets/images/phones/redmi-12-5g.jpg";
+import Redmi13c5g from "../public/assets/images/phones/redmi-13c-5g.jpg";
+import Redmi13c from "../public/assets/images/phones/redmi-13c.jpg";
+import SamsungGalaxyA255g from "../public/assets/images/phones/samsung-galaxy-a25-5g.jpg";
+import SamsungGalaxyF545g from "../public/assets/images/phones/samsung-galaxy-f54-5g.jpg";
+import SamsungGalaxyM145g from "../public/assets/images/phones/samsung-galaxy-m14-5g.jpg";
+import SamsungGalaxyS21Fe from "../public/assets/images/phones/samsung-galaxy-s21-fe.jpg";
+import VivoV29e from "../public/assets/images/phones/vivo-v29e.jpg";
+import Iqoo125g from "../public/assets/images/phones/iqoo-12-5g.jpg";
+import IqooNeo7Pro from "../public/assets/images/phones/iqoo-neo-7-pro.jpg";
+import IqooNeo7 from "../public/assets/images/phones/iqoo-neo-7.jpg";
+import IqooZ7Pro from "../public/assets/images/phones/iqoo-z7-pro.jpg";
+import MotorolaRazr40 from "../public/assets/images/phones/motorola-razr-40.jpg";
+import Oneplus11 from "../public/assets/images/phones/oneplus-11.jpg";
+import Oneplus11r5g from "../public/assets/images/phones/oneplus-11r-5g.jpg";
+import PocoF45g from "../public/assets/images/phones/poco-f4-5g.jpg";
+import PocoM65g from "../public/assets/images/phones/poco-m6-5g.jpg";
+import PocoM6Pro5g from "../public/assets/images/phones/poco-m6-pro-5g.jpg";
+import PocoX5 from "../public/assets/images/phones/poco-x5.jpg";
+import PocoX65g from "../public/assets/images/phones/poco-x6-5g.jpg";
+import RealmeC535g from "../public/assets/images/phones/realme-c53-5g.jpg";
+import RealmeC675g from "../public/assets/images/phones/realme-c67-5g.jpg";
+import RealmeGtNeo3 from "../public/assets/images/phones/realme-gt-neo-3.jpg";
+import SamsungGalaxyA145g from "../public/assets/images/phones/samsung-galaxy-a14-5g.jpg";
+import SamsungGalaxyA155g from "../public/assets/images/phones/samsung-galaxy-a15-5g.jpg";
+import SamsungGalaxyA345g from "../public/assets/images/phones/samsung-galaxy-a34-5g.jpg";
+import SamsungGalaxyF145g from "../public/assets/images/phones/samsung-galaxy-f14-5g.jpg";
+import SamsungGalaxyM34 from "../public/assets/images/phones/samsung-galaxy-m34.jpg";
+import SamsungGalaxyS235g from "../public/assets/images/phones/samsung-galaxy-s23-5g.jpg";
+import SamsungGalaxyS23Fe from "../public/assets/images/phones/samsung-galaxy-s23-fe.jpg";
+import SamsungGalaxyS23Ultra5g from "../public/assets/images/phones/samsung-galaxy-s23-5g.jpg";
+import VivoT2x5g from "../public/assets/images/phones/vivo-t2x-5g.jpg";
+import VivoV27 from "../public/assets/images/phones/vivo-v27.jpg";
+import VivoY2005g from "../public/assets/images/phones/vivo-y200-5g.jpg";
+import XiaomiRedmiNote13 from "../public/assets/images/phones/xiaomi-redmi-note-13.jpg";
+import AppleIphone14Pro from "../public/assets/images/phones/apple-iphone-14-pro.jpg";
+import AppleIphone15Plus from "../public/assets/images/phones/apple-iphone-15-plus.jpg";
+import AppleIphone15ProMax from "../public/assets/images/phones/apple-iphone-15-pro-max.jpg";
+import GooglePixel6a from "../public/assets/images/phones/google-pixel-6a.jpg";
+import GooglePixel7 from "../public/assets/images/phones/google-pixel-7.jpg";
+import GooglePixel7a from "../public/assets/images/phones/google-pixel-7a.jpg";
+import MotorolaEdge40Neo from "../public/assets/images/phones/motorola-edge-40-neo.jpg";
+import MotorolaEdge40 from "../public/assets/images/phones/motorola-edge-40.jpg";
+import MotorolaG545g from "../public/assets/images/phones/motorola-g54-5g.jpg";
+import NothingPhone1 from "../public/assets/images/phones/nothing-phone-(1).jpg";
+import NothingPhone2 from "../public/assets/images/phones/nothing-phone-(2).jpg";
+import OneplusOpen from "../public/assets/images/phones/oneplus-open.jpg";
+import OppoReno105g from "../public/assets/images/phones/oppo-reno10-5g.jpg";
+import OppoReno10Pro from "../public/assets/images/phones/oppo-reno10-pro.jpg";
+import PocoF5 from "../public/assets/images/phones/poco-f5.jpg";
+import PocoX5Pro5g from "../public/assets/images/phones/poco-x5-pro-5g.jpg";
+import PocoX6Pro from "../public/assets/images/phones/poco-x6-pro.jpg";
+import Realme11Pro5g from "../public/assets/images/phones/realme-11-pro-5g.jpg";
+import Realme11ProPlus from "../public/assets/images/phones/realme-11-pro-plus.jpg";
+import RedmiNote12Pro5g from "../public/assets/images/phones/redmi-note-12-pro-5g.jpg";
+import RedmiNote13Pro from "../public/assets/images/phones/redmi-note-13-pro.jpg";
+import SamsungGalaxyA545g from "../public/assets/images/phones/samsung-galaxy-a54-5g.jpg";
+import SamsungGalaxyS22 from "../public/assets/images/phones/samsung-galaxy-s22.jpg";
+import SamsungGalaxyZFlip3 from "../public/assets/images/phones/samsung-galaxy-z-flip3.jpg";
+import VivoT2 from "../public/assets/images/phones/vivo-t2.jpg";
+import VivoV27Pro from "../public/assets/images/phones/vivo-v27-pro.jpg";
+import InfinixZero305g from "../public/assets/images/phones/infinix-zero-30-5g.jpg";
+import OppoReno11Pro from "../public/assets/images/phones/oppo-reno11-pro.jpg";
+import Realme115g from "../public/assets/images/phones/realme-11-5g.jpg";
+import RealmeGt2Pro5g from "../public/assets/images/phones/realme-gt-2-pro-5g.jpg";
+import RedmiNote125g from "../public/assets/images/phones/redmi-note-12-5g.jpg";
+import RedmiNote13ProPlus from "../public/assets/images/phones/redmi-note-13-pro-plus.jpg";
+import SamsungGalaxyF345g from "../public/assets/images/phones/samsung-galaxy-f34-5g.jpg";
+import SamsungGalaxyS24Ultra from "../public/assets/images/phones/samsung-galaxy-s24-ultra-5g.jpg";
+// import VivoT2Pro5g from "../public/assets/images/phones/vivo-t2-pro-5g.jpg";
+import VivoV29Pro from "../public/assets/images/phones/vivo-v29-pro.jpg";
+import VivoV29 from "../public/assets/images/phones/vivo-v29.jpg";
+import VivoX100Pro5g from "../public/assets/images/phones/vivo-x100-pro-5g.png";
+import VivoX100 from "../public/assets/images/phones/vivo-x100.jpg";
+
 const phones = [
   {
     Name: "Motorola g54 5G",
@@ -7,6 +95,7 @@ const phones = [
     Secondparameter: 80.5,
     Thirdparameter: 63.0,
     Fourthparameter: 38.0,
+    image: MotorolaG545g,
   },
   {
     Name: "Redmi 12 5G",
@@ -16,6 +105,7 @@ const phones = [
     Secondparameter: 77.5,
     Thirdparameter: 54.0,
     Fourthparameter: 37.0,
+    image: Redmi125g,
   },
   {
     Name: "Xiaomi Redmi 13C 5G",
@@ -25,6 +115,7 @@ const phones = [
     Secondparameter: 70.0,
     Thirdparameter: 56.0,
     Fourthparameter: 33.0,
+    image: XiaomiRedmiNote13,
   },
   {
     Name: "realme C67 5G",
@@ -34,6 +125,7 @@ const phones = [
     Secondparameter: 83.5,
     Thirdparameter: 58.0,
     Fourthparameter: 32.0,
+    image: RealmeC675g,
   },
   {
     Name: "POCO M6 5G",
@@ -43,6 +135,7 @@ const phones = [
     Secondparameter: 70.0,
     Thirdparameter: 56.0,
     Fourthparameter: 33.0,
+    image: PocoM65g,
   },
   {
     Name: "realme C53",
@@ -52,6 +145,7 @@ const phones = [
     Secondparameter: 74.0,
     Thirdparameter: 57.0,
     Fourthparameter: 24.0,
+    image: RealmeC535g,
   },
   {
     Name: "Xiaomi Redmi 13C",
@@ -61,6 +155,7 @@ const phones = [
     Secondparameter: 66.0,
     Thirdparameter: 62.0,
     Fourthparameter: 21.0,
+    image: XiaomiRedmiNote13,
   },
   {
     Name: "OPPO Reno8 T 5G",
@@ -72,24 +167,6 @@ const phones = [
     Fourthparameter: 37.0,
   },
   {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
-  },
-  {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
-  },
-  {
     Name: "POCO X5",
     Price: 12999.0,
     Batteryscore: 70.0,
@@ -97,15 +174,7 @@ const phones = [
     Secondparameter: 74.5,
     Thirdparameter: 61.0,
     Fourthparameter: 37.0,
-  },
-  {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
+    image: PocoX5,
   },
   {
     Name: "Samsung Galaxy A14 5G",
@@ -115,6 +184,7 @@ const phones = [
     Secondparameter: 71.0,
     Thirdparameter: 58.0,
     Fourthparameter: 34.0,
+    image: SamsungGalaxyA145g,
   },
   {
     Name: "POCO M6 Pro 5G",
@@ -124,6 +194,7 @@ const phones = [
     Secondparameter: 77.5,
     Thirdparameter: 54.0,
     Fourthparameter: 37.0,
+    image: PocoM6Pro5g,
   },
   {
     Name: "Samsung galaxy m14 5G",
@@ -133,6 +204,7 @@ const phones = [
     Secondparameter: 76.0,
     Thirdparameter: 59.0,
     Fourthparameter: 36.0,
+    image: SamsungGalaxyM145g,
   },
   {
     Name: "Xiaomi Redmi Note 13",
@@ -142,15 +214,7 @@ const phones = [
     Secondparameter: 87.0,
     Thirdparameter: 66.0,
     Fourthparameter: 36.0,
-  },
-  {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
+    image: XiaomiRedmiNote13,
   },
   {
     Name: "realme 11 pro 5g",
@@ -160,6 +224,7 @@ const phones = [
     Secondparameter: 80.5,
     Thirdparameter: 69.0,
     Fourthparameter: 42.0,
+    image: Realme11Pro5g,
   },
   {
     Name: "Poco x5 Pro 5g",
@@ -169,15 +234,17 @@ const phones = [
     Secondparameter: 79.5,
     Thirdparameter: 72.0,
     Fourthparameter: 46.0,
+    image: PocoX5Pro5g,
   },
   {
-    Name: "POCO F4 5G 8GB RAM\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+    Name: "POCO F4 5G 8GB",
     Price: 29999.0,
     Batteryscore: 65.0,
     Displayscore: 83.0,
     Secondparameter: 74.0,
     Thirdparameter: 77.0,
     Fourthparameter: 56.0,
+    image: PocoF45g,
   },
   {
     Name: "Samsung Galaxy A34 8GB RAM",
@@ -187,6 +254,7 @@ const phones = [
     Secondparameter: 83.0,
     Thirdparameter: 67.0,
     Fourthparameter: 43.0,
+    image: SamsungGalaxyA345g,
   },
   {
     Name: "realme GT Neo 3 5G",
@@ -196,6 +264,7 @@ const phones = [
     Secondparameter: 80.0,
     Thirdparameter: 72.0,
     Fourthparameter: 56.0,
+    image: RealmeGtNeo3,
   },
   {
     Name: "vivo V27",
@@ -205,6 +274,7 @@ const phones = [
     Secondparameter: 83.0,
     Thirdparameter: 74.0,
     Fourthparameter: 50.0,
+    image: VivoV27,
   },
   {
     Name: "POCO X6 5G",
@@ -214,6 +284,7 @@ const phones = [
     Secondparameter: 80.5,
     Thirdparameter: 66.0,
     Fourthparameter: 45.0,
+    image: PocoX65g,
   },
   {
     Name: "Motorola Edge 40 Neo",
@@ -223,6 +294,7 @@ const phones = [
     Secondparameter: 82.5,
     Thirdparameter: 72.0,
     Fourthparameter: 42.0,
+    image: MotorolaEdge40Neo,
   },
   {
     Name: "Infinix Zero 30 5G",
@@ -232,6 +304,7 @@ const phones = [
     Secondparameter: 74.0,
     Thirdparameter: 77.0,
     Fourthparameter: 51.0,
+    image: InfinixZero305g,
   },
   {
     Name: "realme 11 5G",
@@ -241,16 +314,9 @@ const phones = [
     Secondparameter: 79.0,
     Thirdparameter: 54.0,
     Fourthparameter: 34.0,
+    image: Realme115g,
   },
-  {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
-  },
+
   {
     Name: "Xiaomi Redmi Note 12 Pro 5G",
     Price: 23999.0,
@@ -261,15 +327,6 @@ const phones = [
     Fourthparameter: 41.0,
   },
   {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
-  },
-  {
     Name: "iQOO Neo 7",
     Price: 24999.0,
     Batteryscore: 96.0,
@@ -277,6 +334,7 @@ const phones = [
     Secondparameter: 90.5,
     Thirdparameter: 70.0,
     Fourthparameter: 63.0,
+    image: IqooNeo7,
   },
   {
     Name: "Samsung Galaxy A15 5G",
@@ -286,15 +344,7 @@ const phones = [
     Secondparameter: 79.0,
     Thirdparameter: 57.0,
     Fourthparameter: 36.0,
-  },
-  {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
+    image: SamsungGalaxyA155g,
   },
   {
     Name: "Redmi note 12 5g",
@@ -304,6 +354,7 @@ const phones = [
     Secondparameter: 74.0,
     Thirdparameter: 60.0,
     Fourthparameter: 35.0,
+    image: Redmi125g,
   },
   {
     Name: "OnePlus Nord CE 3 lite 5G",
@@ -313,15 +364,7 @@ const phones = [
     Secondparameter: 82.5,
     Thirdparameter: 62.0,
     Fourthparameter: 40.0,
-  },
-  {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
+    image: OneplusNordCe3Lite5g,
   },
   {
     Name: "Samsung Galaxy M34",
@@ -331,15 +374,7 @@ const phones = [
     Secondparameter: 85.5,
     Thirdparameter: 65.0,
     Fourthparameter: 39.0,
-  },
-  {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
+    image: SamsungGalaxyM34,
   },
   {
     Name: "Xiaomi Redmi Note 13 Pro Plus",
@@ -349,6 +384,7 @@ const phones = [
     Secondparameter: 94.0,
     Thirdparameter: 68.0,
     Fourthparameter: 52.0,
+    image: XiaomiRedmiNote13,
   },
   {
     Name: "Xiaomi Redmi Note 13 Pro",
@@ -358,6 +394,7 @@ const phones = [
     Secondparameter: 94.5,
     Thirdparameter: 68.0,
     Fourthparameter: 46.0,
+    image: XiaomiRedmiNote13,
   },
   {
     Name: "POCO X6 Pro",
@@ -367,6 +404,7 @@ const phones = [
     Secondparameter: 82.5,
     Thirdparameter: 74.0,
     Fourthparameter: 82.0,
+    image: PocoX6Pro,
   },
   {
     Name: "Samsung Galaxy S21 FE",
@@ -376,6 +414,7 @@ const phones = [
     Secondparameter: 70.0,
     Thirdparameter: 74.0,
     Fourthparameter: 56.0,
+    image: SamsungGalaxyS21Fe,
   },
   {
     Name: "Google Pixel 6A",
@@ -385,6 +424,7 @@ const phones = [
     Secondparameter: 68.5,
     Thirdparameter: 71.0,
     Fourthparameter: 63.0,
+    image: GooglePixel6a,
   },
   {
     Name: "Nothing Phone 1",
@@ -394,6 +434,7 @@ const phones = [
     Secondparameter: 77.0,
     Thirdparameter: 70.0,
     Fourthparameter: 47.0,
+    image: NothingPhone1,
   },
   {
     Name: "Motorola Edge 40",
@@ -403,6 +444,7 @@ const phones = [
     Secondparameter: 80.5,
     Thirdparameter: 74.0,
     Fourthparameter: 57.0,
+    image: MotorolaEdge40,
   },
   {
     Name: "realme GT 2 Pro 5G",
@@ -412,6 +454,7 @@ const phones = [
     Secondparameter: 84.0,
     Thirdparameter: 72.0,
     Fourthparameter: 68.0,
+    image: RealmeGt2Pro5g,
   },
   {
     Name: "realme 11 Pro Plus",
@@ -421,6 +464,7 @@ const phones = [
     Secondparameter: 82.0,
     Thirdparameter: 77.0,
     Fourthparameter: 45.0,
+    image: Realme11ProPlus,
   },
   {
     Name: "POCO F5 256GB",
@@ -430,6 +474,7 @@ const phones = [
     Secondparameter: 82.0,
     Thirdparameter: 70.0,
     Fourthparameter: 72.0,
+    image: PocoF5,
   },
   {
     Name: "Samsung Galaxy A25 5G",
@@ -439,6 +484,7 @@ const phones = [
     Secondparameter: 85.0,
     Thirdparameter: 64.0,
     Fourthparameter: 39.0,
+    image: SamsungGalaxyA255g,
   },
   {
     Name: "OnePlus Nord 3 5G",
@@ -448,15 +494,7 @@ const phones = [
     Secondparameter: 85.0,
     Thirdparameter: 75.0,
     Fourthparameter: 60.0,
-  },
-  {
-    Name: null,
-    Price: null,
-    Batteryscore: null,
-    Displayscore: null,
-    Secondparameter: null,
-    Thirdparameter: null,
-    Fourthparameter: null,
+    image: OneplusNord35g,
   },
   {
     Name: "vivo V29",
@@ -466,6 +504,7 @@ const phones = [
     Secondparameter: 81.0,
     Thirdparameter: 70.0,
     Fourthparameter: 46.0,
+    image: VivoV29,
   },
   {
     Name: "OPPO Reno10 5G",
@@ -475,6 +514,7 @@ const phones = [
     Secondparameter: 78.5,
     Thirdparameter: 74.0,
     Fourthparameter: 45.0,
+    image: OppoReno105g,
   },
   {
     Name: "OnePlus 10R 5G",
@@ -484,6 +524,7 @@ const phones = [
     Secondparameter: 87.5,
     Thirdparameter: 68.0,
     Fourthparameter: 57.0,
+    image: Oneplus10r5g,
   },
   {
     Name: "vivo V27 Pro 256GB",
@@ -493,6 +534,7 @@ const phones = [
     Secondparameter: 79.5,
     Thirdparameter: 75.0,
     Fourthparameter: 63.0,
+    image: VivoV27Pro,
   },
   {
     Name: "iQOO Neo 7 Pro",
@@ -502,6 +544,7 @@ const phones = [
     Secondparameter: 91.5,
     Thirdparameter: 78.0,
     Fourthparameter: 75.0,
+    image: IqooNeo7Pro,
   },
   {
     Name: "OnePlus 11R 5G",
@@ -511,6 +554,7 @@ const phones = [
     Secondparameter: 93.0,
     Thirdparameter: 73.0,
     Fourthparameter: 77.0,
+    image: Oneplus11r5g,
   },
   {
     Name: "Nothing Phone (2)",
@@ -520,6 +564,7 @@ const phones = [
     Secondparameter: 83.5,
     Thirdparameter: 72.0,
     Fourthparameter: 76.0,
+    image: NothingPhone2,
   },
   {
     Name: "OPPO Reno11 Pro",
@@ -529,6 +574,7 @@ const phones = [
     Secondparameter: 89.5,
     Thirdparameter: 76.0,
     Fourthparameter: 64.0,
+    image: OppoReno11Pro,
   },
   {
     Name: "Samsung Galaxy S22",
@@ -538,6 +584,7 @@ const phones = [
     Secondparameter: 79.5,
     Thirdparameter: 79.0,
     Fourthparameter: 70.0,
+    image: SamsungGalaxyS22,
   },
   {
     Name: "vivo V29 Pro",
@@ -547,6 +594,7 @@ const phones = [
     Secondparameter: 81.5,
     Thirdparameter: 76.0,
     Fourthparameter: 59.0,
+    image: VivoV29Pro,
   },
   {
     Name: "Google Pixel 7a",
@@ -556,6 +604,7 @@ const phones = [
     Secondparameter: 73.0,
     Thirdparameter: 78.0,
     Fourthparameter: 62.0,
+    image: GooglePixel7a,
   },
   {
     Name: "Google Pixel 7",
@@ -565,6 +614,7 @@ const phones = [
     Secondparameter: 70.5,
     Thirdparameter: 78.0,
     Fourthparameter: 62.0,
+    image: GooglePixel7,
   },
   {
     Name: "Oppo Reno 10 Pro",
@@ -574,6 +624,7 @@ const phones = [
     Secondparameter: 77.5,
     Thirdparameter: 78.0,
     Fourthparameter: 46.0,
+    image: OppoReno10Pro,
   },
   {
     Name: "Samsung Galaxy A54 5G",
@@ -583,6 +634,7 @@ const phones = [
     Secondparameter: 81.0,
     Thirdparameter: 71.0,
     Fourthparameter: 47.0,
+    image: SamsungGalaxyA545g,
   },
   {
     Name: "Samsung Galaxy Z Flip 3",
@@ -592,6 +644,7 @@ const phones = [
     Secondparameter: 65.0,
     Thirdparameter: 72.0,
     Fourthparameter: 61.0,
+    image: SamsungGalaxyZFlip3,
   },
   {
     Name: "Motorola Razr 40",
@@ -601,6 +654,7 @@ const phones = [
     Secondparameter: 77.0,
     Thirdparameter: 72.0,
     Fourthparameter: 48.0,
+    image: MotorolaRazr40,
   },
   {
     Name: "Samsung Galaxy S24 Ultra",
@@ -610,6 +664,7 @@ const phones = [
     Secondparameter: 96.5,
     Thirdparameter: 86.0,
     Fourthparameter: 99.0,
+    image: SamsungGalaxyS24Ultra,
   },
   {
     Name: "vivo X100 Pro 5G",
@@ -619,6 +674,7 @@ const phones = [
     Secondparameter: 86.5,
     Thirdparameter: 92.0,
     Fourthparameter: 98.0,
+    image: VivoX100Pro5g,
   },
   {
     Name: "iQOO 12 5G",
@@ -628,6 +684,7 @@ const phones = [
     Secondparameter: 87.0,
     Thirdparameter: 84.0,
     Fourthparameter: 97.0,
+    image: Iqoo125g,
   },
   {
     Name: "vivo X100",
@@ -637,6 +694,7 @@ const phones = [
     Secondparameter: 94.5,
     Thirdparameter: 89.0,
     Fourthparameter: 98.0,
+    image: VivoX100,
   },
   {
     Name: "Samsung Galaxy S23 Ultra 5G",
@@ -646,6 +704,7 @@ const phones = [
     Secondparameter: 90.0,
     Thirdparameter: 90.0,
     Fourthparameter: 91.0,
+    image: SamsungGalaxyS23Ultra5g,
   },
   {
     Name: "Samsung Galaxy S23 5G",
@@ -655,6 +714,7 @@ const phones = [
     Secondparameter: 81.0,
     Thirdparameter: 83.0,
     Fourthparameter: 86.0,
+    image: SamsungGalaxyS235g,
   },
   {
     Name: "Apple iPhone 15 Pro Max",
@@ -664,6 +724,7 @@ const phones = [
     Secondparameter: 93.0,
     Thirdparameter: 91.0,
     Fourthparameter: 98.0,
+    image: AppleIphone15ProMax,
   },
   {
     Name: "OnePlus 11",
@@ -673,6 +734,7 @@ const phones = [
     Secondparameter: 83.5,
     Thirdparameter: 79.0,
     Fourthparameter: 87.0,
+    image: Oneplus11,
   },
   {
     Name: "Apple iPhone 15",
@@ -682,6 +744,7 @@ const phones = [
     Secondparameter: 78.0,
     Thirdparameter: 82.0,
     Fourthparameter: 94.0,
+    image: AppleIphone15,
   },
   {
     Name: "Apple iPhone 14 Pro",
@@ -691,6 +754,7 @@ const phones = [
     Secondparameter: 81.5,
     Thirdparameter: 87.0,
     Fourthparameter: 94.0,
+    image: AppleIphone14Pro,
   },
   {
     Name: "Samsung Galaxy S23 FE",
@@ -700,6 +764,7 @@ const phones = [
     Secondparameter: 73.0,
     Thirdparameter: 82.0,
     Fourthparameter: 71.0,
+    image: SamsungGalaxyS23Fe,
   },
   {
     Name: "Apple iPhone 15 Plus",
@@ -709,6 +774,7 @@ const phones = [
     Secondparameter: 83.5,
     Thirdparameter: 82.0,
     Fourthparameter: 97.0,
+    image: AppleIphone15Plus,
   },
   {
     Name: "OnePlus Open",
@@ -718,26 +784,10 @@ const phones = [
     Secondparameter: 84.5,
     Thirdparameter: 83.0,
     Fourthparameter: 93.0,
+    image: OneplusOpen,
   },
 ];
 
-const questions = [
-  {},
-  {},
-  {},
-  {
-    text: "4. How will you use your phone's camera?",
-  },
-];
-
-import React, { useState } from "react";
-import Recorded from "../public/assets/images/form/recorded.png";
-import Image from "next/image";
-import ArrowDown from "../public/assets/images/arrow-down.png";
-import { motion, AnimatePresence } from "framer-motion";
-import EditIcon from "../public/assets/images/form/edit.png";
-import Cart from "../public/assets/images/form/cart.png";
-import Link from "next/link";
 export default function Filtering({
   tabOneResponse,
   tabTwoResponse,
@@ -968,7 +1018,12 @@ export default function Filtering({
               key={index}
               className="w-max p-4 lg:p-6 flex flex-col border-[3px] border-[#625DF533] rounded-2xl gap-y-3"
             >
-              <div className="text-base lg:text-xl bold text-black">
+              <div className="w-full flex justify-center">
+                <div className="w-32 h-32 lg:w-40 lg:h-40">
+                  <Image src={phone.image} alt="" />
+                </div>
+              </div>
+              <div className="text-base lg:text-xl bold text-black mt-6">
                 {phone.Name}
               </div>
               <div className="flex justify-between">
