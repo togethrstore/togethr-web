@@ -10,7 +10,7 @@ const items = [
     title: "Cycling",
     image: ImageOne,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/kvLxQAd8",
+    buttonHref: "/form",
   },
   {
     title: "Tennis",

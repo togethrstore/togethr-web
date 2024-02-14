@@ -137,11 +137,11 @@ const Carousel = () => {
           </button> */}
         </div>
         <div className="w-full flex justify-center">
-          <Link href={"/form"}>
+        <a target="_blank" rel="noopener noreferrer" href="/form">
             <button className="w-full lg:w-max medium bg-[#625DF5] transition-all duration-500 rounded-2xl hover:bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500 py-3 px-12 text-white text-lg">
               Shop with Expert
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

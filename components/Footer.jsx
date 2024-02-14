@@ -15,15 +15,15 @@ const categories = [
       { name: "Phones", link: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ" },
     ],
   },
-  {
-    title: "Sports & Hobbies",
-    items: [
-      {
-        name: "Bicycles",
-        link: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
-      },
-    ],
-  },
+  // {
+  //   title: "Sports & Hobbies",
+  //   items: [
+  //     {
+  //       name: "Bicycles",
+  //       link: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
+  //     },
+  //   ],
+  // },
   {
     title: "Togethr",
     items: [

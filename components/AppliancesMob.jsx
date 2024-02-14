@@ -126,10 +126,7 @@ export default function ApplicancesMob() {
                     </div>
                     <a href={item.buttonHref}>
                       <button
-                        className={`w-full medium lg:bold py-3 text-white text-base mt-2 ${
-                          index === 0
-                            ? "bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-[white] hover:border-[#625DF5] text-white hover:text-[#625df5] transition-all duration-300"
-                            : "bg-[white] rounded-2xl border-2 border-[#625DF5] hover:bg-[#625DF5] hover:border-[#625DF5] text-[#625DF5] hover:text-white transition-all duration-300"
+                        className={`w-full medium lg:bold py-3 text-base mt-2 bg-[white] rounded-2xl border-2 border-[#625DF5] hover:bg-[#625DF5] hover:border-[#625DF5] text-[#625DF5] hover:text-white transition-all duration-300"
                         }`}
                       >
                         {item.buttonLabel}

@@ -77,17 +77,17 @@ export default function Hero() {
         <div className="flex flex-col gap-y-5 lg:gap-y-12 px-6 lg:px-0">
           <div className="flex flex-col gap-y-4">
             <div className="text-[2.5rem] lg:text-[3.5rem] text-black bold">
-              Find the right <br /> product for you.
+              Find the right <br /> product for you
             </div>
             <div className="medium text-[#51636F] text-base lg:text-lg">
               Real experts — Personalized product picks — for free!
             </div>
           </div>
-          <Link href={"/form"}>
+          <a target="_blank" rel="noopener noreferrer" href="/form">
             <button className="w-full lg:w-max medium bg-[#625DF5] transition-all duration-500 rounded-2xl hover:bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500 py-3 px-12 text-white text-lg">
               Shop with Expert
             </button>
-          </Link>
+          </a>
         </div>
         <div className="w-[80%] lg:hidden">
           <motion.div

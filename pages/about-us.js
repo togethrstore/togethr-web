@@ -20,7 +20,7 @@ export default function AboutUs() {
           </div>
           <div className="bold text-black text-xl lg:text-2xl">Our Mission</div>
           <div className="text-[#51636F] text-base lg:text-lg regular">
-            Connect real, unbiased experts and consumers 50 that they find the
+            Connect real, unbiased experts and consumers so that they find the
             perfect product together.
           </div>
         </div>

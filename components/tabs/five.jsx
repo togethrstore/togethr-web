@@ -5,10 +5,10 @@ import HoverButton from "../../public/assets/images/form/button-hover.png";
 const categories = [
   {
     id: 5,
-    text: "How often do you play games on your phone?",
+    text: "Choose the closest description of your phone’s usage:",
     options: [
       "Basic — Call, text, email, web surfing",
-      "Balanced — Casual gaming, occasional photos/videos, multitasking,",
+      "Balanced — Casual gaming, occasional photos/videos, multitasking",
       "Intensive — High graphics gaming, professional content creation",
     ],
   },
@@ -20,7 +20,7 @@ const TabFive = ({ nextTab, save }) => {
       <div className="w-full flex flex-col gap-y-6 px-6 py-4 lg:px-0 max-w-4xl xl:max-w-7xl">
         {/* <div className="bold text-xl lg:text-2xl">
           <span>5. </span>
-          How often do you play games on your phone?{" "}
+          Choose the closest description of your phone’s usage:?{" "}
         </div> */}
         {categories.map((category, index) => (
           <div key={index}>

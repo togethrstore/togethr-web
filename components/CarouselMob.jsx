@@ -77,11 +77,11 @@ export default function CarouselMob() {
           </div>
         </CustomSlider>
         <div className="w-full flex justify-center px-6 pt-4">
-          <Link href={"/form"}>
+          <a target="_blank" rel="noopener noreferrer" href="/form">
             <button className="w-full lg:w-max medium hero-button py-3 px-16 text-white text-lg">
               Shop with Expert
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

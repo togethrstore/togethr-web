@@ -604,7 +604,7 @@ const phones = [
     Thirdparameter: 72.0,
     Fourthparameter: 76.0,
     image: NothingPhone2,
-    link: "https://fktr.in/bXxFngt",
+    link: "https://fktr.in/zgvduuU",
   },
   {
     Name: "OPPO Reno11 Pro",
@@ -986,7 +986,7 @@ export default function Filtering({
     {
       index: 4,
       response: tabFiveResponse,
-      text: "5. How often do you play games on your phone?",
+      text: "5. Choose the closest description of your phone’s usage:",
     },
     { index: 5, response: tabSixResponse },
   ];
@@ -1138,9 +1138,13 @@ export default function Filtering({
           Passionate people who are happy to be your shopping buddies for your
           next big purchase{" "}
         </div>
-        <button className="w-max mt-4 lg:mt-10 medium hero-button py-3 px-12 text-white text-lg">
+        <a
+          rel="noopener noreferrer"
+          href="https://rebrand.ly/v4dwlzd"
+          className="w-max mt-4 lg:mt-10 medium hero-button py-3 px-12 text-white text-lg"
+        >
           Talk to an Expert{" "}
-        </button>
+        </a>
       </div>
     </>
   );

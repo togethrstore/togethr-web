@@ -42,8 +42,7 @@ export default function Electronics() {
               Shop Categories
             </div>
             <div className="medium text-[#51636F] text-lg">
-              Talk to real experts and buy authentic products at the best
-              prices.
+              Talk to real experts and buy authentic products at the best prices
             </div>
           </div>
           <div className="flex flex-col gap-y-4">
@@ -62,11 +61,7 @@ export default function Electronics() {
                   <div className="w-40 xl:w-56 2xl:w-60">
                     <Image src={item.image} alt={item.title} priority={true} />
                   </div>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={item.buttonHref}
-                  >
+                  <a rel="noopener noreferrer" href={item.buttonHref}>
                     <button className="w-full bold bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500 hover:border-[#625DF5] py-4 text-white transition-all duration-300 text-base">
                       {item.buttonLabel}
                     </button>

@@ -102,8 +102,7 @@ export default function ElectronicsMob() {
               Shop Categories
             </div>
             <div className="medium text-[#51636F] text-base lg:text-lg">
-              Talk to real experts and buy authentic products at the best
-              prices.
+              Talk to real experts and buy authentic products at the best prices
             </div>
           </div>
 

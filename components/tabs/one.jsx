@@ -4,7 +4,10 @@ import HoverButton from "../../public/assets/images/form/button-hover.png";
 import InfoCircle from "../../public/assets/images/form/info-circle.png";
 
 const categories = [
-  { label: "Electronics", items: ["Phones", "Laptops", "Headphones"] },
+  {
+    label: "Electronics",
+    items: ["Phones", "Laptops", "Headphones", "Smart Watches"],
+  },
   { label: "Sports", items: ["Cycling"] },
 ];
 
@@ -28,7 +31,9 @@ const TabOne = ({ nextTab, save }) => {
                   className={`text-[#51636F] bg-white hover:bg-[#625DF533] group hover:text-black flex items-center justify-between text-base lg:text-lg bold p-4 border-[2.5px] border-[#625DF533] hover:border-[#625DF5] text-start rounded-2xl transition-all duration-300 ${
                     item === "Phones" ||
                     item === "Laptops" ||
-                    item === "Headphones"
+                    item === "Headphones" ||
+                    item === "Smart Watches" ||
+                    item === "Cycling"
                       ? ""
                       : "pointer-events-none opacity-50"
                   }`}
@@ -44,6 +49,14 @@ const TabOne = ({ nextTab, save }) => {
                       window.open(
                         "https://u4lncn4kip6.typeform.com/to/RCZ22YtM"
                       );
+                    } else if (item === "Smart Watches") {
+                      window.open(
+                        "https://u4lncn4kip6.typeform.com/to/MC03ITjZ"
+                      );
+                    } else if (item === "Cycling") {
+                      window.open(
+                        "https://u4lncn4kip6.typeform.com/to/kvLxQAd8"
+                      );
                     }
                   }}
                   onTouchStart={() => {
@@ -57,6 +70,10 @@ const TabOne = ({ nextTab, save }) => {
                     } else if (item === "Headphones") {
                       window.open(
                         "https://u4lncn4kip6.typeform.com/to/RCZ22YtM"
+                      );
+                    } else if (item === "Smart Watches") {
+                      window.open(
+                        "https://u4lncn4kip6.typeform.com/to/MC03ITjZ"
                       );
                     }
                   }}
