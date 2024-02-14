@@ -7,9 +7,9 @@ const categories = [
     id: 4,
     text: "How do you use your phone’s camera?",
     options: [
-      "Casual photos occasionally",
-      "High-quality photos for personal use",
-      "Professional photography/videography",
+      "I don't prioritize the phone's camera — I rarely use it",
+      "I use the phone's camera to capture personal moments",
+      "I extensively use the phone's camera for professional purposes",
     ],
   },
 ];

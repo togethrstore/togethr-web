@@ -7,9 +7,9 @@ const categories = [
     id: 5,
     text: "How often do you play games on your phone?",
     options: [
-      "Rarely (once a week or less)",
-      "Occasionally (a few times a week),",
-      "Daily",
+      "Basic — Call, text, email, web surfing",
+      "Balanced — Casual gaming, occasional photos/videos, multitasking,",
+      "Intensive — High graphics gaming, professional content creation",
     ],
   },
 ];

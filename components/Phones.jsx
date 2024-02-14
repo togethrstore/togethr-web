@@ -896,13 +896,13 @@ export default function Filtering({
 
   let cameraFilterMultiplier;
   switch (tabFourResponse) {
-    case "Casual photos occasionally":
+    case "I don't prioritize the phone's camera — I rarely use it":
       cameraFilterMultiplier = 0.5;
       break;
-    case "High-quality photos for personal use":
+    case "I use the phone's camera to capture personal moments":
       cameraFilterMultiplier = 0.75;
       break;
-    case "Professional photography/videography":
+    case "I extensively use the phone's camera for professional purposes":
       cameraFilterMultiplier = 1;
       break;
     default:
@@ -926,13 +926,13 @@ export default function Filtering({
   let performanceFilterMultiplier;
 
   switch (tabFiveResponse) {
-    case "Rarely (once a week or less)":
+    case "Basic — Call, text, email, web surfing":
       performanceFilterMultiplier = 0.5;
       break;
-    case "Occasionally (a few times a week)":
+    case "Balanced — Casual gaming, occasional photos/videos, multitasking":
       performanceFilterMultiplier = 0.75;
       break;
-    case "Daily":
+    case "Intensive — High graphics gaming, professional content creation":
       performanceFilterMultiplier = 1;
       break;
     default:
