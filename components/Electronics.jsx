@@ -10,25 +10,25 @@ const items = [
     title: "Laptops",
     image: ImageFour,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/SRKq2e0W",
+    buttonHref: "/form",
   },
   {
     title: "Phones",
     image: ImageOne,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/EE3Vp4WF",
+    buttonHref: "/form",
   },
   {
     title: "Headphones",
     image: ImageTwo,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/RCZ22YtM",
+    buttonHref: "/form",
   },
   {
     title: "Smart Watches",
     image: ImageThree,
     buttonLabel: "Shop with Expert",
-    buttonHref: "https://u4lncn4kip6.typeform.com/to/UwUMl38w",
+    buttonHref: "/form",
   },
 ];
 
@@ -62,7 +62,11 @@ export default function Electronics() {
                   <div className="w-40 xl:w-56 2xl:w-60">
                     <Image src={item.image} alt={item.title} priority={true} />
                   </div>
-                  <a href={item.buttonHref}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={item.buttonHref}
+                  >
                     <button className="w-full bold bg-[#625DF5] rounded-2xl border-2 border-[#625DF5] hover:bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500 hover:border-[#625DF5] py-4 text-white transition-all duration-300 text-base">
                       {item.buttonLabel}
                     </button>

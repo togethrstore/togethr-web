@@ -26,18 +26,38 @@ const TabOne = ({ nextTab, save }) => {
                 <button
                   key={itemIndex}
                   className={`text-[#51636F] bg-white hover:bg-[#625DF533] group hover:text-black flex items-center justify-between text-base lg:text-lg bold p-4 border-[2.5px] border-[#625DF533] hover:border-[#625DF5] text-start rounded-2xl transition-all duration-300 ${
-                    item === "Phones" ? "" : "pointer-events-none opacity-50"
+                    item === "Phones" ||
+                    item === "Laptops" ||
+                    item === "Headphones"
+                      ? ""
+                      : "pointer-events-none opacity-50"
                   }`}
                   onClick={() => {
                     if (item === "Phones") {
                       save(item);
                       nextTab();
+                    } else if (item === "Laptops") {
+                      window.open(
+                        "https://u4lncn4kip6.typeform.com/to/SRKq2e0W"
+                      );
+                    } else if (item === "Headphones") {
+                      window.open(
+                        "https://u4lncn4kip6.typeform.com/to/RCZ22YtM"
+                      );
                     }
                   }}
                   onTouchStart={() => {
                     if (item === "Phones") {
                       save(item);
                       nextTab();
+                    } else if (item === "Laptops") {
+                      window.open(
+                        "https://u4lncn4kip6.typeform.com/to/SRKq2e0W"
+                      );
+                    } else if (item === "Headphones") {
+                      window.open(
+                        "https://u4lncn4kip6.typeform.com/to/RCZ22YtM"
+                      );
                     }
                   }}
                 >
