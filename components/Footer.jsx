@@ -11,19 +11,21 @@ const categories = [
   {
     title: "Electronics",
     items: [
-      { name: "Laptops", link: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ" },
-      { name: "Phones", link: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ" },
+      { name: "Laptops", link: "/form" },
+      { name: "Phones", link: "/form" },
+      { name: "Headphones", link: "/form" },
+      { name: "Smart Watches", link: "/form" },
     ],
   },
-  // {
-  //   title: "Sports & Hobbies",
-  //   items: [
-  //     {
-  //       name: "Bicycles",
-  //       link: "https://u4lncn4kip6.typeform.com/to/PVf62CCJ",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Sports & Hobbies",
+    items: [
+      {
+        name: "Bicycles",
+        link: "/form",
+      },
+    ],
+  },
   {
     title: "Togethr",
     items: [

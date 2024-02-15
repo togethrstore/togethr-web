@@ -38,44 +38,28 @@ export default function Headerr() {
                     exit="hidden"
                     variants={dropdownVariants}
                   >
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={"https://u4lncn4kip6.typeform.com/to/SRKq2e0W"}
-                    >
+                    <a rel="noopener noreferrer" href={"/form"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                         Laptops
                       </motion.button>
                     </a>
 
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={"https://u4lncn4kip6.typeform.com/to/EE3Vp4WF"}
-                    >
+                    <a rel="noopener noreferrer" href={"/form"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                         Phones
                       </motion.button>
                     </a>
 
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={"https://u4lncn4kip6.typeform.com/to/RCZ22YtM"}
-                    >
+                    <a rel="noopener noreferrer" href={"/form"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                         Headphones
                       </motion.button>
                     </a>
 
                     <motion.div className="bg-[#625df533] h-[1px] my-1"></motion.div>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={"https://u4lncn4kip6.typeform.com/to/GTuIxk9r"}
-                    >
+                    <a rel="noopener noreferrer" href={"/form"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex lg:pr-2">
                         Smart Watches
                       </motion.button>
@@ -122,11 +106,7 @@ export default function Headerr() {
                     exit="hidden"
                     variants={dropdownVariants}
                   >
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={"https://u4lncn4kip6.typeform.com/to/kvLxQAd8"}
-                    >
+                    <a rel="noopener noreferrer" href={"/form"}>
                       <motion.button className="text-black hover:text-[#625DF5] transition-all duration-300 medium text-base lg:text-lg inline-flex">
                         Cycling
                       </motion.button>
