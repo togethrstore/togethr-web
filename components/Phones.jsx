@@ -1048,7 +1048,7 @@ export default function Filtering({
                           // onClick={() => setActiveTab(0)}
                           // onClick={ReloadPage}
                         >
-                          <div className="w-max flex items-center gap-x-2 text-[#51636F] px-4 py-2 text-base border-2 border-[#51636F] rounded-2xl bold">
+                          <div className="w-max max-w-[330px] sm:max-w-sm md:max-w-none lg:max-w-none flex items-center gap-x-2 text-[#51636F] px-4 py-2 text-base border-2 border-[#51636F] rounded-2xl bold">
                             <div>{state.response}</div>
                             {/* <div className="w-4 lg:w-5 inline-flex">
                               <Image className="" src={EditIcon} alt="" />
