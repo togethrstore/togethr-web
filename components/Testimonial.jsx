@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import { Rating, LeftButton, RightButton, RatingMob } from "./Buttons";
 import { motion, AnimatePresence } from "framer-motion";
