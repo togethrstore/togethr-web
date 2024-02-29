@@ -72,7 +72,7 @@ export default function Hero() {
   }, [mobindex]);
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center mx-5">
       <div className="w-full max-w-4xl xl:max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-between py-12 lg:py-36 lg:pt-44">
         <div className="flex flex-col gap-y-5 lg:gap-y-12 px-6 lg:px-0">
           <div className="flex flex-col gap-y-4">
@@ -80,12 +80,12 @@ export default function Hero() {
               Find the right <br /> product for you
             </div>
             <div className="medium text-[#51636F] text-base lg:text-lg">
-              Real experts — Personalized product picks — for free!
+            AI-Powered Shopping — Tailored Recommendations — for free!
             </div>
           </div>
-          <a target="_blank" rel="noopener noreferrer" href="/form">
+          <a target="_blank" rel="noopener noreferrer" href="https://u4lncn4kip6.typeform.com/to/F46mmQT5">
             <button className="w-full lg:w-max medium bg-[#625DF5] transition-all duration-500 rounded-2xl hover:bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-500 py-3 px-12 text-white text-lg">
-              Shop with Expert
+            Join the Waitlist
             </button>
           </a>
         </div>

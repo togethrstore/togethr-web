@@ -8,11 +8,8 @@ export default function About() {
   return (
     <>
       <div className="w-full flex justify-center">
-        <div className="w-full flex flex-col gap-y-6 px-6 py-10 lg:px-0 max-w-4xl xl:max-w-7xl lg:py-16">
+        <div className="w-full flex flex-col gap-y-6 px-6 py-10 lg:px-0 max-w-4xl xl:max-w-7xl lg:py-16 mx-7">
           <div className="flex flex-col gap-y-4">
-            <div className="text-black bold lg:pb-10 text-2xl lg:text-[2.5rem]">
-              How it works
-            </div>
             {/* <div className="medium text-[#51636F] text-base lg:text-lg">
               Lorem Ipsum dos amet. Lorem Ipsum dos amet. Lorem Ipsum dos amet.
             </div> */}
@@ -24,10 +21,10 @@ export default function About() {
               </div>
               <div>
                 <div className="text-black text-start lg:text-center text-lg lg:text-2xl bold pb-2 lg:py-4">
-                  Share Requirements
+                Conversational Experience
                 </div>
                 <div className="medium text-[#51636F] text-lg text-start lg:text-center">
-                  Fill out a form (takes less than a minute)
+                Chat with our AI like a friend, getting all your shopping queries answered at one place
                 </div>
               </div>
             </div>
@@ -37,11 +34,10 @@ export default function About() {
               </div>
               <div>
                 <div className="text-black text-start lg:text-center text-lg lg:text-2xl bold pb-2 lg:py-4">
-                  Talk to Expert{" "}
+                Curated Choices
                 </div>
                 <div className="medium text-[#51636F] text-lg text-start lg:text-center">
-                  Our expert will contact you to discuss your requirements.{" "}
-                </div>
+                Receive hyper-personalized product recommendations, with the flexibility to explore all options.                </div>
               </div>
             </div>
             {/* asaushfiahwfi */}
@@ -51,11 +47,10 @@ export default function About() {
               </div>
               <div className="">
                 <div className="text-black text-start lg:text-center text-lg lg:text-2xl bold pb-2 lg:py-4">
-                  Shop Togethr
+                Purpose-built for Shopping
                 </div>
                 <div className="medium text-[#51636F] text-lg text-start lg:text-center">
-                  Purchase your perfect product at the best price.{" "}
-                </div>
+                Experience shopping-focused AI, designed specifically to support your decision-making                </div>
               </div>
             </div>
           </div>

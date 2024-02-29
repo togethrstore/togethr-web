@@ -8,39 +8,16 @@ import LinkedinHover from "../public/assets/images/footer/linkedin-hover.png";
 import Link from "next/link";
 
 const categories = [
-  {
-    title: "Electronics",
-    items: [
-      { name: "Laptops", link: "/form" },
-      { name: "Phones", link: "/form" },
-      { name: "Headphones", link: "/form" },
-      { name: "Smart Watches", link: "/form" },
-    ],
-  },
-  {
-    title: "Sports & Hobbies",
-    items: [
-      {
-        name: "Bicycles",
-        link: "/form",
-      },
-    ],
-  },
+ 
   {
     title: "Togethr",
     items: [
-      { name: "About Us", link: "/about-us" },
-      {
-        name: "Become an expert",
-        link: "https://docs.google.com/forms/d/e/1FAIpQLSchbqV-6EsFyVjCLzeXfsns-Mq4tvDJqGJSZIJP8SixmenwPw/viewform",
-      },
+    
+      { name: "Join our waitlist", link: "https://u4lncn4kip6.typeform.com/to/F46mmQT5" },
       { name: "Contact Us", link: "/contact-us" },
       { name: "Terms & Conditions", link: "/terms&conditions" },
       { name: "Privacy Policy", link: "/privacy-policy" },
-      {
-        name: "Cancellation & Refund Policy",
-        link: "/cancellation&refund-policy",
-      },
+      
     ],
   },
 ];
@@ -51,7 +28,7 @@ const Footer = () => {
 
   return (
     <div className="w-full flex justify-center px-6 lg:px-0 py-10 lg:py-12">
-      <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl">
+      <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl mx-7">
         <div className="flex flex-col">
           <div className="flex justify-between">
             <Link href={"/"}>
@@ -100,7 +77,7 @@ const Footer = () => {
                       key={subIndex}
                       className="hover:text-[#625DF5] transition-all duration-300"
                     >
-                      <Link href={item.link} className="">
+                      <Link href={item.link} className="" target="_blank">
                         {item.name}
                       </Link>
                     </div>

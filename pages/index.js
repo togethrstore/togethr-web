@@ -21,19 +21,19 @@ export default function Home() {
       <div className="">
         <Headerr />
         <Hero />
-        <div className="categories-desktop hidden lg:block">
+        {/* <div className="categories-desktop hidden lg:block">
           <Electronics />
           <Undersports />
           <Appliances />
-        </div>
-        <div className="lg:hidden faq-bg">
+        </div> */}
+        {/* <div className="lg:hidden faq-bg">
           <ElectronicsMob />
           <UndersportsMob />
           <ApplicancesMob />
-        </div>
+        </div> */}
         <About />
-        <CarouselMob />
-        <Carousel />
+        {/* <CarouselMob /> */}
+        {/* <Carousel /> */}
         <Testimonial />
         <Faq />
         <Footer />

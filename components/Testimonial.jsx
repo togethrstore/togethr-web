@@ -36,14 +36,6 @@ const reviewData = [
     bgColor: getRandomBgColor(),
   },
   {
-    expert: "Paras Chawla",
-    ratings: [1, 2, 3, 4, 5],
-    description:
-      "Excellent review shared by Togethr team. I wanted a quick opinion to buy phone and Kaivalya attested my research which gave me confidence to buy it right away. Highly recommended to talk to them before purchasing any expensive item.",
-    date: "I Submitted 2 months ago",
-    bgColor: getRandomBgColor(),
-  },
-  {
     expert: "Harshil Jain",
     ratings: [1, 2, 3, 4, 5],
     description:
@@ -70,7 +62,7 @@ const Card = ({ review }) => {
     >
       <motion.div className="w-full p-6 flex flex-col border-2 border-[#625DF5] rounded-2xl testi-bg">
         <div className="w-full flex flex-col lg:items-center lg:flex-row lg:justify-between">
-          <div className="flex items-center h-max gap-x-4">
+          <div className="flex items-center h-max gap-x-4 ">
             <div
               style={{
                 backgroundColor: review.bgColor,
@@ -121,15 +113,14 @@ export default function Testimonial() {
   };
 
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-full flex flex-col gap-y-6 lg:gap-y-12 max-w-4xl px-6 lg:px-0 xl:max-w-7xl py-10 lg:py-16">
-        <div className="flex flex-col gap-y-4">
+    <div className="w-full flex justify-center ">
+      <div className="w-full flex flex-col gap-y-6 lg:gap-y-12 max-w-4xl px-6 lg:px-0 xl:max-w-7xl py-10 lg:py-16 ">
+        <div className="flex flex-col gap-y-4 mx-7">
           <div className="text-black bold text-2xl lg:text-[2.5rem]">
             We are Togethr
           </div>
-          <div className="medium text-[#51636F] text-base lg:text-lg">
-            Hear from our customers about their experiences shopping with our
-            experts!
+          <div className="medium text-[#51636F] text-base lg:text-lg ">
+          Hear from our customers about their experiences shopping Togethr!
           </div>
         </div>
         <div className="flex justify-center">

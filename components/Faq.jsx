@@ -7,41 +7,29 @@ const faqData = [
   {
     question: "What is Togethr?",
     answer:
-      "To put it simply, Togethr is your personal shopping assistant. Our experts help you choose the right product and buy it at the best price.",
+      "To put it simply, Togethr is your personal shopping expert — we help you choose the perfect product.",
   },
   {
     question: "What exactly do you do?",
     answer:
-      "We have a panel of experts across multiple categories who will walk you through any queries and help you make a purchase. All you have to do is fill out a quick form.",
-  },
-  {
-    question: "Who’s an expert?",
-    answer:
-      "An expert is a passionate individual who is happy to be your shopping buddy for your next big purchase. They understand your requirements and give you unbiased, personalized buying advice.",
+      "We offer a chat-based AI experience to guide you to the perfect product, covering any category you’re interested in, simply through conversation.",
   },
   {
     question: "Is it free?",
-    answer: "Yes, you can talk to an expert free of cost, no tricks.",
+    answer: "Yes, our personal shopping expert is free to use, no tricks.",
   },
   {
     question: "Why are you doing this?",
     answer:
       "We believe that modern internet shoppers are plagued with 'too much' information across multiple channels, and influencers. We want to make your shopping experience enjoyable.",
   },
+  
   {
-    question: "Can I buy products from Togethr?",
-    answer: "Yes, you can!",
-  },
-  {
-    question: "How can I buy from Togethr?",
+    question: "What products can you help me find?",
     answer:
-      "Sign up to talk to an expert and they will share purchase links after your conversation.",
+      "We're category agnostic, meaning we can help you shop for anything — from your next smartphone to your next car. Just ask!",
   },
-  {
-    question: "What is a price match guarantee?",
-    answer:
-      "Whatever product you decide to buy, we will match the price from major online retailers and brands.",
-  },
+ 
 ];
 
 export default function Faq() {
@@ -54,7 +42,7 @@ export default function Faq() {
   return (
     <>
       <div className="w-full flex justify-center px-6 lg:px-0 py-10 lg:py-16 faq-bg">
-        <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-16">
+        <div className="w-full flex flex-col gap-y-12 max-w-4xl xl:max-w-7xl py-16 mx-7">
           <div className="flex flex-col gap-y-4">
             <div className="text-black bold text-2xl lg:text-[2.5rem]">
               Frequently asked questions
