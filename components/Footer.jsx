@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../public/assets/images/global/logo.png";
+import Logo from "../public/assets/images/global/color.jpg";
 import Instagram from "../public/assets/images/footer/instagram.png";
 import Linkedin from "../public/assets/images/footer/linkedin.png";
 import InstagramHover from "../public/assets/images/footer/instagram-hover.png";

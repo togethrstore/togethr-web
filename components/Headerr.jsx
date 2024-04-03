@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../public/assets/images/global/logo.png";
+import Logo from "../public/assets/images/global/color.jpg";
 import ArrowDown from "../public/assets/images/arrow-down.png";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
